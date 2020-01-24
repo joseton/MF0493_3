@@ -98,6 +98,15 @@ textarea{
     border-radius: 36px;
     resize: none;
 }
+.btn{
+  width: 30%;
+  height: 40px;
+  background-color: #05d192;
+  color: #fff;
+  align-content: center;
+  border-radius: 36px;
+  outline: none;
+}
 .space{
   width: 100%;
   background-color: #f4f4f4;

@@ -54,10 +54,12 @@ div a{
   font-weight: bold;
   font-size: 16px;
 }
-#mask_intro{
-  max-width: 820px;
+.img_home{
+  width: 50%;
+  background-image: url("img/hunger_wfp_3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
 footer{
   height: 120px;
   width: 100%;
