@@ -88,15 +88,31 @@
                     </form>
                     <form id="frm_registre" novalidate>
                         <h3>REGISTRE</h3>
-                        <label for="reg_email">Correu electrònic</label>
-                        <input type="email" class="camp_form" id="reg_email" name="reg_email">
-                        <p class="missatge" id="reg_email_val"></p>
-                        <label for="reg_pass">Paraula de pas</label>
-                        <input type="password" class="camp_form" id="reg_pass" name="reg_pass">
-                        <p class="missatge" id="reg_pass_val"></p>
-                        <label for="reg_pass2">Repeteix la paraula de pas</label>
-                        <input type="password" class="camp_form" id="reg_pass2" name="reg_pass2">
-                        <p class="missatge" id="reg_pass2_val"></p>
+                        <div class="inputs_50">
+                            <label for="reg_email">Correu electrònic</label>
+                            <input type="email" class="camp_form" id="reg_email" name="reg_email">
+                            <p class="missatge" id="reg_email_val"></p>
+                        </div>
+                        <div class="inputs_50">
+                            <label for="reg_nom">Nom</label>
+                            <input type="text" class="camp_form" id="reg_nom" name="reg_nom">
+                            <p class="missatge" id="reg_nom_val"></p>
+                        </div>
+                        <div class="inputs_50">
+                            <label for="reg_edat">Edat</label>
+                            <input type="number" class="camp_form" id="reg_edat" name="reg_edat">
+                            <p class="missatge" id="reg_email_val"></p>
+                        </div>
+                        <div class="inputs_50">
+                            <label for="reg_pass">Paraula de pas</label>
+                            <input type="password" class="camp_form" id="reg_pass" name="reg_pass">
+                            <p class="missatge" id="reg_pass_val"></p>
+                        </div>
+                        <div class="inputs_50">
+                            <label for="reg_pass2">Repeteix la paraula de pas</label>
+                            <input type="password" class="camp_form" id="reg_pass2" name="reg_pass2">
+                            <p class="missatge" id="reg_pass2_val"></p>
+                        </div>
                         <input type="button" class="camp_form" value="Registrar" onclick="registre()">
                         <p>Ja tens compte d'usuari? Fes clic <span onclick="mostrar_login()">AQUÍ</span></p>
                         <p class="missatge" id="success"></p>
