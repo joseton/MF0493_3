@@ -129,7 +129,7 @@ window.onload = function() {
 //funcion que envia un form al servidor con el div donde se escribira el echo
 function send_php(form,div_respuesta) {
 
-    div_respuesta.innerHTML ='<i style="left:0" class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>'
+    div_respuesta.innerHTML ='<i style="left:0;color:black" class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>'
 
     var regData = new FormData(form);
 

@@ -21,3 +21,14 @@ $(document).ready(function(){
 
 
 });
+
+//menus hamburguesa desplegable
+
+
+function leyendas() {
+    window.open("leyendas.html");
+}
+
+function resu() {
+    window.open("resu.html");
+}

@@ -15,34 +15,38 @@
 
 @media all and (max-width: 768px) {
 
-    li {
-        margin: 20px auto;
+    nav {
+        height: 0;
+        overflow: hidden;
+        float:right;
+        position: relative;
+        right: 7%;
     }
 
-    nav ul {
-        display: block;
+    nav ul{
+        flex-direction: column;
     }
+
+    li {
+        margin: 15px auto;
+    }
+
 
     ul li a{
         font-size: 14px;
         padding: 10px;
-        opacity: .8;
+        opacity: .7;
     }
 
-    ul li ul {
-        display: none;
-        position: relative;
-        left: 35%;
-        cursor:pointer;
 
-    }
-
-    #burger2{
+    #burger{
         width: 10%;
         display: block;
         position: relative;
         left: 80%;
+        bottom: 30px;
         cursor:pointer;
+
     }
 
 }

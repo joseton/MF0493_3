@@ -47,9 +47,7 @@ nav ul {
     margin-top: 3%;
     list-style: none;
 }
-#burger2{
-    display: none;
-}
+
 
 ul li a {
     color:inherit;
@@ -60,14 +58,13 @@ ul li a {
     opacity: .9;
 }
 
-/* #burger{
-    border: solid 1px white;
+#burger{
     width: 7%;
     display: none;
     cursor: pointer;
     position: relative;
     left:95%;
-} */
+}
 
 body {
     text-align: center;
