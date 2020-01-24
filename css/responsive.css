@@ -1,0 +1,48 @@
+@media all and (max-width: 900px) {
+    #headertitle{
+        width: 30%;
+    }
+}
+
+@media all and (max-width: 802px) {
+    header{
+        background-image: url('../img/banner3.3.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+
+@media all and (max-width: 768px) {
+
+    li {
+        margin: 20px auto;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    ul li a{
+        font-size: 14px;
+        padding: 10px;
+        opacity: .8;
+    }
+
+    ul li ul {
+        display: none;
+        position: relative;
+        left: 35%;
+        cursor:pointer;
+
+    }
+
+    #burger2{
+        width: 10%;
+        display: block;
+        position: relative;
+        left: 80%;
+        cursor:pointer;
+    }
+
+}

@@ -1,0 +1,48 @@
+
+form{
+    width: 650px;
+    margin: auto;
+    padding: 10px;
+}
+
+h3{
+    margin: 10px 0px 20px 20px;
+}
+
+label {
+    display: block;
+}
+
+input{
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 3% 0;
+}
+
+div a{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+}
+
+#registro{
+    display:none;
+}
+
+input:invalid, .invalid{
+    border: 1px solid #600 !important;
+    background-color: #f00;
+}
+
+.error{
+        font-size: 75%;
+        color: #700;
+}
+.respuesta{
+    margin: 10px auto;
+    color: green;
+}

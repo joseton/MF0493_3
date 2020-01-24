@@ -1,0 +1,17 @@
+{
+    "name":"proyecto/frontend",
+    "description":"Proyecto Frontend CIFO Violeta",
+    "license":"public",
+    "authors": [
+        {
+            "name":"Alejo Viñeta",
+            "email":"avinetam@gmail.com"
+        }
+    ],
+
+    "require": {
+        "components/jquery": ">=3.4.1",
+
+    }
+
+}

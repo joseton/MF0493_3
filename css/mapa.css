@@ -1,0 +1,26 @@
+#mapa{
+    height:360px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+section{
+    margin: 5% auto;
+}
+
+
+article img {
+    width: 100%;
+}
+
+article a {
+    font-size: 4em;
+    color: black;
+    text-decoration: none;
+    opacity: 0.8;
+    display: block;
+}
+
+article a:hover {
+    opacity: 1;
+}
