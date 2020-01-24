@@ -10,7 +10,7 @@ $(document).ready(function() {
         $(this).children('ul').slideUp();
     });
 
-    $burguer = $('.burguer_menu').find('.lang');
+    $burguer = $('.burguer_menu').find('.lang').find('a');
 
     $burguer.click(function(){
         $(this).children('.lang').stop();
