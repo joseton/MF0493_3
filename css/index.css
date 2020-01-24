@@ -1,0 +1,189 @@
+/* AQUI APLICAMOS LOS ESTILOS DE INDEX */
+
+/* aplicamos margin y padding 0 a toda la web nada mas empezar para separar bordes y espacio, y border box-sizing para que no nos afecte a anchos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar{
+    opacity: 0.95;
+    position: relative;
+    /* display: block; */
+    background-attachment: fixed;
+}
+
+h2{
+    font-size: 180px;
+    position: absolute;
+    top: 30%;
+    left: 51%;
+    color: white;
+    font-family: 'Parisienne', cursive;
+}
+h4{
+    font-size: 50px;
+    position: absolute;
+    top: 30%;
+    left: 31%;
+    color: white;
+    font-family: 'Parisienne', cursive;
+}
+
+body header{
+    font-size: 20px;
+    color: grey;
+    padding: 20px;
+}
+
+/* LA CLASE "STICKY LA AÑADIMOS CON JS PARA QUE CUANDO BAJEMOS EL SCROLL EL MENU SE QUEDE ENGANCHADO ARRIBA" */
+/* .content {
+  padding: 16px;
+} */
+/* .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+} */
+
+main{
+    /* background-image: linear-gradient(to right, #c6ffdd, #cee5a7, #e1c67d, #f3a06e, #f7797d);; */
+
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: flex-end; */
+}
+
+ul li a{
+    color: grey;
+    /* border: 1px solid grey; */
+    text-decoration: none;
+    padding: 30px 24px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    vertical-align: middle;
+
+}
+
+ul li a:hover{
+    font-weight: bold;
+    color: #cfbf13;
+}
+
+ul li {
+    padding: 7px;
+    list-style: none;
+}
+/* ESTILOS DE SABIAS QUE.._______________________________________________________________ */
+#imghistoria{
+    opacity: 0.95;
+    position: absolute;
+}
+section div h1{
+    text-align: center;
+    position: relative;
+    color: #d43125;
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: -.02em;
+    line-height: 1;
+    padding-top: 20px;
+    margin: 100px;
+}
+ section div p{
+    position: relative;
+    margin: 0 auto 20px;
+    text-align: center;
+    max-width: 50%;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+
+ }
+
+main section #nuestrosproductos h1{
+    color: #cfbf13;
+    font-size: 35px;
+    text-align: center;
+    font-family: monospace;
+    top: 65px;
+}
+
+/* ESTOS SON LOS ESTILOS DE NUESTROS PRODUCTOS______________________________________________________________________ */
+
+.contenedor_productos{
+    display: flex;
+    justify-content: space-around;
+}
+
+#nuestrosproductos p{
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #cfbf13;
+    border-color: black;
+    padding: 10px;
+    text-align: center;
+    right: 10px;
+}
+
+#nuestrosproductos img:hover{
+
+}
+
+#nuestrosproductos img:hover{
+    cursor: pointer;
+    -webkit-transform: scale(1.1,1.1);
+}
+
+/* ESTILOS DEL FOOTER_____________________________________________________________________ */
+footer{
+    background-color: #cfbf13;
+    font-family: sans-serif;
+    width: 100%;
+    height: 5%;
+    bottom: 0;
+    padding: 15px;
+}
+
+footer span{
+    color: white;
+    font-size: 15px;
+    margin: 8px;
+}
+
+footer span:hover{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer .footerleft{
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer .footerright{
+    display: flex;
+    justify-content: flex-end;
+}
+
+ input[type=search]{
+    padding: 10px;
+    outline: 0;
+    border: 0px;
+    margin: 12px;
+}
+
+.footerright img{
+    cursor: pointer;
+    margin: 12px;
+
+}

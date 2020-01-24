@@ -1,0 +1,15 @@
+{
+    "name":"proyecto/frontend",
+    "description":"Poryecto Frontend CIFO Violeta",
+    "license": "public",
+    "autors": [
+        {
+            "name":"",
+            "email":""
+        }
+    ],
+
+    "require":{
+        "components/jquery":">=3.4.1"
+    }
+}

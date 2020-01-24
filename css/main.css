@@ -1,0 +1,87 @@
+/* AQUI APLICAMOS LOS ESTILOS DE INDEX Y TAMBIEN LOS DEL MAIN */
+
+/* aplicamos margin y padding 0 a toda la web nada mas empezar para separar bordes y espacio, y border box-sizing para que no nos afecte a anchos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#navbar{
+    opacity: 0.95;
+    position: relative;
+    /* display: block; */
+    background-attachment: fixed;
+}
+
+
+h2{
+    font-size: 180px;
+    position: absolute;
+    top: 30%;
+    left: 51%;
+    color: white;
+    font-family: 'Parisienne', cursive;
+}
+h4{
+    font-size: 50px;
+    position: absolute;
+    top: 30%;
+    left: 31%;
+    color: white;
+    font-family: 'Parisienne', cursive;
+
+
+}
+
+body header{
+    font-size: 20px;
+    /* background-image: linear-gradient(to right, #c6ffdd, #cee5a7, #e1c67d, #f3a06e, #f7797d);; */
+    color: grey;
+    padding: 50px;
+
+}
+
+/* LA CLASE "STICKY LA AÑADIMOS CON JS PARA QUE CUANDO BAJEMOS EL SCROLL EL MENU SE QUEDE ENGANCHADO ARRIBA" */
+/* .content {
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+} */
+
+main{
+    /* background-image: linear-gradient(to right, #c6ffdd, #cee5a7, #e1c67d, #f3a06e, #f7797d);; */
+
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: flex-end; */
+}
+
+ul li a{
+    color: grey;
+    /* border: 1px solid grey; */
+    text-decoration: none;
+    padding: 30px 24px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+
+ul li a:hover{
+    font-weight: bold;
+    color: #cfbf13;
+}
+
+ul li {
+    padding: 7px;
+    list-style: none;
+}
