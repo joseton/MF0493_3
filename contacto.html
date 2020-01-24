@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Web Clase M1 DWEBS CIFO Violeta</title>
+    <!-- Ejemplo de CSS incrustado -->
+    <style type="text/css">
+    /* dentro de la etiqueta, añadimos codigo CSS */
+    /* header{
+    background-color: grey;
+    } */
+    </style>
+    <!-- Links a nuestros CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/contacto.js"></script>
+</head>
+<body>
+    <!-- ESTRUCTURA BÁSICA EN HTML5 -->
+    <!-- CABECERA -->
+    <!-- ejemplo CSS en linea -->
+    <!-- <header style="background-color: grey;"> -->
+    <header>
+      <!-- <div class="header-video"> -->
+      <video muted preload autoplay loop>
+        <source src="animaciones/video_coctelera.mp4" type="video/mp4">
+        <source src="animaciones/video_coctelera.webm" type="video/webm">
+        <source src="animaciones/video_coctelera.ogg" type="video/ogg">
+        Tu navegador no soporta HTML5 Videos
+      </video>
+        <!-- imagen -->
+        <!-- src: ruta de la imagen
+        alt: texto que aparece cuando no encuentra imagen (importante para SEO) -->
+        <img src="img/logo_CesarWine.png" alt="logo" title="Imagen logo" id="logo">
+        <!-- menu de navegación -->
+        <nav>
+            <!-- ul: contenedor de la lista
+            li: cada elemento de la lista -->
+            <ul>
+                <!-- a: enlace link con atributo "href", que nos configura la ruta externa ó interna -->
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="slider.html">Proximos Eventos</a></li>
+                <li><a href="slider.html">Cursos/formacion</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contacto.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login_reg.html">Login/Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- main: Contenido Principal -->
+    <main>
+        <!-- TODO Challenge 2: Añadir el formulario que se indica en la descripción del Challenge -->
+        <form>
+            <h3>Formulario de contacto</h3>
+            <div class="inputs_50">
+                <label for="nombre">Nombre <span>*</span></label>
+                <input type="text" id="nombre">
+                <span class="result_nombre"></span>
+            </div>
+            <div class="inputs_50">
+                <label for="apellido">Apellido <span>*</span></label>
+                <input type="text" id="apellido">
+                <span class="result_apellido"></span>
+            </div>
+            <div class="clearflix"></div>
+            <div class="inputs_100">
+                <label for="email">Email <span>*</span></label>
+                <input type="text" id="email">
+                <span class="result_email"></span>
+            </div>
+            <div class="inputs_33">
+                <label for="tlf">Teléfono <span>*</span></label>
+                <input type="text" id="tlf">
+                <span class="result_tlf"></span>
+            </div>
+            <div class="inputs_33">
+                <label for="dni">DNI <span>*</span></label>
+                <input type="text" id="dni">
+                <span class="result_dni"></span>
+            </div>
+            <div class="inputs_33">
+                <label for="any">Año de Nacimiento <span>*</span></label>
+                <input type="text" id="any">
+                <span class="result_any"></span>
+            </div>
+            <div class="clearflix"></div>
+            <div class="inputs_100">
+                <label>Provincias Catalanas <span>*</span></label>
+                <select class="provincias">
+                    <option>[Selecciona]</option>
+                    <option>Barcelona</option>
+                    <option>Girona</option>
+                    <option>Lleida</option>
+                    <option>Tarragona</option>
+                </select>
+                <span class="result_provincias"></span>
+            </div>
+            <div class="inputs_100">
+                <label>Mensaje <span>*</span></label>
+                <textarea  placeholder="Mensaje" id="mensaje"></textarea>
+                <span class="result_mensaje"></span>
+            </div>
+            <button type="button" class="btn">Enviar datos</button>
+        </form>
+        <!-- Final TODO Challenge 2 -->
+    </main>
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>Web ejemplo clase M1 - DWEBS CIFO VIOLETA</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Web Clase M1 DWEBS CIFO Violeta</title>
+  <!-- Ejemplo de CSS incrustado -->
+  <style type="text/css">
+    /* dentro de la etiqueta, añadimos codigo CSS */
+    /* header{
+        background-color: grey;
+        } */
+  </style>
+  <!-- Links a nuestros CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/galeria.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="//cdn.jsdelivr.net/gh/zkreations/SheetSlider@2.2.0/dist/sheetslider.min.css" rel="stylesheet" />
+
+  <script src="https://use.fontawesome.com/ff0a9012c4.js"></script>
+</head>
+
+<body>
+  <!-- ESTRUCTURA BÁSICA EN HTML5 -->
+  <!-- CABECERA -->
+  <!-- ejemplo CSS en linea -->
+  <!-- <header style="background-color: grey;"> -->
+  <header>
+    <!-- imagen -->
+    <!-- src: ruta de la imagen
+        alt: texto que aparece cuando no encuentra imagen (importante para SEO) -->
+    <img src="./img/Logo_CesarWine_invert.jpg" alt="logo" title="Imagen logo" id="logo">
+    <!-- menu de navegación -->
+    <nav>
+      <div id="show_menu">Mostrar Menú</div>
+      <!-- ul: contenedor de la lista
+            li: cada elemento de la lista -->
+      <ul>
+        <!-- a: enlace link con atributo "href", que nos configura la ruta externa ó interna -->
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="slider.html">Proximos Eventos</a></li>
+        <li><a href="slider.html">Cursos/formacion</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="galeria2.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="login_reg.html">Login/Registro</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- main: Contenido Principal -->
+  <main>
+    <!-- TODO Challenge 3: Añadir el slider que se indica en la descripción del Challenge -->
+    <!--Sheet Slider-->
+<div class="sheetSlider sh--default">
+   <input id="s1" type="radio" name="slide1" checked/>
+   <input id="s2" type="radio" name="slide1"/>
+   <input id="s3" type="radio" name="slide1"/>
+   <div class="sh__content">
+
+      <!-- Slider Item -->
+      <div class="sh__item">
+         <img src="img/slide1.jpg" alt="imgText"/>
+         <!-- Item Info -->
+         <div class="sh__meta">
+            <h4>2 Weeks</h4>
+            <span>Secondary text <a href="#urlPage">with link</a></span>
+         </div>
+      </div>
+
+      <!-- Slider Item -->
+      <div class="sh__item">
+         <img src="img/slide2.jpg" alt="imgText"/>
+         <!-- Item Info -->
+         <div class="sh__meta">
+            <h4>Artwork surreal</h4>
+            <span>Secondary text without link</span>
+         </div>
+      </div>
+
+      <!-- Slider Item -->
+      <div class="sh__item">
+         <img src="img/slide3.jpg" alt="imgText"/>
+         <!-- Item Info -->
+         <div class="sh__meta">
+            <h4>Cat under a carpet</h4>
+            <span>Secondary text without link</span>
+         </div>
+      </div>
+
+   </div><!-- .sh__content -->
+
+   <!--botones-->
+   <div class="sh__btns">
+      <label for="s1"></label>
+      <label for="s2"></label>
+      <label for="s3"></label>
+   </div><!-- .sh__btns -->
+
+   <!--flechas-->
+   <div class="sh__arrows">
+      <label for="s1"></label>
+      <label for="s2"></label>
+      <label for="s3"></label>
+   </div><!-- .sh__arrows -->
+
+</div><!-- .sheetSlider -->
+    <!-- Final TODO Challenge 3 -->
+  </main>
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <span id="foot">Developed by TonioBlanco.com <i class="fa fa-copyright"> 2020</i> </span>
+  </footer>
+<link href="//cdn.jsdelivr.net/gh/zkreations/SheetSlider@2.2.0/dist/sheetslider.min.js" rel="stylesheet"/>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+{
+    "name":"proyecto/frontend",
+    "description":"Proyecto Frontend CIFO Violeta",
+    "license":"public",
+    "authors": [
+        {
+            "name":"Armand",
+            "email":"armando.lap@gmail.com"
+        }
+    ],
+
+    "require": {
+        "components/jquery": ">=3.4.1"
+    }
+
+}

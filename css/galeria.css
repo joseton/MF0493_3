@@ -1,0 +1,93 @@
+/* ------------------------------------------------------------------------ */
+/* slider.css: Estilos de la página slider.html */
+/* ------------------------------------------------------------------------ */
+/* TODO Challenge 3: Añade aqui los estilos necesarios para confeccionar el slider que se indica en el Challenge. */
+body {
+  background-image: url("./../img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul {
+  display: flex;
+  font-size: 20px;
+}
+
+header nav ul li a {
+  border: 0px solid #000;
+  padding: 5px 15px;
+  margin-left: 5px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.mask {
+  display: block;
+  width: 80%;
+  height: 400px;
+  margin: 0px auto;
+  overflow: hidden;
+  border: 1px solid #c3c3c3;
+}
+
+.container_slider {
+  width: 400%;
+  height: 100%;
+  animation-name: slider;
+  animation-duration: 15s;
+  position: relative;
+}
+
+.slide {
+  float: left;
+  width: 25%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+footer span {
+  color: white;
+  font-size: 10px;
+}
+
+#slide1 {
+  background-image: url(./../img/slide1.jpg);
+}
+
+#slide2 {
+  background-image: url(./../img/slide2.jpg);
+}
+
+#slide3 {
+  background-image: url(./../img/slide3.jpg);
+}
+
+#slide4 {
+  background-image: url(./../img/slide4.jpg);
+}
+
+@keyframes slider {
+  10% {
+    left: 0;
+  }
+
+  35% {
+    left: -100%;
+  }
+
+  60% {
+    left: -200%;
+  }
+
+  85% {
+    left: -300%;
+  }
+}
+
+/* Final TODO Challenge 3 */
