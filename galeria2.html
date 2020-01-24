@@ -13,7 +13,7 @@
   </style>
   <!-- Links a nuestros CSS -->
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/galeria.css">
+  <link rel="stylesheet" href="css/galeria2.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link href="//cdn.jsdelivr.net/gh/zkreations/SheetSlider@2.2.0/dist/sheetslider.min.css" rel="stylesheet" />
 
@@ -29,7 +29,7 @@
     <!-- imagen -->
     <!-- src: ruta de la imagen
         alt: texto que aparece cuando no encuentra imagen (importante para SEO) -->
-    <img src="./img/Logo_CesarWine_invert.jpg" alt="logo" title="Imagen logo" id="logo">
+    <img src="./img/Logo_CesarWine_invert.jpg" alt="logo" title="Imagen logo" id="logo2">
     <!-- menu de navegación -->
     <nav>
       <div id="show_menu">Mostrar Menú</div>
@@ -51,7 +51,7 @@
   <main>
     <!-- TODO Challenge 3: Añadir el slider que se indica en la descripción del Challenge -->
     <!--Sheet Slider-->
-<div class="sheetSlider sh--default">
+<div class="sheetSlider sh-21r9 sh-flip sh-auto">
    <input id="s1" type="radio" name="slide1" checked/>
    <input id="s2" type="radio" name="slide1"/>
    <input id="s3" type="radio" name="slide1"/>
@@ -59,7 +59,7 @@
 
       <!-- Slider Item -->
       <div class="sh__item">
-         <img src="img/slide1.jpg" alt="imgText"/>
+         <img src="./img/slide1.jpg" alt="imgText"/>
          <!-- Item Info -->
          <div class="sh__meta">
             <h4>2 Weeks</h4>
@@ -69,7 +69,7 @@
 
       <!-- Slider Item -->
       <div class="sh__item">
-         <img src="img/slide2.jpg" alt="imgText"/>
+         <img src="./img/slide2.jpg" alt="imgText"/>
          <!-- Item Info -->
          <div class="sh__meta">
             <h4>Artwork surreal</h4>
@@ -79,7 +79,7 @@
 
       <!-- Slider Item -->
       <div class="sh__item">
-         <img src="img/slide3.jpg" alt="imgText"/>
+         <img src="./img/slide3.jpg" alt="imgText"/>
          <!-- Item Info -->
          <div class="sh__meta">
             <h4>Cat under a carpet</h4>
@@ -90,6 +90,7 @@
    </div><!-- .sh__content -->
 
    <!--botones-->
+   <button class="sh-control"></button>
    <div class="sh__btns">
       <label for="s1"></label>
       <label for="s2"></label>
@@ -110,7 +111,7 @@
   <footer>
     <span id="foot">Developed by TonioBlanco.com <i class="fa fa-copyright"> 2020</i> </span>
   </footer>
-<link href="//cdn.jsdelivr.net/gh/zkreations/SheetSlider@2.2.0/dist/sheetslider.min.js" rel="stylesheet"/>
+<script src="//cdn.jsdelivr.net/gh/zkreations/SheetSlider@2.2.0/dist/sheetslider.min.js"></script>
 </body>
 
 </html>
