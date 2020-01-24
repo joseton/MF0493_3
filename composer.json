@@ -1,0 +1,16 @@
+{
+    "name":"proyecto/frontend",
+    "description":"proyecto Frontend CIFO Violeta",
+    "license":"public",
+    "authors":[
+        {
+            "name":"Josep_magret",
+            "email":"pepitobcnes@gmail.com"
+        }
+    ],
+    "require":{
+        "components/jquery":">=3.4.1"
+
+    }
+
+}

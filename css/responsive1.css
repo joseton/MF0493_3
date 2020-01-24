@@ -1,0 +1,95 @@
+
+@media all and (max-width:1115px){
+body{
+  width: 100%;
+}
+     nav{
+         display:none;
+     }
+#hamburguesa{
+    display:block!important;
+}
+header nav ul{
+       display: block;
+       text-align: center;
+       height: 0;
+       overflow: hidden;
+       position: absolute;
+       background-color: white;
+   }
+
+   nav ul li{
+       margin: 8px;
+   }
+
+   header nav ul li a{
+       padding: 5px;
+       display: block;
+       margin-left: -60%;
+       background-color: #648ee8;
+       color: white;
+   }
+    section{
+      width: 100%;
+    }
+    .u{
+      width: 50%;
+    }
+    .uno  {
+      width: 100%;
+      height: 100%;
+
+    }
+    .dos p {
+      width:100%;
+
+    }
+    .clearfix{
+      clear: both;
+    }
+    .a {
+      width:100%;
+
+.p1{
+  width: 100;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.test1{
+  width: 100%;
+}
+.u{
+  width: 100%;
+}
+    }
+
+  img.negro1{
+      width: 100%;
+    }
+    IMG.negro{
+      width: 100%;
+    }
+    .india1{
+      width: 50%;
+    }
+    img.india{
+      width: 100%;
+    }
+
+    .yo{
+      width: 100%;
+    }
+    .negro{
+      width: 100%;
+    }
+    .tu{
+      width: 100%;
+    }
+    img.blanco{
+      width: 100%;
+    }
+    form{
+      margin: 0,auto;
+    }
+}

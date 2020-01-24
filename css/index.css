@@ -1,0 +1,352 @@
+
+  *{
+  margin:0,auto;
+  padding:5px;
+  box-sizing:border-box;
+  }
+  html{
+    background-color: #E6E7F0;
+    overflow: scroll;
+
+  }
+
+  body {
+  margin:0px auto;
+  width: 70%;
+  font-family: 'Courier', cursive;
+  font-size: 29px;
+  height: auto;
+
+  }
+  .logo2{
+  text-align: left;
+  margin:0 ;
+  overflow: hidden;
+  margin-top: 1%;
+  float:left;
+
+
+  }
+  #hamburguesa{
+      display: none;
+  }
+
+.video{
+  width: 100%;
+  height:50%;
+  padding: 0;
+}
+  nav{
+    float:right;
+    width:35%;
+    height:50%;
+    color: black;
+    margin: 3%;
+    margin-left: 2
+  }
+
+
+  ul{
+    text-decoration: none;
+    background-color:"B11735";
+    color: white;
+  }
+  li {
+    margin:40px;
+    /* margin-left: 490px; */
+    color: white;
+    font-size: 25px;
+    padding: 2px;
+
+
+  }
+  a{
+    color: black;
+    text-decoration: underline ;
+    text-decoration-color:#E7C089;
+  }
+  a:hover{
+    cursor:pointer;
+    color:#E7C089;
+  }
+#registrate{
+    text-align: center;
+    visibility:hidden;
+
+}
+
+  #Inicio{
+    margin: 2%;
+  }
+
+#LaCarta{
+  text-align: center;
+}
+
+.carta{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+
+
+  .i{
+    width: 50%;
+    float: right;
+  }
+
+  h3{
+    text-align: center;
+
+  }
+  #registre{
+      display:none;
+  }
+  .flexbox-container{
+    display: flex;
+    margin:2%;
+  }
+
+.galeria{
+    width:80%;
+    margin:auto;
+    display:flex;
+    flex-direction: row;
+    padding:0;
+
+}
+.b img{
+    width:100%;
+    object-fit:cover;
+
+
+}
+
+
+u img {
+  width:20%;
+  margin: auto;
+}
+
+.clearfix{
+  clear:both;
+}
+h2{
+  color: white ;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 1.2em;
+
+}
+
+.test1{
+  width: 60%;
+  padding: 20px;
+  height: 10%;
+  text-align:center;
+  margin: 0 ;
+  margin: 1px auto;
+
+}
+
+
+
+.u{
+  width:50%;
+  text-align: center;
+
+}
+img.negro{
+  text-align: center;
+  margin: 0 auto;
+
+
+}
+
+.clearfix{
+  clear: both;
+}
+.test2{
+width: 60%;
+padding: 20px;
+height: 10%;
+text-align:center;
+margin: 0 ;
+margin: 1px auto;
+
+}
+.indi{
+  width: 225px;
+  height: 225px;
+}
+img.india1{
+  text-align: center;
+margin: 0 auto;
+width: 225px;
+height: 225px;
+
+}
+
+.clearfix{
+  clear: both;
+
+}
+.test3{
+  width: 60%;
+
+  padding: 20px;
+  height: 20%;
+  text-align:center;
+  margin:0;
+  margin: 1px auto;
+}
+.blanco{
+  width: 200x;
+  height: 225px;
+  object-fit:cover;
+}
+img.blanco{
+  text-align: left;
+margin: 0 auto;
+width: 205px;
+height: 205px;
+
+}
+p{
+  font-size: 20px;
+  text-align: center;
+}
+.yo{
+  text-align: center;
+margin: 4% ;
+padding:2%;
+
+}
+.clearfix{
+  clear: both;
+
+}
+.break{
+  float:left;
+  width: 100%;
+
+}
+#cartaboton{
+    text-align: center;
+    position:relative;
+    transform: translateX(-50%);
+    left: 50%;
+    background-color: #E7C089;
+    outline:0;
+
+}
+cartaboton hover:{
+    cursor:pointer;
+    color:#E7C089;
+}
+#contactanos{
+    margin:0 !important;
+}
+.p1{
+  width: 50%;
+  text-align: center;
+}
+.clearfix{
+  clear: both;
+}
+h1{
+  color: Midnight;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 5);
+  font-family: 'Courier', cursive;
+  font-size: 100%;
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline ;
+  text-decoration-color:#E7C089;
+  }
+form{
+  width: 400px;
+  margin: auto;
+  padding: 10px;
+  background-color: #f5f5f5;
+  font-size:60%;
+}
+label{
+  display: block;
+  margin: 15px 0 5px 0;
+}
+input{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: 0;
+}
+span{
+  color: #ff0000;
+  cursor: pointer;
+}
+h3{
+  text-align: center;
+  margin: 10px 0px 20px 20px;
+}
+p{
+  text-align: center;
+  margin: 10px;
+}
+input:invalid, .invalid{
+  border: 1px solid #900;
+  background-color: #fdd;
+}
+.error{
+  color: #900;
+}
+#login{
+    display:none;
+
+}
+.carta{
+
+    font-size: 1em;
+    display:none;
+        }
+
+
+.google-maps {
+       position: relative;
+       padding-bottom: 75%;
+       height: 0;
+       overflow: hidden;
+
+   }
+   .google-maps iframe {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100% !important;
+       height: 100% !important;
+   }
+
+
+.clearfix{
+  clear:both;
+}
+
+.pie {
+opacity: 0.7;
+padding:45px;
+margin:0px;
+text-align: left;
+height:auto;
+width:100%;
+color: black;
+
+}

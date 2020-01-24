@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive1.css">
+    <script type="text/javascript" src="vendor/components/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/validations.js"></script>
+    <script src="https://kit.fontawesome.com/056db44d2b.js" crossorigin="anonymous"></script>
+
+
+
+    <title>Restaurante Los Tres Egipcios</title>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div id="hamburguesa">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="flexbox-container">
+            <div class=img> <img src="img/logo.png" alt=""></div>
+            <div class="nav"><nav id="menu">
+
+
+                <ul>
+                    <li><a href="#Inicio">Conocenos</a></li>
+                    <li><a href="#registrate" onclick="display()">Registrate </a></li>
+                    <li><a href="#LaCarta" >La Carta</a></li>
+                    <li><a href="#Contactanos">Donde estamos</a></li>
+                    <li><a href="#Testimonios">Testimonios</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+    </div>
+</header>
+<div class="clearfix" ></div>
+
+
+
+
+<div class ="clearfix">
+    <main>
+        <video class="video" src="rest.mp4" autoplay muted loop></video>
+        <h5 id="registrate">Registro/Login</h5>
+        <form id="registre" novalidate>
+            <h5>REGISTRO</h5>
+            <label for="reg_email">Email</label>
+            <input type="email" id="reg_email" name="reg_email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            <span class="error"></span>
+            <label for="reg_pass">Contraseña</label>
+            <input type="password" id="reg_pass" name="reg_pass" minlength="6">
+            <span class="error"></span>
+            <label for="reg_r_pass">Repetir contraseña</label>
+            <input type="password"  id="reg_r_pass" name="reg_r_pass">
+            <span class="error"></span>
+            <input type="submit" value="Registrar">
+            <p>¿Ya estás registrado? Haz clic <span onclick="mostrar_login()">AQUÍ</span></p>
+            <div id="dataResp_registro"></div>
+        </form>
+
+        <form id="login" novalidate>
+            <h5>LOGIN</h5>
+            <label for="lg_email">Email</label>
+            <input type="email" id="lg_email" name="lg_email">
+            <span class="error"></span>
+            <label for="lg_pass">Contraseña</label>
+            <input type="password" id="lg_pass" name="lg_pass">
+            <span class="error"></span>
+            <input type="button" name="lg_boton" value="Entrar">
+            <p>¿No tienes cuenta? Haz clic <span onclick="mostrar_reg()">AQUÍ</span></p>
+            <div id="dataResp_login"></div>
+
+        </form>
+
+        <h1 id="Inicio" >CONOCENOS</H1>
+            <div class="flexbox-container">
+                <div class="p1">
+                    <p> En este espacio pequeño y acogedor del barrio ajuytr es donde ahora
+                        transmite, junto a su equipo, toda su experiencia y buen hacer, disfruta
+                        creando recetas para sus clientes y vive su pasión por la hostelería.</p>
+                        <p> Te hablamos de un restaurante en tgerr artesanal,  donde lo que buscamos
+                            desde que entras por la puerta, es que te sientas cómodo y vivas una experiencia
+                            gastronómica placentera para tu gusto, olfato, oído, vista y tacto.</p>
+                        </div>
+                        <div class="u">
+                            <p> Te hablamos de un restaurante en fdsgfdf artesanal,  donde lo que buscamos
+                                desde que entras por la puerta, es que te sientas cómodo y vivas una experiencia
+                                gastronómica placentera para tu gusto, olfato, oído, vista y tacto.</p>
+
+                                Nos gusta que estés aquí, bienvenido a Los Tres egipcios..
+                            </div >
+                        </div>
+                        <div class ="clearfix">
+                        </div>
+                    </div>
+                </div>
+                <div class ="clearfix"></div>
+
+                <div class ="clearfix"></div>
+                <h1 id="LaCarta" >LaCarta</h1>
+                <div class="galeria">
+                    <div class="b">
+                        <img class="fatta" src="img/fatta.jpg" alt="">
+                    </div>
+                    <div class="b">
+                        <img src="img/collage.jpg" alt="">
+                    </div>
+                    <div class="b">
+                        <img class="postre2" src="img/postre2.jpg" alt="">
+                    </div>
+                </div>
+                <button type="button"id="cartaboton"onclick="aparece()">Mostrar Carta</button>
+                    <div class="carta">
+                        <h2>Para comenzar</h2>
+                        <div class="com1"><p>Anchoas 000 de Santoña</p>
+                            <p>Paletilla ibérica“Juan Manuel”</p>
+                            <p>Croquetas de jamón de Bellota</p>
+                            <p>Croquetas de gorgonzola y nueces</p>
+                            <p>Caballa ahumada con vinagreta de  melocotón y huevas</p>
+                            <p>Ensaladilla con ventresca y mayonesa coral</p>
+                            <p>Berenjenas crujientes, queso de cabra y miel</p>
+                            <p>Gambas al ajillo</p>
+                            <p>Muslitos de codorníz en tempura con salsa Hoisin</p>
+                            <p>Calamar de playa a la malagueña</p>
+                            <p>Las Bravas Ajoblanco de patata y boniato</p>
+                            <p>Pan de coca tostado, tomate de colgar y aceite de oliva de arbequina</p>
+                            <p>Pan artesano de payés de centeno y trigo</p></div>
+
+                            <h2>Entrantes</h2>
+                            <div class="com2">
+                                <p>Ceviche de pez limón, leche de tigre, mango y chili habanero</p>
+                                <p>Huevos estrellados con jamón de bellota</p>
+                                <p>Wok de verduras y gambas al estilo Thai</p>
+                                <p>Burrata fresca, tomate y pimiento asado, espárragos y almendra</p>
+                                <p>Ensalada Healthy de quinoa, aguacate, espinacas y granada</p>
+                                <p>Tartar de salmón marinado con aguacate</p>
+
+                                <div class="com3">
+                                    <h2>Arroces y Pasta</h2>
+                                    <p>Paella de pescado y marisco del señorito -arroz de Pals- (min. 2pax)</p>
+                                    <p>Arroz a banda con bogavante (min. 2pax)</p>
+                                    <p>Rigatoni trufados al parmesano</p>
+                                    <p>Canelón de espinacas y gorgonzola con setas de temporada</p></div>
+
+                                    <h2>Del Mar</h2>
+                                    <p>Tataki de atún rojo con crema de aguacate y wasabi</p>
+                                    <p>Bacalao negro glaseado con pak choi y shitake</p>
+                                    <p>Pulpo a la parrilla, parmentier de patata y emulsión de pimentón de la Vera</p>
+                                    <p>Suprema de salmón a la parrilla con verduras</p>
+                                    <p>Tartar de atún con aguacate y tomate</p>
+                                    <p>Calamares salteados con setas, alcachofas y espárragos</p>
+
+                                    <h2>Las Carnes D.O.</h2>
+                                    <p>Solomillo de ternera al carbón con salsa de Jack Daniel’s</p>
+                                    <p>Chuleta de vaca rubia gallega con salsa de rábano picante -a peso-</p>
+                                    <p>Secreto ibérico a la parrilla con chutney de piña y pimientos</p>
+                                    <p>Tagliata de buey, crema de parmesano y rúcula a la trufa negra</p>
+                                    <p>Hamburguesa de vaca rubia gallega, queso raclette y cebolla de Figueres confitada</p>
+                                    <p>Tagliata de buey, crema de parmesano y rúcula a la trufa negra</p>
+                                    <p>Steak tartar de solomillo de vaca vieja cortado a mano</p>
+                                    <p>Pies de cerdo rellenos de foie, espinacas, manzana y setas al estilo Casa Delfín</p>
+                                    <p>Chuletón de vaca rubia gallega -a peso-</p>
+
+                                    <h2>Postres</h2>
+                                    <p>Eton Mess de la Kate -frutos rojos, nata montada y merengue-</p>
+                                    <p>Pastel de queso con pistachos y salsa de mandarina</p>
+                                    <p>Coulant de chocolate con helado de Vainilla de Madagascar -10 min-</p>
+                                    <p>Cremoso de maracuyá y coco con chocolate blanco y lima</p>
+                                    <p>Helado vegano de chocolate negro</p>
+                                    <p>Helado de pistacho</p>
+                                    <p>Sorbete de lima</p>
+                                </div>
+                            </div>
+
+
+
+                                <div class="clearfix">
+                                    <h1 id="Testimonios">TESTIMONIOS</H1>
+                                        <div class="test1">
+                                            <img class="negro" src="img/negro1.png" alt="">
+                                            <p class="yo">im id est laborum.Lorem ipsum dolor sit amet, consectetur
+                                                adipisicing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua.
+                                                Ut enim ad minim veniam, quis nostrud
+                                                aut  in culpa qui officia deserunt mollit
+                                                anim id est laborum.</p>
+                                            </div>
+                                            <div class="clearfix">
+                                                <div class="test2">
+                                                    <img class="indi" src="img/india1.png" alt="">
+                                                    <p class="yo">im id est laborum.Lorem ipsum dolor sit amet, consectetur
+                                                        adipisicing elit, sed do eiusmod tempor
+                                                        incididunt ut labore et dolore magna aliqua.
+                                                        aliquip ex ea commodo consequat. Duis
+                                                        anim id est laborum.</p>
+                            </div>
+                            <div class="clearfix">
+                            <div class="test3">
+                                <img class="blanco" src="img/blanc.png" alt="">
+                                <p class="yo">im id est laborum.Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut
+                                a  anim id est laborum.</p>
+                            </div>
+                            <div class="clearfix"></div>
+                                <h1 id="Contactanos">CONTACTANOS</H1>
+                                <div class="break">
+                                <form action="#" target="" method="get" name="formDatosPersonales">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"/>
+                                <label for="apellidos">Apellidos</label>
+                                <input type="text" name="apellidos" id="apellidos" placeholder="1r Apellido"/>
+                                <label for="email" />Email</label>
+                                <input type="email" name="email" id="email" placeholder="email" required />
+                                <label for="asunto">Asunto</label>
+                                <input type ="text" name="asunto" id="asunto" placeholder="titular de la consulta"/>
+                                <label for="mensaje">Mensaje</label>
+                                <textarea name="mensaje" for="mensaje" placeholder="describe brevemente en menos de 300 carácteres" maxlength="300"></textarea>
+                                <input type="submit" name="enviar" value="enviar datos"/>
+                                </form>
+                                <div class="google-maps">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23937.06575790532!2d2.1438393!3d41.4146267!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2a5e9644c97%3A0xe81ac026b980df66!2sGr%C3%A0cia%2C%20Barcelona!5e0!3m2!1sca!2ses!4v1577201035587!5m2!1sca!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>"
+                                </div>
+
+                                </main>
+                                </div>
+                                <div class="clearfix"></div>
+                                <footer>
+                                <div class="pie">
+                                <p>C/ la porra fresca, 5. 086954 castefa
+                                (Junto al Palacio de los Deportes)</p>
+                                <p>e. info @ restaurantelostresegipcios.com</p>
+                                <p>m. 675 11 11 36</p>
+                                <p>Los clientes nos recomiendan en                                                                               TripAdvisor</p>
+                                <p> © 2019 Restaurante Los tres Egipcios</p>
+                                </div>
+                                </footer>
+                                </body>
+                                </html>

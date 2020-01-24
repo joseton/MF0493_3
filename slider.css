@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.mask{
+    width: 80%;
+    /* vh: unidades en vertical del viewport (ventana completa del navegador)
+    ej: 100vh 100% del alto del navegador
+        1vh 1% del alto del navegador
+    wh: los mismo pero para la anchura */
+    height: 80vh;
+    overflow: hidden;
+    margin:50px auto;
+}
+.mask>.container_slider{
+    width: 400%;
+    height: 100%;
+    animation-name: slider;
+    animation-duration: 15s;
+    position: relative;
+}
+.mask>.container_slider>.slide{
+    float: left;
+    width: 25%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.mask>.container_slider>#slide1{
+    background-image: url(img/dish1.jpg);
+}
+.mask>.container_slider>#slide2{
+    background-image: url(img/dish2.jpg);
+}
+.mask>.container_slider>#slide3{
+    background-image: url(img/dish3.jpg);
+}
+.mask>.container_slider>#slide4{
+    background-image: url(img/Fatta.jpg);
+}
+
+
+@keyframes slider {
+    0%{
+        left: 0;
+    }
+    18%{
+        left: 0;
+    }
+    20%{
+        left: -100%;
+    }
+    38%{
+        left: -100%;
+    }
+    40%{
+        left: -200%;
+    }
+    58%{
+        left: -200%;
+    }
+    60%{
+        left: -300%;
+    }
+    78%{
+        left: -300%;
+    }
+
+}
