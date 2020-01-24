@@ -75,7 +75,7 @@ label{
     display: block;
     margin-bottom: 5px;
     width: 100%;
-    align-content: center;
+    text-align: center;
 }
 input, select{
     width: 100%;
@@ -103,7 +103,7 @@ textarea{
   height: 40px;
   background-color: #05d192;
   color: #fff;
-  align-content: center;
+  margin-left: 35%;
   border-radius: 36px;
   outline: none;
 }

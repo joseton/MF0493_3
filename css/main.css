@@ -13,7 +13,6 @@ header{
 }
 .head_logo_intro{
   width: 50%;
-  display: flex;
   justify-content: space-between;
   margin-left: 20px;
 }
@@ -56,7 +55,7 @@ div a{
 }
 .img_home{
   width: 50%;
-  background-image: url("img/hunger_wfp_3.jpg");
+  background-image: url("../img/hunger_wfp_3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
