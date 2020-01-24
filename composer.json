@@ -1,0 +1,16 @@
+{
+  "name":"proyecto/frontend",
+  "descriptiopn":"Proyecto Frontend CIFO Violeta",
+  "License":"Public",
+  "authors": [
+    {
+      "name":"JScarpa",
+      "email":"diazscarpetta@gmail.com"
+    }
+  ],
+
+  "require": {
+      "components/jquery":">=3.4.1"
+  }
+
+}
