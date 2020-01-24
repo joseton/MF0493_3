@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+    <!-- Questrial & Roboto Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Questrial|Roboto&display=swap" rel="stylesheet">
+        <title>Proyecto Frontend</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script type="text/javascript" src="vendor/components/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="vendor/components/bootstrap/js/bootstrap.min.js"></script>
+    <!-- jQuery Modal -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+        <script type="text/javascript" src="js/cookies.js"></script>
+    </head>
+    <body>
+      <div class="main">
+        <div class="topnav">
+          <!-- /* The container <div> - needed to position the dropdown content */ -->
+          <div class="dropdown">
+            <span>
+              <div id="navitem1">Destino
+                <div class="dropdown-content1">
+                  <a href="Barcelona">Barcelona</a>
+                  <a href="Girona">Girona</a>
+                  <a href="Madrid">Madrid</a>
+                </div>
+              </div>
+            </span>
+            <span>
+              <div id="navitem2">Fechas
+                <div class="dropdown-content2">
+                  <p style="text-align:left">Desde</p>
+                  <input type="date" name="fecha_desde">
+                  <p style="text-align:left">Hasta</p>
+                  <input type="date" name="fecha_hasta">
+                </div>
+              </div>
+            </span>
+            <!-- Modal HTML embedded directly into document -->
+            <div id="actividades" class="modal">
+              <p>Estamos preparando las más originales actividades en grupo.<br>Te avisaremos en cuanto tengamos la oferta lista.<br><br></p>
+              <a href="#" rel="modal:close">Cerrar</a>
+            </div>
+            <a href="#actividades" rel="modal:open">Actividades</a>
+            <!-- Modal HTML embedded directly into document -->
+            <div id="alojamiento" class="modal">
+              <p>Estamos recopilando los alojamientos más ineteresantes para tu grupo.<br>Te avisaremos en cuanto tengamos la oferta lista.<br><br></p>
+              <a href="#" rel="modal:close">Cerrar</a>
+            </div>
+            <a href="#alojamiento" rel="modal:open">Alojamiento</a>
+            <!-- Modal HTML embedded directly into document -->
+            <div id="gastronomia" class="modal">
+              <p>Estamos cerrando acuerdos con restaurantes para grupos y caterings.<br>Te avisaremos en cuanto tengamos la oferta lista.<br><br></p>
+              <a href="#" rel="modal:close">Cerrar</a>
+            </div>
+            <a href="#gastronomía" rel="modal:open">Gastronomía</a>
+            <!-- Modal HTML embedded directly into document -->
+            <div id="transporte" class="modal">
+              <p>Estamos cerrando acuerdos con transportistas para grupos.<br>Te avisaremos en cuanto tengamos la oferta lista.<br><br></p>
+              <a href="#" rel="modal:close">Cerrar</a>
+            </div>
+            <a href="#transporte" rel="modal:open">Transporte</a>
+          </div>
+          <div class="lang">
+            <a href="ES">ES</a>
+            <a href="EN">EN</a>
+          </div>
+        </div>
+      </div>
+      <div class="ads_banner">
+        <div id="skyscraper1">
+          <p>Aquí su publicidad</p>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer_menu">
+          <a href="legal.html">Texto legal</a>
+          <p display="inline">Todos los derechos reservados Sensaciones a la Carta, s.l.©</p>
+        </div>
+      </div>
+
+</body>
+</html>

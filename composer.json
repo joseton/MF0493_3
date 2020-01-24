@@ -1,0 +1,18 @@
+{
+    "name":"proyecto/frontend",
+    "description":"Proyecto Frontend CIFO Violeta",
+    "licencia":"public",
+    "authors":[
+        {
+            "name":"JoanCarles",
+            "email":"leibaral@gmail.com"
+        }
+    ],
+
+    "require":{
+        "components/jquery":">=3.4.1",
+        "components/bootstrap":">=4.4.1"
+    }
+
+
+}
