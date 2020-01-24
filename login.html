@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Receptes veganes</title>
+        <script type="text/javascript" src="vendor/components/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
+        <script type="text/javascript" src="js/cookies.js"></script>
+        <script src="https://use.fontawesome.com/ff0a9012c4.js"></script>
+        <link rel="stylesheet" href="css/animations.css">
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="img/vegan.png" alt="Logo" onclick="index()">
+            <nav>
+                <img id="responsive" alt="Menú" src="img/responsive.png">
+                <ul>
+                    <li class="menu">
+                        <a class="menu-boto" href="#">Receptes</a>
+                        <ul class="menu-desp">
+                            <li><a href="#" onclick="cerca()">Arrossos</a></li>
+                            <li><a href="#" onclick="cerca()">Amanides</a></li>
+                            <li><a href="#" onclick="cerca()">Proteïnes</a></li>
+                            <li><a href="#" onclick="cerca()">Pasta</a></li>
+                            <li><a href="#" onclick="cerca()">Dolços</a></li>
+                            <li><a href="#" onclick="cerca()">Begudes</a></li>
+                            <li><a href="#" onclick="cerca()">Cremes</a></li>
+                            <li><a href="#" onclick="cerca()">Entrepans</a></li>
+                            <li><a href="#" onclick="cerca()">Pizzes</a></li>
+                            <li><a href="#" onclick="cerca()">Salses</a></li>
+                            <li><a href="#" onclick="cerca()">Sopes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="menu">
+                        <a class="menu-boto" href="#">Categories</a>
+                        <ul class="menu-desp">
+                            <li><a href="#" onclick="cerca()">Dificultat</a></li>
+                            <li><a href="#" onclick="cerca()">Temps de preparació</a></li>
+                            <li><a href="#" onclick="cerca()">Temperatura</a></li>
+                            <li><a href="#" onclick="cerca()">Gust</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="menu">
+                        <a class="menu-boto" href="#">Ingredients</a>
+                        <ul class="menu-desp">
+                            <li><a href="#" onclick="cerca()">Arròs</a></li>
+                            <li><a href="#" onclick="cerca()">Civada</a></li>
+                            <li><a href="#" onclick="cerca()">Xocolata</a></li>
+                            <li><a href="#" onclick="cerca()">Fulles verdes</a></li>
+                            <li><a href="#" onclick="cerca()">Fruites</a></li>
+                            <li><a href="#" onclick="cerca()">Fruits secs</a></li>
+                            <li><a href="#" onclick="cerca()">Farines</a></li>
+                            <li><a href="#" onclick="cerca()">Hortalisses</a></li>
+                            <li><a href="#" onclick="cerca()">Begudes</a></li>
+                            <li><a href="#" onclick="cerca()">Llegums</a></li>
+                            <li><a href="#" onclick="cerca()">Bolets</a></li>
+                            <li><a href="#" onclick="cerca()">Soja</a></li>
+                            <li><a href="#" onclick="cerca()">Tofu</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <input type="text" id="cerca">
+            </nav>
+            <img id="login" src="img/login.png" alt="Login" onclick="mostrar_login()">
+            <img id="logout" src="img/logout.png" alt="Logout" onclick="fer_logout()">
+        </header>
+        <main>
+            <div class="form">
+                    <form id="frm_login" novalidate>
+                        <h3>LOGIN</h3>
+                        <label for="lg_email">Correu electrònic</label>
+                        <input type="email" class="camp_form" id="lg_email" name="lg_email">
+                        <p class="missatge" id="lg_email_val"></p>
+                        <label for="lg_pass">Paraula de pas</label>
+                        <input type="password" class="camp_form" id="lg_pass" name="lg_pass">
+                        <p class="missatge" id="lg_pass_val"></p>
+                        <input type="button" class="camp_form" value="Entrar" onclick="login()">
+                        <p>No tens compte d'usuari? Fes clic <span onclick="mostrar_reg()">AQUÍ</span></p>
+                        <p class="missatge" id="error"></p>
+                    </form>
+                    <form id="frm_registre" novalidate>
+                        <h3>REGISTRE</h3>
+                        <label for="reg_email">Correu electrònic</label>
+                        <input type="email" class="camp_form" id="reg_email" name="reg_email">
+                        <p class="missatge" id="reg_email_val"></p>
+                        <label for="reg_pass">Paraula de pas</label>
+                        <input type="password" class="camp_form" id="reg_pass" name="reg_pass">
+                        <p class="missatge" id="reg_pass_val"></p>
+                        <label for="reg_pass2">Repeteix la paraula de pas</label>
+                        <input type="password" class="camp_form" id="reg_pass2" name="reg_pass2">
+                        <p class="missatge" id="reg_pass2_val"></p>
+                        <input type="button" class="camp_form" value="Registrar" onclick="registre()">
+                        <p>Ja tens compte d'usuari? Fes clic <span onclick="mostrar_login()">AQUÍ</span></p>
+                        <p class="missatge" id="success"></p>
+                    </form>
+            </div>
+        </main>
+        <footer>
+            <p>2020 'Receptes veganes' per Víctor Aixalà</p>
+        </footer>
+    </body>
+</html>

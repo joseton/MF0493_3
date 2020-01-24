@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Receptes veganes</title>
+    <script type="text/javascript" src="vendor/components/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="img/vegan.png" alt="Logo" onclick="index()">
+        <nav>
+            <img id="responsive" alt="Menú" src="img/responsive.png">
+            <ul>
+                <li class="menu">
+                    <a class="menu-boto" href="#">Receptes</a>
+                    <ul class="menu-desp">
+                        <li><a href="#" onclick="cerca()">Arrossos</a></li>
+                        <li><a href="#" onclick="cerca()">Amanides</a></li>
+                        <li><a href="#" onclick="cerca()">Proteïnes</a></li>
+                        <li><a href="#" onclick="cerca()">Pasta</a></li>
+                        <li><a href="#" onclick="cerca()">Dolços</a></li>
+                        <li><a href="#" onclick="cerca()">Begudes</a></li>
+                        <li><a href="#" onclick="cerca()">Cremes</a></li>
+                        <li><a href="#" onclick="cerca()">Entrepans</a></li>
+                        <li><a href="#" onclick="cerca()">Pizzes</a></li>
+                        <li><a href="#" onclick="cerca()">Salses</a></li>
+                        <li><a href="#" onclick="cerca()">Sopes</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li class="menu">
+                    <a class="menu-boto" href="#">Categories</a>
+                    <ul class="menu-desp">
+                        <li><a href="#" onclick="cerca()">Dificultat</a></li>
+                        <li><a href="#" onclick="cerca()">Temps de preparació</a></li>
+                        <li><a href="#" onclick="cerca()">Temperatura</a></li>
+                        <li><a href="#" onclick="cerca()">Gust</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li class="menu">
+                    <a class="menu-boto" href="#">Ingredients</a>
+                    <ul class="menu-desp">
+                        <li><a href="#" onclick="cerca()">Arròs</a></li>
+                        <li><a href="#" onclick="cerca()">Civada</a></li>
+                        <li><a href="#" onclick="cerca()">Xocolata</a></li>
+                        <li><a href="#" onclick="cerca()">Fulles verdes</a></li>
+                        <li><a href="#" onclick="cerca()">Fruites</a></li>
+                        <li><a href="#" onclick="cerca()">Fruits secs</a></li>
+                        <li><a href="#" onclick="cerca()">Farines</a></li>
+                        <li><a href="#" onclick="cerca()">Hortalisses</a></li>
+                        <li><a href="#" onclick="cerca()">Begudes</a></li>
+                        <li><a href="#" onclick="cerca()">Llegums</a></li>
+                        <li><a href="#" onclick="cerca()">Bolets</a></li>
+                        <li><a href="#" onclick="cerca()">Soja</a></li>
+                        <li><a href="#" onclick="cerca()">Tofu</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <input type="text" id="cerca">
+            <img id="login" src="img/login.png" alt="Login" onclick="mostrar_login()">
+            <img id="logout" src="img/logout.png" alt="Logout" onclick="fer_logout()">
+        </nav>
+    </header>
+    <main>
+        <div id="contenidor">
+            <div class="recepta" onclick="cerca()">
+                <img src="img/recepta1.jpg" alt="Recepta 1">
+                <div class="titol">
+                    <h3>Macarrons gratinats amb formatge de patata</h3>
+                </div>
+
+            </div>
+            <div class="recepta" onclick="cerca()">
+                <img src="img/recepta2.jpg" alt="Recepta 2">
+                <div class="titol">
+                    <h3>Arròs amb salsa de bolets i miso</h3>
+                </div>
+            </div>
+            <div class="recepta" onclick="cerca()">
+                <img src="img/recepta3.jpg" alt="Recepta 3">
+                <div class="titol">
+                    <h3>Espaguetis d'espelta amb salsa de boniato i verdures</h3>
+                </div>
+            </div>
+            <div class="recepta" onclick="cerca()">
+                <img src="img/recepta4.jpg" alt="Recepta 4">
+                <div class="titol">
+                    <h3>Moniato asat amb estofat de mongetes</h3>
+                </div>
+            </div>
+            <div class="recepta" onclick="cerca()">
+                <img src="img/recepta5.jpg" alt="Recepta 5">
+                <div class="titol">
+                    <h3>Bol de curri picant amb heura, verdures i cacahuets</h3>
+                </div>
+            </div>
+            <div class="recepta" onclick="cerca()">
+                <img src="img/recepta6.jpg" alt="Recepta 6">
+                <div class="titol">
+                    <h3>Entrepà de bolets adobats amb pebrots asats i hummus</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>2020 'Receptes veganes' per Víctor Aixalà</p>
+    </footer>
+</body>
+</html>

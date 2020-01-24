@@ -1,0 +1,40 @@
+/* MEDIA QUERYS */
+@media all and (max-width: 1024px){
+    nav{
+        width: 100%;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    nav ul li{
+        width: 100%;
+        margin: 0 10px;
+    }
+    main{
+        width: 100%;
+    }
+}
+@media all and (max-width: 1062px){
+    #responsive{
+        display: block;
+    }
+    /* header{
+        text-align: center;
+    } */
+    nav{
+        float: left;
+    }
+    /* nav ul{
+        display: flex;
+        justify-content: space-around;
+    } */
+    nav ul{
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+    /* nav ul li{
+        margin: 8px;
+    } */
+}

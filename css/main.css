@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body, html{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    border-bottom: 2px black solid;
+    background-color: #ddd;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+header span{
+    display: none;
+    color: white;
+}
+#logo{
+    width: 15%;
+    float: left;
+    cursor: pointer;
+}
+nav{
+    margin-left: 20px;
+    width: 85%;
+    padding: 15px;
+    float: right;
+}
+nav ul {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin-right: 50px;
+}
+main{
+    flex: 1 0 auto;
+    padding: 15px;
+}
+section{
+    width: 70%;
+    padding: 0 10px;
+    float: left;
+}
+section p{
+    text-align: justify;
+}
+h2{
+    padding-bottom: 1vh;
+}
+aside{
+    width: 30%;
+    padding: 10px 20px;
+    float: left;
+    text-align: center;
+    color: white;
+    background-color: rgb(51,181,229);
+}
+aside>h4, aside>p{
+    margin: 2.5vh;
+}
+footer{
+    height: 28px;
+    text-align: center;
+    font-style: italic;
+    border-top: 2px black solid;
+    color: black;
+    background-color: #ddd;
+}
+/* Caixa pel menú desplegable */
+.menu{
+    list-style-type: none;
+    width: 151px;
+    background-color: #ddd;
+    padding: 10px 0;
+}
+/* Per alguna raó, mostra punts als elements dels ul */
+ul ul{
+    list-style-type: none;
+}
+/* Botó principal del menú */
+.menu-boto {
+  background-color: #ddd;
+  color: black;
+  padding: 10px 19px;
+  font-size: 16px;
+  border: none;
+  text-decoration: none;
+}
+/* Enllaços dintre del menú */
+.menu-desp {
+  display: none;
+  width: 151px;
+  top: 39px;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  text-align: center;
+  z-index: 1;
+}
+.menu-desp a {
+  color: black;
+  background-color: #f1f1f1;
+  padding: 5px 0;
+  text-decoration: none;
+  display: block;
+  z-index: 1;
+}
+/* Mostra el menú desplegable al passar pel damunt del botó amb el ratolí */
+.menu:hover .menu-desp {
+    display: block;
+}
+/* Canvia el color de fons dels enllaços del menú al passar pel damunt amb el ratolí  */
+.menu-desp a:hover {
+    background-color: #ddd;
+}
+#cerca{
+    background-color: #ddd;
+    color: black;
+    width: 200px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid black;
+    margin-right: 5px;
+}
+#cerca:focus{
+    outline: none;
+}
+.camp_form{
+    font-size: 14px;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: 0;
+}
+#login{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    cursor: pointer;
+}
+#logout{
+    display: none;
+    position: relative;
+    right: 10px;
+    top: 20px;
+    cursor: pointer;
+}
+#responsive{
+    display: none;
+    width: 72px;
+    height: 72px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+#responsive:hover + ul{
+    height: 180px;
+}
+.invalid{
+    border: 1px solid #900;
+    background-color: #fdd;
+}
+.error{
+    color: #900;
+}

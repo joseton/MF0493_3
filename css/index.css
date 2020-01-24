@@ -1,0 +1,23 @@
+#contenidor{
+    height: 100%;
+}
+.recepta{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    float: left;
+    display: inline-block;
+    width: 31%;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+.recepta:hover{
+    color: green;
+}
+.recepta img{
+    width: 100%;
+}
+.titol{
+    height: 50px;
+    text-align: center;
+}
