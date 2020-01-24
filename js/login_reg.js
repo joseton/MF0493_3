@@ -146,17 +146,20 @@ $(document).ready(function(){
         }
 
     });
+
+    $( "#mostrar_login" ).click(function() {
+        $("#registre").hide();
+        $("#login").show();
+    });
+
+    $( "#mostrar_reg" ).click(function() {
+        $("#login").hide();
+        $("#registre").show();
+    });
+
+
 });
 
-function mostrar_login(){
-    $("#registre").hide();
-    $("#login").fadeIn(750);
-}
-
-function mostrar_reg(){
-    $("#login").hide();
-    $("#registre").fadeIn(750);
-}
 
 function email_validar(email){
     var patt = new RegExp(/^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/);
