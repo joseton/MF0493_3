@@ -89,9 +89,9 @@ window.onload = function() {
                     // añado en la caja, la respuesta del backend (hecho en PHP)
                     dataResp_registro.innerHTML = req.response;
                 }
-                else{
-                    dataResp.innerHTML = "Ha surgido un problema con el servidor";
-                }
+                // else{
+                //     dataResp_registro.innerHTML = "Ha surgido un problema con el servidor";
+                // }
             }
             // open: prepara la configuración
             req.open(method, url, async);
@@ -100,9 +100,9 @@ window.onload = function() {
             // borra los campos del formulario
             registre.reset();
             // para el evento "submit". Obligatorio para que el formulario con Ajax funcione bien.
-            event.preventDefault();
-        }
 
+        }
+        event.preventDefault();
 
         }, false);
 };
@@ -166,9 +166,9 @@ $(document).ready(function(){
             beforeSend: function(){
                 $("#dataResp_login").html('<i class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>');
             },
-            error: function(){
-                $("#dataResp_login").html('Error en la comunicación con el servidor');
-            }
+        //     error: function(){
+        //         $("#dataResp_login").html('Error en la comunicación con el servidor');
+        //     }
         });
         event.preventDefault();
     }
