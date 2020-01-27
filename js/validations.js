@@ -69,7 +69,7 @@ window.onload = function() {
             // AJAX
             // FormData: Clase definida en JS que utilizo para enviar los datos de un formulario
             var dataResp_registro = document.getElementById('dataResp_registro');
-            dataResp_registro.innerHTML = '<i class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>';
+            dataResp_registro.innerHTML = '<i id="spiner" class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>';
             var formData = new FormData(registre);
             // -------------------------------------
             // variables de configuración
@@ -164,7 +164,7 @@ $(document).ready(function(){
                 $("#dataResp_login").html(dataResp);
             },
             beforeSend: function(){
-                $("#dataResp_login").html('<i class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>');
+                $("#dataResp_login").html('<i class="spiner1" class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>');
             },
         //     error: function(){
         //         $("#dataResp_login").html('Error en la comunicación con el servidor');

@@ -11,6 +11,9 @@ body{
 #hamburguesa{
     display:block!important;
 }
+img{
+    width:100%;
+}
 header nav ul{
        display: block;
        text-align: center;
@@ -83,9 +86,7 @@ header nav ul{
     .negro{
       width: 100%;
     }
-    .tu{
-      width: 100%;
-    }
+    
     img.blanco{
       width: 100%;
     }

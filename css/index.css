@@ -22,7 +22,7 @@
   text-align: left;
   margin:0 ;
   overflow: hidden;
-  margin-top: 1%;
+  margin-top:0.3%;
   float:left;
 
 
@@ -42,9 +42,7 @@
     height:50%;
     color: black;
     margin: 3%;
-
 }
-
 
   ul{
     text-decoration: none;
@@ -68,16 +66,17 @@
   a:hover{
     cursor:pointer;
     color:#E7C089;
+    font-weight: bold;
   }
   #irarriba {
 	padding:1%;
-	background:white;
+	background-color:white;
 	font-size:20px;
 	color:black;
 	cursor:pointer;
 	position: fixed;
 	bottom:20px;
-	left:85%;
+	left:95%;
 }
 
 #registrate{
@@ -98,12 +97,9 @@
     width: 50%;
     text-align: center;
     margin: 0 auto;
-
 }
 
-
-
-  .i{
+ .i{
     width: 50%;
     float: right;
   }
@@ -131,48 +127,42 @@
 .b img{
     width:100%;
     object-fit:cover;
-
-
 }
-
 
 u img {
   width:20%;
   margin: auto;
 }
 
-
 h2{
   color: white ;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  font-size: 1.2em;
-
+  font-size: 1.3em;
 }
 
 .test1{
-  width: 35%;
-  padding: 20px;
-  height: 10%;
-  text-align:center;
-  margin: 0 ;
-  margin: 1px auto;
+    width: 60%;
+    padding: 20px;
+    height: 10%;
+    text-align:center;
+    margin: 0 ;
+    margin: 1px auto;
 
 }
 
-
-
-.u{
-  width:50%;
-  text-align: center;
-
-}
 img.negro{
-  text-align: center;
   margin: 0 auto;
-
-
+  width: 225px;
+  height: 225px;
+  text-align: center;
+  opacity: 0.5;
+}
+img.negro:hover{
+    opacity: 1;
+    border: 1px solid black;
+    border-radius: 80%;
 }
 
 .clearfix{
@@ -190,14 +180,21 @@ margin: 1px auto;
 .indi{
   width: 225px;
   height: 225px;
+  opacity: 0.5;
 }
 img.india1{
-  text-align: center;
+text-align: center;
 margin: 0 auto;
 width: 225px;
 height: 225px;
 
 }
+img.indi:hover{
+    opacity: 1;
+    border: 1px solid black;
+    border-radius: 200px;
+}
+
 
 .clearfix{
   clear: both;
@@ -217,19 +214,26 @@ height: 225px;
   object-fit:cover;
 }
 img.blanco{
-
-margin: 0 auto;
-
-
+    margin: 0 auto;
+    width: 225px;
+    height: 225px;
+    opacity: 0.5;
 }
+img.blanco:hover  {
+    opacity:1;
+    border: 1px solid black;
+    border-radius: 200px;
+}
+
 p{
   font-size: 20px;
   text-align: center;
 }
 .yo{
-  text-align: center;
+text-align: center;
 margin: 4% ;
 padding:2%;
+width: 90%;
 
 }
 .clearfix{
@@ -248,7 +252,12 @@ padding:2%;
     left: 50%;
     background-color: #E7C089;
     outline:0;
+    height: auto;
+    font-size: 1em;
 
+}
+#up{
+    background-color: white;
 }
 cartaboton hover:{
     cursor:pointer;
@@ -297,6 +306,20 @@ input{
   border-radius: 4px;
   outline: 0;
 }
+textarea{
+    resize: none;
+    width:100%;
+}
+#spiner{
+    position:relative;
+    transform: translateX(-50%);
+    left: 50%;
+}
+#spiner1{
+    position:relative;
+    transform: translateX(-50%);
+    left: 50%;
+}
 span{
   color: #ff0000;
   cursor: pointer;
@@ -327,6 +350,11 @@ input:invalid, .invalid{
         }
 #finboton{
     background-color: #E7C089;
+    font-size:1em;
+}
+finboton hover:{
+    cursor:pointer;
+    color:#E7C089;
 }
 
 .google-maps {
@@ -336,7 +364,7 @@ input:invalid, .invalid{
        overflow: hidden;
 
    }
-   .google-maps iframe {
+.google-maps iframe {
        position: absolute;
        top: 0;
        left: 0;
