@@ -1,4 +1,4 @@
- 
+
 window.onload = function() {
     // validació del formulari de registre amb API de validació d'HTML5
     var registre = document.getElementsByTagName("form")[0];
@@ -66,7 +66,8 @@ window.onload = function() {
         } else {
             // alert("El usuario se ha registrado correctamente");
             var dataResp1 = document.getElementById('dataResp1');
-            dataResp1.innerHTML = '<i class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>';
+            dataResp1.innerHTML = ' <i class="fas fa-spinner fa-pulse"></i>';
+
             var formData = new FormData(registre);
             var method = 'POST';
             var url = 'php/backend.php';
@@ -138,7 +139,7 @@ $(document).ready(function(){
                     $("#dataResp2").html(dataResp2);
                 },
                 beforeSend: function(){
-                    $("#dataResp2").html('<i class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>');
+                    $("#dataResp2").html(' <i class="fas fa-spinner fa-pulse"></i>');
                 },
                 error: function(){
                     $("#dataResp2").html('Error en la comunicación con el servidor');

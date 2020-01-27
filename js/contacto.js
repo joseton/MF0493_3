@@ -1,4 +1,4 @@
-// TODO Challenge 5: Añadir el código JS que se indica en la descripción del Challenge
+
 $(document).ready(function(){
         $("button").click(function(){
 
@@ -212,4 +212,4 @@ function dni_validar(dni){
     }
 }
 
-// Final TODO Challenge 5
+ 

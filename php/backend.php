@@ -1,5 +1,5 @@
 <?php
-// TODO Challenge 7: Añadir el código PHP que se indica en la descripción del Challenge
+
 usleep(1500000);
 if(isset($_POST['reg_email'])){
     $reg_email = $_POST['reg_email'];
@@ -17,4 +17,3 @@ if(isset($_POST['reg_email'])){
     // $envia .= "Contraseña: ".$lg_pass;
 }
 echo json_encode($envia);
-// Final TODO Challenge 7
