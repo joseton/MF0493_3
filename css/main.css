@@ -21,7 +21,7 @@
 #searchbox:active{
     border: none;
 }
-input{
+.dat{
     max-width: 120px;
     font-family: 'Questrial'; 'Roboto'; sans-serif;
     font-size: 1em;
@@ -49,7 +49,7 @@ input{
     letter-spacing:1px;
     background-color: rgb(0,250,200);
 }
-#buttong{
+#logbutton{
     width: 75%;
     border-radius: 5px;
     padding: 4px;

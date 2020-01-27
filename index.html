@@ -1,87 +1,86 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
 <head>
-    <meta charset="utf-8">
-    <!-- Questrial & Roboto Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Questrial|Roboto&display=swap" rel="stylesheet">
-    <title>Proyecto Frontend</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <script type="text/javascript" src="vendor/components/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="vendor/components/bootstrap/js/bootstrap.min.js"></script>
-    <!-- jQuery Modal -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript" src="js/cookies.js"></script>
-    <script type="text/javascript" src="js/validations.js"></script>
+  <meta charset="utf-8">
+  <!-- Questrial & Roboto Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Questrial|Roboto&display=swap" rel="stylesheet">
+  <title>Proyecto Frontend</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script type="text/javascript" src="vendor/components/jquery/jquery.min.js"></script>
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/cookies.js"></script>
+  <script type="text/javascript" src="js/validations.js"></script>
 </head>
 <body>
-    <div class="fijo_lateral_izq">
-        <img src="img/logo01.png" id="logo">
-        <input type="text" id="searchbox"><img src="img/lupa.png" width="20px" vertical-align="top">
-        <input type="submit" name="register" value="Regístrate" id="button">
-        <input type="submit" name="login" value="Entra" id="buttong">
-        <div id="social"><img src="img/instagram_icon.png"><img src="img/linkedin_icon.png"></div>
-    </div>
-    <div class="main">
-        <div class="topnav">
-            <nav id="menu">
-                <ul>
-                    <li>
-                    <a href="#">Destino</a>
-                        <ul>
-                            <li><a href="Barcelona">Barcelona</a></li>
-                            <li><a href="Girona">Girona</a></li>
-                            <li><a href="Madrid">Madrid</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                    <a href="#">Fechas</a>
-                        <ul>
-                            <li>Desde</li>
-                            <li><input type="date" name="fecha_desde"></li>
-                            <li>Hasta</li>
-                            <li><input type="date" name="fecha_hasta"></li>
-                        </ul>
-                    </li>
-                    <li>
-                </ul>
-            </nav>
-            <nav id="menu2">
-                <div id="actividades" class="modal">
-                    <p>Estamos preparando las más originales actividades en grupo.<br>Te avisaremos en cuanto tengamos la oferta lista.<br><br></p>
-                    <a href="#" rel="modal:close">Cerrar</a>
-                </div>
-                <a href="#actividades" rel="modal:open">Actividades</a>
-                <div id="alojamiento" class="modal">
-                    <p>Estamos recopilando los alojamientos más interesantes para tu grupo.<br>Te avisaremos en cuanto tengamos la oferta lista.<br><br></p>
-                    <a href="#" rel="modal:close">Cerrar</a>
-                </div>
-                <a href="#alojamiento" rel="modal:open">Alojamiento</a>
-                <div id="gastronomia" class="modal">
-                    <p>Estamos cerrando acuerdos con restaurantes para grupos y caterings.<br>Te avisaremos en cuanto tengamos la oferta lista.<br><br></p>
-                    <a href="#" rel="modal:close">Cerrar</a>
-                </div>
-                <a href="#gastronomia" rel="modal:open">Gastronomía</a>
-                <div id="transporte" class="modal">
-                    <p>Estamos cerrando acuerdos con transportistas para grupos.<br>Te avisaremos en cuanto tengamos la oferta lista.<br><br></p>
-                    <a href="#" rel="modal:close">Cerrar</a>
-                </div>
-                <a href="#transporte" rel="modal:open">Transporte</a>
+  <div class="fijo_lateral_izq">
+    <img src="img/logo01.png" id="logo">
+    <input type="text" id="searchbox"><img src="img/lupa.png" width="20px" vertical-align="top">
+    <input type="submit" name="register" value="Regístrate" id="button" onclick="window.location.href='login_reg.html'">
+    <input type="submit" name="login" value="Entra" id="logbutton" onclick="goToLogin()">
+    <div id="social"><img src="img/instagram_icon.png"><img src="img/linkedin_icon.png"></div>
+  </div>
+  <div class="main">
+    <div class="topnav">
+      <nav id="menu">
+        <ul>
+          <li>
+            <a href="#">Destino</a>
+            <ul>
+              <li><a href="Barcelona">Barcelona</a></li>
+              <li><a href="Girona">Girona</a></li>
+              <li><a href="Madrid">Madrid</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Fechas</a>
+            <ul>
+              <li>Desde</li>
+              <li><input type="date" class="dat" name="fecha_desde"></li>
+              <li>Hasta</li>
+              <li><input type="date" class="dat" name="fecha_hasta"></li>
+            </ul>
+          </li>
+          <li>
+          </ul>
+        </nav>
+        <nav id="menu2">
+          <div id="actividades" class="modal">
+            <p>Estamos preparando las más originales actividades en grupo.<br>Te avisaremos en cuanto tengamos la oferta lista.<br><br></p>
+            <a href="#" rel="modal:close">Cerrar</a>
+          </div>
+          <a href="#actividades" rel="modal:open">Actividades</a>
+          <div id="alojamiento" class="modal">
+            <p>Estamos recopilando los alojamientos más interesantes para tu grupo.<br>Te avisaremos en cuanto tengamos la oferta lista.<br><br></p>
+            <a href="#" rel="modal:close">Cerrar</a>
+          </div>
+          <a href="#alojamiento" rel="modal:open">Alojamiento</a>
+          <div id="gastronomia" class="modal">
+            <p>Estamos cerrando acuerdos con restaurantes para grupos y caterings.<br>Te avisaremos en cuanto tengamos la oferta lista.<br><br></p>
+            <a href="#" rel="modal:close">Cerrar</a>
+          </div>
+          <a href="#gastronomia" rel="modal:open">Gastronomía</a>
+          <div id="transporte" class="modal">
+            <p>Estamos cerrando acuerdos con transportistas para grupos.<br>Te avisaremos en cuanto tengamos la oferta lista.<br><br></p>
+            <a href="#" rel="modal:close">Cerrar</a>
+          </div>
+          <a href="#transporte" rel="modal:open">Transporte</a>
 
-            </nav>
-            <div class="burguer_menu">
-                <img src="img/burguer.png" alt="menu" id="burguer">
-                <div class="lang">
-                    <a href="ES">ES</a>
-                    <a href="EN">EN</a>
-                </div>
-            </div>
-
+        </nav>
+        <div class="burguer_menu">
+          <img src="img/burguer.png" alt="menu" id="burguer">
+          <div class="lang">
+            <a href="ES">ES</a>
+            <a href="EN">EN</a>
+          </div>
         </div>
+
+      </div>
 
 
 
@@ -89,16 +88,16 @@
 
     </div>
     <div class="ads_banner">
-        <div id="skyscraper1">
-            <p>Aquí su publicidad</p>
-        </div>
+      <div id="skyscraper1">
+        <p>Aquí su publicidad</p>
+      </div>
     </div>
     <div class="footer">
-        <div class="footer_menu">
-            <a href="legal.html">Texto legal</a>
-            <p display="inline">Todos los derechos reservados Sensaciones a la Carta, s.l.©</p>
-        </div>
+      <div class="footer_menu">
+        <a href="legal.html">Texto legal</a>
+        <p display="inline">Todos los derechos reservados Sensaciones a la Carta, s.l.©</p>
+      </div>
     </div>
 
-</body>
-</html>
+  </body>
+  </html>

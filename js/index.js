@@ -1,3 +1,5 @@
+
+
 $(document).ready(function() {
 
     $menu = $('#menu').find('ul').find('li');
@@ -19,4 +21,14 @@ $(document).ready(function() {
         $(this).children('.lang').stop();
         $(this).children('.lang').slideUp();
     });
+
 });
+
+function goToLogin(){
+  window.location.href="login_reg.html";
+  // var registre = document.getElementById("#registro");
+  alert(registre.value);
+  // var login = document.getElementById("#login");
+  // login.style.display = "block";
+  // registre.style.display = "none";
+};
