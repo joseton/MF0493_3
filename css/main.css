@@ -3,7 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+.cien_height{
+    height: 100vh;
+}
 /* HEADER */
 header{
   height: 100px;
@@ -60,13 +62,19 @@ div a span{
 }
 
 /* MAIN 1 */
-.msj_intro{
+#msj_intro{
+    
+}
+#foto_intro{
+    background-image: url("../img/hunger_zoom.jpg");
+}
+.mask{
   width: 50%;
   height: 540px;
-  background-color: #131b24;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   float: left;
-  font-family: 'Open Sans Condensed', sans-serif;
-  color: #f4f4f4;
 }
 div h1{
   margin: 120px 50px;
@@ -90,18 +98,11 @@ div h6 a{
   text-decoration: underline;
   vertical-align: middle;
 }
-.mask{
-  width: 50%;
-  height: 540px;
-  background-image: url("../img/hunger.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  float: left;
-}
+
+
 /* Hover MAIN 1*/
 .mask:hover{
-  background-image: url("../img/hunger_zoom.jpg");
+
 }
 #conoce:hover{
   text-decoration: none;
@@ -139,7 +140,7 @@ div h6 a{
 
 
 
-  
+
 }
 .caja2{
   width: 100%;

@@ -1,49 +1,50 @@
 $( document ).ready(function() {
 
    $("#btn_contacto").click(function(){
-
-    var nombre = document.getElementById('nombre');
-    var nombre_val = document.getElementById('nombre_val');
-    var apellido = document.getElementById('apellido');
-    var apellido_val = document.getElementById('apellido_val');
+    // var nombre = document.getElementById('nombre');
+    // var nombre_val = document.getElementById('nombre_val');
+    // var apellido = document.getElementById('apellido');
+    // var apellido_val = document.getElementById('apellido_val');
+    var nombre = $("#nombre");
+    var nombre_val = $("#nombre_val");
     var email = $("#email");
     var email_val = $("#email_val");
     var pais = $(".pais");
-    var pais_val = $("#provincias_val");
-    var mensaje = document.getElementById('mensaje');
-    var mensaje_val = document.getElementById('mensaje_val');
-
-    if(nombre.value == ""){
-        nombre_val.innerHTML = "El campo 'Nombre' está vacío";
+    // var pais_val = $("#provincias_val");
+    // var mensaje = document.getElementById('mensaje');
+    // var mensaje_val = document.getElementById('mensaje_val');
+    //
+    if(nombre.val() == ""){
+        nombre_val.html("El campo 'Nombre' está vacío");
     }else{
-        nombre_val.innerHTML = "";
+        nombre_val.html("");
     }
-
-    if(apellido.value == ""){
-        apellido_val.innerHTML = "El campo 'Apellido' está vacío";
-    }else{
-        apellido_val.innerHTML = "";
-    }
-
-    if (email.val() == "") {
-        email_val.html("El campo 'Email' está vacío");
-    } else if (!email_validar(email.val())){
-        email_val.html("El Email no tiene formato: name@domain.ext");
-    } else {
-        email_val.html("");
-    }
-
-    if (pais.val() == "0"){
-        pais_val.html("No ha seleccionado un país");
-    }else {
-        pais_val.html("");
-    }
-
-    if(mensaje.value == ""){
-        mensaje_val.innerHTML = "El campo 'Mensaje' está vacío";
-    }else{
-        mensaje_val.innerHTML = "";
-    }
+    //
+    // if(apellido.value == ""){
+    //     apellido_val.innerHTML = "El campo 'Apellido' está vacío";
+    // }else{
+    //     apellido_val.innerHTML = "";
+    // }
+    //
+    // if (email.val() == "") {
+    //     email_val.html("El campo 'Email' está vacío");
+    // } else if (!email_validar(email.val())){
+    //     email_val.html("El Email no tiene formato: name@domain.ext");
+    // } else {
+    //     email_val.html("");
+    // }
+    //
+    // if (pais.val() == "0"){
+    //     pais_val.html("No ha seleccionado un país");
+    // }else {
+    //     pais_val.html("");
+    // }
+    //
+    // if(mensaje.value == ""){
+    //     mensaje_val.innerHTML = "El campo 'Mensaje' está vacío";
+    // }else{
+    //     mensaje_val.innerHTML = "";
+    // }
   })
 
 });
