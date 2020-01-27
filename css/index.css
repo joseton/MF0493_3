@@ -70,9 +70,8 @@
     color:#E7C089;
   }
   #irarriba {
-
-	padding:40px;
-	background:;
+	padding:1%;
+	background:white;
 	font-size:20px;
 	color:black;
 	cursor:pointer;
@@ -80,6 +79,7 @@
 	bottom:20px;
 	left:85%;
 }
+
 #registrate{
     text-align: center;
     visibility:hidden;
@@ -141,9 +141,7 @@ u img {
   margin: auto;
 }
 
-.clearfix{
-  clear:both;
-}
+
 h2{
   color: white ;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
