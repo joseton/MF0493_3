@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .cien_height{
-    height: 100vh;
+  height: 100vh;
 }
 /* HEADER */
 header{
@@ -62,23 +62,19 @@ div a span{
 }
 
 /* MAIN 1 */
-#msj_intro{
-    
-}
-#foto_intro{
-    background-image: url("../img/hunger_zoom.jpg");
-}
 .mask{
   width: 50%;
-  height: 540px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 560px;
   float: left;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+#msj_intro{
+  background-color: #131b24;
+  color: #f4f4f4;
 }
 div h1{
   margin: 120px 50px;
-  font-size: 44px;
+  font-size: 48px;
   tab-size: 4px;
 }
 div h1 span{
@@ -98,11 +94,15 @@ div h6 a{
   text-decoration: underline;
   vertical-align: middle;
 }
-
-
+#foto_intro{
+  background-image: url("../img/hunger.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 /* Hover MAIN 1*/
-.mask:hover{
-
+#foto_intro:hover{
+  background-image: url("../img/hunger_zoom.jpg");
 }
 #conoce:hover{
   text-decoration: none;
@@ -111,13 +111,14 @@ div h6 a{
 /* MAIN 2 */
 .caja1{
   width: 100%;
-  height: 200px;
+  height: 210px;
   padding: 25px 70px;
   float: left;
   background-color: #f4f4f4;
   text-align: justify;
 }
 .caja1 h5{
+  padding-top: 20px;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   /* font-weight: bolder; */
@@ -126,6 +127,7 @@ div h6 a{
   opacity: 100%;
 }
 .caja1 h4{
+  padding-bottom: 20px;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #131b24;
@@ -137,10 +139,6 @@ div h6 a{
 .caja1 h4 a{
   text-decoration: underline;
   color: #131b24;
-
-
-
-
 }
 .caja2{
   width: 100%;
@@ -308,7 +306,7 @@ div h6 a{
 }
 #huella{
   width: 60px;
-  margin: 20px 95px;
+  margin: 20px 103px;
 }
 .foot_2{
   width: 100%;
