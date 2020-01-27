@@ -6,6 +6,8 @@
         float:right;
         position: relative;
         right: 7%;
+        margin-top: 0;
+        z-index: 2;
     }
 
     nav ul{
