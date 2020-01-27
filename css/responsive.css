@@ -1,18 +1,3 @@
-@media all and (max-width: 900px) {
-    #headertitle{
-        width: 30%;
-    }
-}
-
-@media all and (max-width: 802px) {
-    header{
-        background-image: url('../img/banner3.3.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-}
-
-
 @media all and (max-width: 768px) {
 
     nav {
@@ -47,6 +32,10 @@
         bottom: 30px;
         cursor:pointer;
 
+    }
+
+    article img{
+        display:none;
     }
 
 }

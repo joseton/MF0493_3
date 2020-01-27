@@ -1,0 +1,28 @@
+section{
+    margin: 1% auto;
+    width: 70%;
+}
+
+article{
+    display: flex;
+    justify-content: space-between;
+    margin: 1%;
+}
+
+.articleimg{
+    width: 40%;
+}
+
+.articletxt{
+    width:60%;
+}
+
+article p{
+    text-align: justify;
+    margin-left: 3%;
+}
+
+article img{
+    max-width: 100%;
+    height: auto;
+}

@@ -5,38 +5,39 @@ html, body {
     height: 100%;
     width: 100%;
     margin: 0;
-    display: table;
+}
+
+body{
+    min-height: 100vh;
 }
 
 footer {
     background-color: grey;
-    display: table-row;
-    height: 1%;
+    height: 30px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 header {
-    background-image: url('../img/banner3.2.jpg');
+    background-image: url('../img/banner3.4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
     text-align: center;
-    padding: 3%;
-}
-
-
-
-#headertitle{
-    position: relative;
-    background-color: black;
-    opacity: .9;
-    width: 20%;
-    left: 50%;
-    transform: translateX(-50%);
+    height: 120px;
 }
 
 header h1 {
     position: relative;
+    background-color: black;
+    display:inline-block;
+    padding: 0 20px;
+}
 
+nav{
+    margin-top: -35px;
 }
 
 
