@@ -7,14 +7,41 @@
     box-sizing: border-box;
 }
 
-#navbar{
+
+.imagenfondo{
+    background-image: url("../img/images92.jpg");
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 575px;
+}
+
+.menu{
     opacity: 0.95;
     position: relative;
     /* display: block; */
     background-attachment: fixed;
 }
 
-h2{
+/* CLASE QUE SE AÑADIRÁ CON JS PARA EL MENU PEGAJOSO______________________________________________________________ */
+.menu-fixed {
+	position: fixed;
+    background-color: white;
+    /* LA PROPIEDAD Z-INDEX HACE QUE EL MENU QUEDE UNA CAPA POR DELANTE DE TODAS LAS COSAS DE LA WEB(Y DE ESTA MANERA NO QUEDE DETRAS Y NO PODAMOS INTERACCIONAR-USAR EL NAVBAR, Y PODAMOS USARLO) */
+	z-index: 1000;
+	top:0;
+	/* max-width:1000px; */
+	width: 100% ;
+    padding: 20px;
+    /* el box shadow es para darle sombra al menu navbar */
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+    margin-left: -20px
+}
+/* ____________________________________________________________________________________________________________________ */
+
+
+
+/* ESTOS ESTILOS (H2 Y H4) SON DEL LOGO POTATOES CHIPS R________________________________________________________________ */
+/* h2{
     font-size: 180px;
     position: absolute;
     top: 30%;
@@ -29,7 +56,10 @@ h4{
     left: 31%;
     color: white;
     font-family: 'Parisienne', cursive;
-}
+
+
+} */
+/* _______________________________________________________________________________________________________________________ */
 
 body header{
     font-size: 20px;
@@ -37,18 +67,6 @@ body header{
     padding: 20px;
 }
 
-/* LA CLASE "STICKY LA AÑADIMOS CON JS PARA QUE CUANDO BAJEMOS EL SCROLL EL MENU SE QUEDE ENGANCHADO ARRIBA" */
-/* .content {
-  padding: 16px;
-} */
-/* .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-.sticky + .content {
-  padding-top: 60px;
-} */
 
 main{
     /* background-image: linear-gradient(to right, #c6ffdd, #cee5a7, #e1c67d, #f3a06e, #f7797d);; */
@@ -58,12 +76,10 @@ main{
 header nav ul{
     display: flex;
     justify-content: space-around;
-    /* justify-content: flex-end; */
 }
 
 ul li a{
     color: grey;
-    /* border: 1px solid grey; */
     text-decoration: none;
     padding: 30px 24px;
     font-family: sans-serif;
@@ -81,6 +97,7 @@ ul li {
     padding: 7px;
     list-style: none;
 }
+
 /* ESTILOS DE SABIAS QUE.._______________________________________________________________ */
 #imghistoria{
     opacity: 0.95;
@@ -163,6 +180,7 @@ footer span:hover{
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 footer .footerleft{

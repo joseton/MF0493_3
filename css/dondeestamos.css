@@ -1,44 +1,31 @@
-/* ESTILOS DEL FOOTER_____________________________________________________________________ */
-footer{
-    background-color: #cfbf13;
+main{
+    margin: 100px 500px;
+    text-align: center;
+    /* esta propiedad nos da espaciado entre los "p"(parrafos)  */
+    line-height: 50px;
+
+
+}
+
+main div h1{
+
+    background-image: linear-gradient(to right, #c9d300, #bec716, #b3bb21, #a8af29, #9da32e, #8d9730, #7e8a32, #707e33, #5c6d32, #4a5c30, #3b4c2d, #2e3b28);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    opacity: 1;
+    font-size: 30px;
+
+}
+
+main div h3{
     font-family: sans-serif;
-    width: 100%;
-    height: 5%;
-    bottom: 0;
-    padding: 15px;
+    font-size: 25px;
+    /* color: #cfbf13; */
+    font-weight: lighter;
+
 }
 
-footer span{
-    color: white;
-    font-size: 15px;
-    margin: 8px;
-}
-
-footer span:hover{
-    color: black;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-footer .footerleft{
-    display: flex;
-    justify-content: flex-start;
-}
-
-footer .footerright{
-    display: flex;
-    justify-content: flex-end;
-}
-
- input[type=search]{
-    padding: 10px;
-    outline: 0;
-    border: 0px;
-    margin: 12px;
-}
-
-.footerright img{
-    cursor: pointer;
-    margin: 12px;
+main div p{
+    font-family: sans-serif;
+    font-size: 20px;
 }

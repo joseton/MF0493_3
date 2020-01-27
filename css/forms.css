@@ -1,7 +1,9 @@
 /* ESTILOS DE TODODS LOS FORMULARIOS */
 
 /* AQUÍ APLICAMOS LOS ESTILOS DE LOGIN Y REGISTRO */
+main{
 
+}
 
 #formulariologinreg{
     font-family: sans-serif;
@@ -11,10 +13,9 @@
     padding: 30px;
     top: 50%;
     left: 50%;
-    background-color: white;
     border: 5px solid #cfbf13;
     /* transform: translate(-50%,-50%); */
-    /* Esta propiedad ("transform") nos sirve para ubicar el form en el centro de manera correcta   */
+    /* Esta propiedad ("transform") nos sirve para ubicar el form en el centro de manera correcta, ES DECIR en el centro (ya que nos coge como referencia la esquina de arriba a la izq y no queda bien bien en el centro)   */
 }
 
 #formulariologinreg form h3{
