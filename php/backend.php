@@ -1,6 +1,5 @@
 <?php
-// TODO Challenge 7: Añadir el código PHP que se indica en la descripción del Challenge
-
+echo json_encode("vas bien");
  //usleep(150000);
  sleep(3);
 //var_dump($_POST);
