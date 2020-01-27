@@ -7,3 +7,7 @@
 div .card {
     border-radius: 10px;
 }
+
+div card-body.p-5 {
+    background-color: grey !important;
+}
