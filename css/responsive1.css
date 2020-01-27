@@ -1,10 +1,12 @@
 
 @media all and (max-width:1115px){
+
 body{
   width: 100%;
 }
      nav{
-         display:none;
+         height:0;
+         overflow: hidden;
      }
 #hamburguesa{
     display:block!important;
@@ -67,9 +69,7 @@ header nav ul{
   img.negro1{
       width: 100%;
     }
-    IMG.negro{
-      width: 100%;
-    }
+
     .india1{
       width: 50%;
     }

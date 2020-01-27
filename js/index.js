@@ -15,6 +15,19 @@ function desaparece(){
    carta.style.display="none";
 
 }
+var toggle=true;
+function desplegar(){
+if(toggle) {
+    $("nav").css("height","300px");
+    toggle=false;
+}
+else{
+    $("nav").css("height","0");
+    toggle=true;
+}
+}
+
+
 $(document).ready(function(){
 
     $("a").click(function(){

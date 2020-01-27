@@ -42,8 +42,8 @@
     height:50%;
     color: black;
     margin: 3%;
-    margin-left: 2
-  }
+
+}
 
 
   ul{
@@ -69,6 +69,17 @@
     cursor:pointer;
     color:#E7C089;
   }
+  #irarriba {
+
+	padding:40px;
+	background:;
+	font-size:20px;
+	color:black;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	left:85%;
+}
 #registrate{
     text-align: center;
     visibility:hidden;
@@ -143,7 +154,7 @@ h2{
 }
 
 .test1{
-  width: 60%;
+  width: 35%;
   padding: 20px;
   height: 10%;
   text-align:center;
@@ -195,8 +206,7 @@ height: 225px;
 
 }
 .test3{
-  width: 60%;
-
+  width: 30%;
   padding: 20px;
   height: 20%;
   text-align:center;
@@ -204,15 +214,14 @@ height: 225px;
   margin: 1px auto;
 }
 .blanco{
-  width: 200x;
+  width: 200px;
   height: 225px;
   object-fit:cover;
 }
 img.blanco{
-  text-align: left;
+
 margin: 0 auto;
-width: 205px;
-height: 205px;
+
 
 }
 p{
