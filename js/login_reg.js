@@ -1,5 +1,4 @@
-    // TODO Challenge 6: Añadir el código JS que se indica en la descripción del Challenge
-// TODO Challenge 7: Añadir el código JS que se indica en la descripción del Challenge
+
 window.onload = function() {
     // validació del formulari de registre amb API de validació d'HTML5
     var registre = document.getElementsByTagName("form")[0];
@@ -165,5 +164,3 @@ function email_validar(email){
     var patt = new RegExp(/^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/);
     return patt.test(email);
 }
-// Final TODO Challenge 6
-// Final TODO Challenge 7

@@ -1,5 +1,4 @@
 <?php
-// TODO Challenge 7: Añadir el código PHP que se indica en la descripción del Challenge
 
 // temporizador de 1,5sec o 1500000 microsegons
 usleep(1500000);
@@ -23,5 +22,3 @@ if(isset($_POST['reg_email'])){
     $missatge .= "Contraseña: ".$lg_pass;
 }
 echo json_encode($missatge);
-
-// Final TODO Challenge 7

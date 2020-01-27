@@ -42,43 +42,39 @@
   <!--  =========== Page Content  =========== -->
 
   <main>
-      <!-- TODO Challenge 6: Añadir los formularios que se indica en la descripción del Challenge -->
-      <!-- TODO Challenge 7: Añadir los elementos que se indican en la descripción del Challenge -->
       <form id="registre" novalidate>
-          <h3>REGISTRO</h3>
+          <h3>Register</h3>
           <label for="reg_email">Email</label>
           <input type="email" id="reg_email" name="reg_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
           <span class="error"></span>
-          <label for="reg_pass">Contraseña</label>
+          <label for="reg_pass">password</label>
           <input type="password" id="reg_pass" name="reg_pass"minlength="6">
           <span class="error"></span>
-          <label for="reg_r_pass">Repetir contraseña</label>
+          <label for="reg_r_pass">Repeat Password</label>
           <input type="password" id="reg_r_pass" name="reg_r_pass">
           <span class="error"></span>
-          <input type="submit" value="Registrar">
-          <p>¿Ya estás registrado? Haz clic <span id="mostrar_login">AQUÍ</span></p>
+          <input type="submit" value="Register">
+          <p>¿Are you allready registered <span id="mostrar_login">HERE</span></p>
           <div id="dataResp1">
 
           </div>
       </form>
 
       <form id="login" novalidate>
-          <h3>LOGIN</h3>
+          <h3>Login</h3>
           <label for="lg_email">Email</label>
           <input type="email" id="lg_email" name="lg_email">
           <span class="error"></span>
-          <label for="lg_pass">Contraseña</label>
+          <label for="lg_pass">password</label>
           <input type="password" id="lg_pass" name="lg_pass">
           <span class="error"></span>
-          <input type="button" value="Entrar">
-          <p>¿No tienes cuenta? Haz clic <span id="mostrar_reg">AQUÍ</span></p>
+          <input type="button" value="Enter">
+          <p>Don't Have an Account? Click Here <span id="mostrar_reg">HERE</span></p>
           <div id="dataResp2">
 
 
           </div>
       </form>
-      <!-- Final TODO Challenge 6 -->
-      <!-- Final TODO Challenge 7 -->
   </main>
 
    <!--============= End Page Content  =========== -->
