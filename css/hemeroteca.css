@@ -1,0 +1,28 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.htka_intro{
+  width: 100%;
+  height: 150px;
+  float: left;
+  background-color: #131b24;
+  color: #fff;
+}
+.htka_texto{
+  width: 100%;
+  height: 300px;
+  padding: 100px 100px;
+  background-color: #f4f4f4;
+  float: left;
+  font-size: 20px;
+  color: #131b24;
+  position: relative;
+  text-align: center;
+}
+.htka_texto p{
+  font-family: monospace;
+  font-size: 36px;
+  color: gray;
+}
