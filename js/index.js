@@ -9,6 +9,12 @@ function aparece(){
    carta.style.display="block";
 
 }
+function desaparece(){
+
+  var carta=document.getElementsByClassName("carta")[0];
+   carta.style.display="none";
+
+}
 $(document).ready(function(){
 
     $("a").click(function(){
