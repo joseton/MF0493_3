@@ -1,5 +1,4 @@
-/* TODO Challenge 6: Añade aqui los estilos de los formularios para realizar las tareas que se indica en el Challenge. */
-* {
+ * {
   box-sizing: border-box;
 }
 
@@ -23,6 +22,9 @@ header nav ul li a{
     margin-left: 5px;
     color: #000000;
     text-decoration: none;
+}
+header nav ul li a:hover{
+color:#87314e;
 }
 
 h3 {
@@ -105,8 +107,6 @@ label {
   display :none;
 }
 footer span{
- 
+
     font-size: 10px;
 }
-
-/* Final TODO Challenge 6 */

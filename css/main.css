@@ -46,7 +46,7 @@ header{
     width: 185px;
 }
 
-/* header nav ul li{
+header nav ul li{
     list-style-type: none;
 
 }
@@ -60,8 +60,13 @@ header nav ul li a{
     margin-left: 5px;
     color: #ffffff;
     text-decoration: none;
-} */
-/* ------------ ESTILOS DEL CONTENIDO ----------------*/
+
+}
+header nav ul li a:hover{
+color:#d9524a;
+}
+
+/* ------------ ESTILOS DEL CONTENIDO ----------------
 main{
     flex: 1 0 auto; /* posicionamiento de footer abajo (respeta flujo del navegador) */
     padding: 20px;
