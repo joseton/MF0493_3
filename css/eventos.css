@@ -26,5 +26,9 @@ header nav ul li a {
   text-decoration: none;
 }
 header nav ul li a:hover{
-color:#87314e;
+color:#d9524a;
+}
+footer span {
+  color: white;
+  font-size: 10px;
 }

@@ -1,7 +1,7 @@
 /* ------------------------------------------------------------------------ */
 /* slider.css: Estilos de la página slider.html */
 /* ------------------------------------------------------------------------ */
-/* TODO Challenge 3: Añade aqui los estilos necesarios para confeccionar el slider que se indica en el Challenge. */
+
 body {
   background-image: url("./../img/fondo.jpg");
   background-repeat: no-repeat;
@@ -12,7 +12,7 @@ body {
 header nav ul li {
   list-style-type: none;
 }
- 
+
 header nav ul {
   display: flex;
   font-size: 20px;
@@ -90,4 +90,4 @@ footer span {
   }
 }
 
-/* Final TODO Challenge 3 */
+ 
