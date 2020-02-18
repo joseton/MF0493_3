@@ -168,94 +168,79 @@ div h6 a{
   color: gray;
   border-bottom: 1px solid #0FE7A4;
 }
-.africa{
+.continentes{
+  /* background-color: #05d192; */
+  color: #fff;
+  /* border-radius: 50%; */
+  text-align: center;
+  position: absolute;
+  float: left;
+  opacity: 70%;
+}
+#africa{
   width: 240px;
   height: 240px;
   padding: 104px 0px;
   background-color: #05d192;
-  color: #fff;
   border-radius: 50%;
-  text-align: center;
   position: absolute;
-  float: left;
   margin-top: 227px;
   margin-left: 557px;
-  opacity: 70%;
   font-size: 24px;
 }
-.latin{
+#latin{
   width: 160px;
   height: 160px;
   padding: 61px 0px;
   background-color: #05d192;
-  color: #fff;
   border-radius: 50%;
-  text-align: center;
   position: absolute;
-  float: left;
   margin-top: 291px;
   margin-left: 294px;
-  opacity: 70%;
   font-size: 18px;
 }
-.amer_septentrional{
+#amer_septentrional{
   width: 80px;
   height: 80px;
   padding: 26px 0px;
   background-color: #05d192;
-  color: #fff;
   border-radius: 50%;
   font-size: 13px;
-  text-align: center;
   position: absolute;
-  float: left;
   margin-top: 100px;
   margin-left: 168px;
-  opacity: 70%;
   font-size: 11px;
 }
-.asia{
+#asia{
   width: 220px;
   height: 220px;
   padding: 92px 0px;
   background-color: #05d192;
-  color: #fff;
   border-radius: 50%;
-  text-align: center;
   position: absolute;
-  float: left;
   margin-top: 117px;
   margin-left: 774px;
-  opacity: 70%;
   font-size: 24px;
 }
-.europa{
+#europa{
   width: 80px;
   height: 80px;
   padding: 30px 0px;
   background-color: #05d192;
-  color: #fff;
   border-radius: 50%;
-  text-align: center;
   position: absolute;
-  float: left;
   margin-top: 96px;
   margin-left: 598px;
-  opacity: 70%;
 }
-.oceania{
+#oceania{
   width: 120px;
   height: 120px;
   padding: 48px 0px;
   background-color: #05d192;
-  color: #fff;
   border-radius: 50%;
-  text-align: center;
   position: absolute;
-  float: left;
   margin-top: 363px;
   margin-left: 1140px;
-  opacity: 70%;
   font-size: 18px;
 }
 .caja4{
@@ -272,22 +257,22 @@ div h6 a{
 }
 
 /* Hover MAIN 2*/
-.africa:hover{
+#africa:hover{
   background-color: #131b24;
 }
-.latin:hover{
+#latin:hover{
   background-color: #131b24;
 }
-.amer_septentrional:hover{
+#amer_septentrional:hover{
   background-color: #131b24;
 }
-.asia:hover{
+#asia:hover{
   background-color: #131b24;
 }
-.europa:hover{
+#europa:hover{
   background-color: #131b24;
 }
-.oceania:hover{
+#oceania:hover{
   background-color: #131b24;
 }
 
