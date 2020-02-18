@@ -1,6 +1,6 @@
 
 /* <!—- Aquí van todos los estilos CSS PARA PANTALLAS DE MENOS DE 320PX--> */
-@media all and (max-width: 768px){
+/* @media all and (max-width: 768px){
     .menu{
         display:none;
     }
@@ -22,4 +22,4 @@
         width: 100%;
     }
 
-}
+} */

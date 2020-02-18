@@ -3,57 +3,24 @@
 <head>
     <meta charset="utf-8">
     <title>POTATOES CHIPS R</title>
-    <style type="text/css"></style>
     <!-- AQUI TENEMOS LOS ENLACES A NUESTRA PAGINA CON CSS, JS Y PHP -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
     <!-- ESTE ES EL ENLACE PARA HACER EL RESPONSIVE (PARA TABLETS, MOVILES..) -->
-    <link rel="stylesheet" media="only screen and (max-width: 768px)" href="css/responsive.css">
-
+    <link rel="stylesheet" href="css/responsive.css">
     <script type="text/javascript" src="vendor/components/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript" src="js/suscripcion.js"></script>
-    <script type="text/javascript" src="js/log_reg.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
 
-
-
 </head>
 <body>
-    <div class="flexbox-container">
-        <div id=imagenportada>
-            <div class="imagenfondo">
-            </div>
-            <!-- ANTES TENIAMOS LA IMAGEN CARGADA AQUI DESDE HTML CON SU LOGO PERO PARA PODER HACER EL EFECTO DE IMAGEN ESTATICA LA CARGAMOS DESDE CSS -->
-            <!-- <img src="img/images92.jpg" width='100%' height='575px' alt="" class="imagenfondo" > -->
-            <!-- <h4>Potatoes Chips</h4>
-            <h2>R</h2> -->
-        </div>
-    </div>
-
-
+    <div class="imagenfondo"></div>
     <header>
         <nav class="menu" >
             <ul>
-                <!-- <li><a href="index.html">Home</a></li> -->
-                <li>
-                    <ul>
-                        <!-- AQUI HEMOS HECHO LAS ANCLAS(#)_______________________________________________________________________ -->
-
-                        <div class="subnav">
-                        <li><a href="index.html" class="subnavbtn">Home ▼ </a></li>
-
-                        <!-- <button class="subnavbtn">Home<i class="fa fa-caret-down"></i></button> -->
-                            <div class="subnav-content">
-                                <a href="C:/xampp/htdocs/Proyecto_FINAL/index.html#historia">Historia</a>
-                                <a href="C:/xampp/htdocs/Proyecto_FINAL/index.html#nuestrosproductos">Productos</a>
-                            </div>
-                        </div>
-
-                    </ul>
-                </li>
+                <li><a href="index.html">Home </a></li>
                 <li><a href="slider.html">Galería</a></li>
                 <li><a href="curiosidades.html">Curiosidades</a></li>
                 <li><a href="suscripcion.html">Suscripción</a></li>
@@ -62,142 +29,126 @@
             </ul>
         </nav>
     </header>
-
-
     <main>
-            <video width="100%" height="100%" autoplay muted loop>
-                <source src="video/video1.mp4" type="video/mp4">
-            </video>
+        <video width="100%" height="100%" autoplay muted loop>
+            <source src="video/video1.mp4" type="video/mp4">
+        </video>
+        <section>
+            <div id="historia">
+
+                <img src="img/images12.jpg" width='100%' height='800px' alt="" id="imghistoria">
+                <h1>Sabías que...</h1>
+                <p>En 1853, George Crum era el chef de Moon’s Lake House, en Saratoga Springs, EEUU. Crum no tenía fama de tener buen carácter, y la aparición de Cornelius Vanderbilt en el restaurante desencadenó uno de los inventos más famosos de la historia.</p>
+
+                <p></p>
+
+                <p>El señor Vanderbilt pidió un plato de patatas fritas, que en inglés se denominan french fries. Vanderbilt devolvió el plato argumentando que eran demasiado gruesas y estaban poco hechas. Crum cortó las patatas mucho más finas y las frió más tiempo, pero Vanderbilt era la horma de su zapato y las devolvió de nuevo porque aún eran demasiado gruesas. Harto de Vanderbilt, Crum decidió cortarlas tan finas y freírlas tanto que fuera imposible pincharlas con el tenedor sin romperlas, además de sazonarlas con excesiva sal.</p>
+
+                <p></p>
+
+                <p>Se las sirvieron a Vanderbilt esperando que, con razón, no quedara satisfecho, pero a Venderbilt le volvieron loco. Crum montó su propio restaurante, donde servía sus famosas “Saratoga Chips”.</p>
+            </div>
 
 
+            <div id="nuestrosproductos">
+                <h1>NUESTRAS PATATAS</h1>
 
-            <section>
-                <div id="historia">
-
-                    <img src="img/images12.jpg" width='100%' height='800px' alt="" id="imghistoria">
-                    <h1>Sabías que...</h1>
-                    <p>En 1853, George Crum era el chef de Moon’s Lake House, en Saratoga Springs, EEUU. Crum no tenía fama de tener buen carácter, y la aparición de Cornelius Vanderbilt en el restaurante desencadenó uno de los inventos más famosos de la historia.</p>
-
-                    <p></p>
-
-                    <p>El señor Vanderbilt pidió un plato de patatas fritas, que en inglés se denominan french fries. Vanderbilt devolvió el plato argumentando que eran demasiado gruesas y estaban poco hechas. Crum cortó las patatas mucho más finas y las frió más tiempo, pero Vanderbilt era la horma de su zapato y las devolvió de nuevo porque aún eran demasiado gruesas. Harto de Vanderbilt, Crum decidió cortarlas tan finas y freírlas tanto que fuera imposible pincharlas con el tenedor sin romperlas, además de sazonarlas con excesiva sal.</p>
-
-                    <p></p>
-
-                    <p>Se las sirvieron a Vanderbilt esperando que, con razón, no quedara satisfecho, pero a Venderbilt le volvieron loco. Crum montó su propio restaurante, donde servía sus famosas “Saratoga Chips”.</p>
+                <img src="img/imagentitulocaseras.jpg" width="20%" height="20%" alt="" class="imagentitulo">
+                <div class="contenedor_productos">
+                    <div class="producto">
+                        <img src="img/caseras1.jpg" alt=""  >
+                        <p>CASERAS</p>
+                    </div>
+                    <div class="producto">
+                        <img src="img/caseras2.jpg" alt="">
+                        <p>CASERAS PAJA</p>
+                    </div>
+                    <div class="producto">
+                        <img src="img/caseras3.jpg" alt="">
+                        <p>CASERAS ONDULADAS</p>
+                    </div>
                 </div>
 
 
-                <div id="nuestrosproductos">
-                    <h1>NUESTRAS PATATAS</h1>
-
-                    <img src="img/imagentitulocaseras.jpg" width="20%" height="20%" alt="" class="imagentitulo">
-                    <div class="contenedor_productos">
-                        <div class="producto">
-                            <img src="img/caseras1.jpg" alt=""  >
-                            <p>CASERAS</p>
-                        </div>
-                        <div class="producto">
-                            <img src="img/caseras2.jpg" alt="">
-                            <p>CASERAS PAJA</p>
-                        </div>
-                        <div class="producto">
-                            <img src="img/caseras3.jpg" alt="">
-                            <p>CASERAS ONDULADAS</p>
-                        </div>
+                <img src="img/imagentitulopremium.jpg" width="20%" height="20%" alt="" class="imagentitulo">
+                <div class="contenedor_productos">
+                    <div class="producto">
+                        <img src="img/premium1.jpg" alt="">
+                        <p>PREMIUM</p>
                     </div>
 
-
-                    <img src="img/imagentitulopremium.jpg" width="20%" height="20%" alt="" class="imagentitulo">
-                    <div class="contenedor_productos">
-                        <div class="producto">
-                            <img src="img/premium1.jpg" alt="">
-                            <p>PREMIUM</p>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/premium2.jpg" alt="">
-                            <p>PREMIUM SABOR APERITIVO</p>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/premium3.jpg" alt="">
-                            <p>PREMIUM QUESO DE CABRA Y CEBOLLA CARAMELIZADA</p>
-
-                        </div>
+                    <div class="producto">
+                        <img src="img/premium2.jpg" alt="">
+                        <p>PREMIUM SABOR APERITIVO</p>
                     </div>
 
+                    <div class="producto">
+                        <img src="img/premium3.jpg" alt="">
+                        <p>PREMIUM QUESO DE CABRA Y CEBOLLA CARAMELIZADA</p>
 
-                    <img src="img/imagentituloligeras.jpg" width="20%" height="20%" alt="" class="imagentitulo">
-                    <div class="contenedor_productos">
-                        <div class="producto">
-                            <img src="img/ligeras1.jpg" alt="">
-                            <p>LIGERAS</p>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/ligeras2.jpg" alt="">
-                            <p>LIGERAS TOMATE Y OREGANO</p>
-                        </div>
                     </div>
-
-                    <img src="img/imagentitulochips.jpg" width="20%" height="20%" alt="" class="imagentitulo">
-                    <div class="contenedor_productos">
-                        <div class="producto">
-                            <img src="img/chips1.jpg" alt="">
-                            <p>CHIPS ORIGINALES</p>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/chips2.jpg" alt="">
-                            <p>CHIPS PIZZA</p>
-                        </div>
-
-                        <div class="producto">
-                            <img src="img/chips3.jpg" alt="">
-                            <p>CHIPS BACON & CHEESE</p>
-                        </div>
-                    </div>
-
-
-
-                    <img src="img/imagentitulochurreria.jpg" width="20%" height="20%" alt="" class="imagentitulo">
-                    <div class="contenedor_productos">
-                        <div class="producto">
-                            <img src="img/churreria1.jpg" alt="">
-                            <p>CHURRERIA</p>
-                        </div>
-                    </div>
-
                 </div>
 
 
-                </section>
+                <img src="img/imagentituloligeras.jpg" width="20%" height="20%" alt="" class="imagentitulo">
+                <div class="contenedor_productos">
+                    <div class="producto">
+                        <img src="img/ligeras1.jpg" alt="">
+                        <p>LIGERAS</p>
+                    </div>
 
-            </main>
-        </body>
+                    <div class="producto">
+                        <img src="img/ligeras2.jpg" alt="">
+                        <p>LIGERAS TOMATE Y OREGANO</p>
+                    </div>
+                </div>
 
+                <img src="img/imagentitulochips.jpg" width="20%" height="20%" alt="" class="imagentitulo">
+                <div class="contenedor_productos">
+                    <div class="producto">
+                        <img src="img/chips1.jpg" alt="">
+                        <p>CHIPS ORIGINALES</p>
+                    </div>
 
+                    <div class="producto">
+                        <img src="img/chips2.jpg" alt="">
+                        <p>CHIPS PIZZA</p>
+                    </div>
 
+                    <div class="producto">
+                        <img src="img/chips3.jpg" alt="">
+                        <p>CHIPS BACON & CHEESE</p>
+                    </div>
+                </div>
 
-        <footer id="footer">
-            <div class="footerleft">
-                <span> Únete a nuestro equipo </span>
-                <span> Política de cookies </span>
-                <span> Aviso legal </span>
-                <span> Código Ético </span>
-                <span> Otra información </span>
+                <img src="img/imagentitulochurreria.jpg" width="20%" height="20%" alt="" class="imagentitulo">
+                <div class="contenedor_productos">
+                    <div class="producto">
+                        <img src="img/churreria1.jpg" alt="">
+                        <p>CHURRERIA</p>
+                    </div>
+                </div>
+
             </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footerleft">
+            <span> Únete a nuestro equipo </span>
+            <span> Política de cookies </span>
+            <span> Aviso legal </span>
+            <span> Código Ético </span>
+            <span> Otra información </span>
+        </div>
 
-            <div class="footerright">
-                <img src="img/logolupa.png" alt="" width="40px" height="40px">
-                <input type="search" placeholder="Buscar..." >
-                <img src="img/logo1.png" alt="" width="40px" height="40px">
-                <img src="img/logo2.png" alt="" width="40px" height="40px">
-                <img src="img/logo3.png" alt="" width="40px" height="40px">
-                <img src="img/logo4.png" alt="" width="40px" height="40px">
-            </div>
-        </footer>
-
-
+        <div class="footerright">
+            <img src="img/logolupa.png" alt="" width="40px" height="40px">
+            <input type="search" placeholder="Buscar..." >
+            <img src="img/logo1.png" alt="" width="40px" height="40px">
+            <img src="img/logo2.png" alt="" width="40px" height="40px">
+            <img src="img/logo3.png" alt="" width="40px" height="40px">
+            <img src="img/logo4.png" alt="" width="40px" height="40px">
+        </div>
+    </footer>
+    </body>
 </html>

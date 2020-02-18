@@ -1,97 +1,37 @@
-
-/* AQUI APLICAMOS LOS ESTILOS DEL SLIDER(IMAGENES SLIDER) */
-
-/* SLIDER 1_____________________________________________________________
-(HECHO SIN JS SIN BOTONES, LAS IMAGENES SE PASAN SOLAS TRAS UNOS SEGUNDOS) */
-
-
-/* .mask{
-    display: block;
-    width: 100%;
-    height: 500px;
-    margin: 0px auto;
-    overflow: hidden;
-    box-shadow: 2px 4px 60px 32px rgba(207,191,19,0.32);
-    margin-bottom: 100px;
-
-
-}
-
-.container_slider{
-    width: 400%;
+/*deja el footer abajo*/
+html, body{
     height: 100%;
-    animation-name: slider;
-    animation-duration: 20s;
-    position: relative;
-
-}
-.slide{
-    float: left;
-    width: 25%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
 }
 
-#slide1{
-    background-image: url(../img/images1.jpg);
-}
-#slide2{
-    background-image: url(../img/images2.jpg);
-}
-#slide3{
-    background-image: url(../img/images3.jpg);
-}
-#slide4{
-    background-image: url(../img/images4.jpg);
-}
-#slide5{
-    background-image: url(../img/images5jpg);
-}
-
-@keyframes slider {
-    10%{
-        left: 0;
-    }
-    35%{
-        left: -100%;
-    }
-    60%{
-        left: -200%;
-    }
-    85%{
-        left: -300%;
-    } */
-
-
-
-
-/* SLIDER 2______________________________________________________________________________ */
-
-            /* (HECHO CON JS Y CON BOTONES PARA QUE USUARIO PUEDA INTERACTUAR) */
 body{
-	margin: 0;
 
+    display: flex;
+    flex-direction: column;
 }
 
-
+.mask{
+    flex: 1 0 auto;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+header{
+    font-size: 20px;
+    color: grey;
+    padding: 30px;
+    width: 100%;
+    background: #fff;
+    box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
 nav ul li a:hover{
 	color: #cfbf13;
 	font-weight: bold;
-
 }
 
 div#mask{
 	width: 100%;
-	height: 525px;
-	margin: 0px auto 0px;
-	margin-bottom: 150px;
+	height: 100vh;
 	overflow: hidden;
 	position: relative;
-		/* box-shadow: 2px 4px 60px 32px rgba(207,191,19,0.32); */
-	/* -webkit-box-shadow: 0px 0px 110px 79px rgba(207,191,19,0.79); */
-
-
 }
 
 div#mask>.arrow{
@@ -112,7 +52,6 @@ div#mask>.arrow{
 
 div#mask>.arrow:hover{
 	background-color: rgba(255,255,255,.6);
-
 }
 
 div#mask>.arrow>img{
@@ -121,13 +60,11 @@ div#mask>.arrow>img{
 	top: 50%;
 	left: 50%;
 	transform: translateY(-50%) translateX(-50%);
-
 }
 
 div#mask>.arrow.left{
 	right: unset;
 	left: 15px;
-
 }
 
 div.bullets{
@@ -136,7 +73,6 @@ div.bullets{
 	left: 50%;
 	transform: translateX(-50%);
 	display: inline-block;
-
 }
 
 div.bullets>.bullet{
@@ -148,7 +84,6 @@ div.bullets>.bullet{
 	margin: 0 5px;
 	cursor: pointer;
 	border: solid 1px white;
-
 }
 
 
@@ -161,19 +96,16 @@ div.bullets>.bullet:hover{
 	margin: 0 5px;
 	cursor: pointer;
 	border: solid 1px white;
-
 }
 
 div.bullets>.bullet.selected{
 	border: solid 1px white;
 	background-color: black;
-
 }
 
 div.bullets>.bullet.selected:hover{
 	border: solid 1px white;
 	background-color: black;
-
 }
 
 div#mask>div#tira{
@@ -185,7 +117,6 @@ div#mask>div#tira{
 	/*animation-name: slider;
 	animation-duration: 10s;
 	animation-iteration-count: infinite;*/
-
 }
 
 div#mask>div#tira>div.image{
@@ -194,7 +125,6 @@ div#mask>div#tira>div.image{
 	background-size: cover;
 	background-position: center;
 	float: left;
-
 }
 
 div#mask>div#tira>div#image1{

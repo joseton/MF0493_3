@@ -6,33 +6,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/* ESTOS SON LOS ESTILOS DEL LOGO QUE ESTAN COMENTADOS____________________________________________________________ */
-/* h2{
-    font-size: 180px;
-    position: absolute;
-    top: 30%;
-    left: 51%;
-    color: white;
-    font-family: 'Parisienne', cursive;
+/*deja el footer abajo*/
+/* html, body{
+    height: 100%;
 }
-h4{
-    font-size: 50px;
-    position: absolute;
-    top: 30%;
-    left: 31%;
-    color: white;
-    font-family: 'Parisienne', cursive;
 
+body{
 
-} ______________________________________________________________________________________________________________________*/
-
-body header{
-    font-size: 20px;
-    /* background-image: linear-gradient(to right, #c6ffdd, #cee5a7, #e1c67d, #f3a06e, #f7797d);; */
-    color: grey;
-    padding: 50px;
+    display: flex;
+    flex-direction: column;
 }
+
+main{
+    flex: 1 0 auto;
+    margin-bottom: 100px;
+    margin-top: 20px;
+} */
 
 header nav ul{
     display: flex;
@@ -43,7 +32,7 @@ ul li a{
     color: grey;
     /* border: 1px solid grey; */
     text-decoration: none;
-    padding: 30px 24px;
+    /* padding: 30px 24px; */
     font-family: sans-serif;
     letter-spacing: 2px;
 }
@@ -54,6 +43,6 @@ ul li a:hover{
 }
 
 ul li {
-    padding: 7px;
+    /* padding: 7px; */
     list-style: none;
 }
