@@ -8,14 +8,14 @@
 }
 
 #cap p.element {
-  font-size: 14px;
-  color: white;
+    font-size: 14px;
+    color: white;
 }
 
 #cap p.element span {
-  color: black;
-  font-weight: 600;
-  padding-right: 5px;
+    color: black;
+    font-weight: 600;
+    padding-right: 5px;
 }
 
 #ingredients .titol {
@@ -38,20 +38,20 @@
 }
 
 #ingredients ul li span {
-  position: relative;
-  left: -20px;
+    position: relative;
+    left: -20px;
 }
 
 #imatge img {
-  max-width: 100%;
-  width: auto;
+    max-width: 100%;
+    width: auto;
 }
 
 article {
-  margin-left: 10px;
-  padding: 20px;
-  color: #3f3f3f;
-  background-color: rgb(51,229,181);
+    margin-left: 10px;
+    padding: 20px;
+    color: #3f3f3f;
+    background-color: rgb(51,229,181);
 }
 
 h3 {
