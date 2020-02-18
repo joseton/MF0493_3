@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Proyecto Frontend</title>
     <style>
-      @import url('https://fonts.googleapis.com/css?family=Abhaya+Libre|Montserrat|Open+Sans|Open+Sans+Condensed:700&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Abhaya+Libre|Montserrat|Open+Sans|Open+Sans+Condensed:700&display=swap');
     </style>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
     <script type="text/javascript" src="vendor/components/jquery/jquery.min.js"></script>
     <script type="text/javascript" scr="js/index.js"></script>
-  </head>
-  <body>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+<body>
     <div class="cien_height">
         <header>
             <div class="logo_header">
@@ -24,83 +28,90 @@
             </div>
         </header>
         <div id="msj_intro" class="mask">
-          <h1 id="msj">MÁS DE 820 MILLONES DE PERSONAS PASAN <span id="hambre">H A M B R E</span> Y POBREZA Y UNOS 2.000 MILLONES SUFREN SU AMENAZA</h1>
-          <h6> > <a href="#informe" id="conoce">Conoce más sobre esto</a></h6>
+            <h1 id="msj">MÁS DE 820 MILLONES DE PERSONAS PASAN <span id="hambre">H A M B R E</span> Y POBREZA Y UNOS 2.000 MILLONES SUFREN SU AMENAZA</h1>
+            <h6> > <a href="#informe" id="conoce">Conoce más sobre esto</a></h6>
         </div>
-        <div id="foto_intro" class="mask"></div>
+        <div id="foto_intro" class="mask">
+                <img src="img/hunger_zoom.jpg" alt="">
+        </div>
     </div>
     <main>
-      <div class="caja1">
-        <h5 id="informe"> INFORME "EL ESTADO DE LA SEGURIDAD ALIMENTARIA Y LA NUTRICIÓN EN EL MUNDO, 2019" </h5>
-        <br>
-        <h4>El informe anual que elaboran conjuntamente las agencias de Naciones Unidas FAO, OMS, PMA, FIDA y UNICEF, concluye que durante los últimos tres años
-          <span id="enfasis">el número de personas que padecen hambre e inseguridad almentaria ha continuado aumentando</span>. Este dato pone de relieve el inmenso desafío que supone alcanzar
-          el Objetivo de Desarrollo Sostenible del Hambre Cero (ODS 2) para 2030. Puedes <a href="http://www.fao.org/3/ca5162es/ca5162es.pdf" target="_blank">acceder al Informe aquí</a> .
-          <br> FAMDA ha elaborado el siguiente mapa para ilustrar la distribución de las cifras por regiones:</h4>
-      </div>
-      <div class="caja2"></div>
-      <div class="caja3">
-        <h5>El hambre en el mundo, 2019: proporción (%) y total de personas (mill)</h5>
-        <div class="continentes" onmouseover="info(this)" onmouseout="info(this)">
-          <span id="africa">África</span>
-        </div>
-        <div class="continentes">
-          <span id="asia">Asia</span>
-        </div>
-        <div class="continentes">
-          <span id="latin">Latinoamérica y El Caribe</span>
-        </div>
-        <div class="continentes">
-          <span id="amer_septentrional">América Septentrional</span>
-        </div>
-        <div class="continentes">
-          <span id="europa">Europa</span>
-        </div>
-        <div class="continentes">
-          <span id="oceania">Oceanía</span>
-        </div>
-      </div>
-      <div class="caja4">
-        <div id="baseline_map"></div>
-      </div>
-    </main>
-    <footer>
-      <div class="foot_1">
-          <div class="cajas_foot_1">
+        <div class="caja1">
+            <h5 id="informe"> INFORME "EL ESTADO DE LA SEGURIDAD ALIMENTARIA Y LA NUTRICIÓN EN EL MUNDO, 2019" </h5>
+            <br>
+            <h4>El informe anual que elaboran conjuntamente las agencias de Naciones Unidas FAO, OMS, PMA, FIDA y UNICEF, concluye que durante los últimos tres años
+                <span id="enfasis">el número de personas que padecen hambre e inseguridad almentaria ha continuado aumentando</span>. Este dato pone de relieve el inmenso desafío que supone alcanzar
+                el Objetivo de Desarrollo Sostenible del Hambre Cero (ODS 2) para 2030. Puedes <a href="http://www.fao.org/3/ca5162es/ca5162es.pdf" target="_blank">acceder al Informe aquí</a> .
+                <br> FAMDA ha elaborado el siguiente mapa para ilustrar la distribución de las cifras por regiones:</h4>
+            </div>
+            <div class="caja2"></div>
+            <div class="caja3">
+                <h5>El hambre en el mundo, 2019: proporción (%) y total de personas (mill)</h5>
+                <div class="continentes" onmouseover="info(this)" onmouseout="info(this)">
+                    <span id="africa"><a href="#ex1" rel="modal:open">África</a></span>
+                </div>
+                <div class="continentes">
+                    <span id="asia">Asia</span>
+                </div>
+                <div class="continentes">
+                    <span id="latin">Latinoamérica y El Caribe</span>
+                </div>
+                <div class="continentes">
+                    <span id="amer_septentrional">América Septentrional</span>
+                </div>
+                <div class="continentes">
+                    <span id="europa">Europa</span>
+                </div>
+                <div class="continentes">
+                    <span id="oceania">Oceanía</span>
+                </div>
+            </div>
+            <div class="caja4">
+                <div id="baseline_map"></div>
+            </div>
+        </main>
+        <footer>
+            <div class="foot_1">
+                <div class="cajas_foot_1">
 
-          </div>
-          <div class="cajas_foot_1">
+                </div>
+                <div class="cajas_foot_1">
 
-          </div>
-          <div class="cajas_foot_1">
-            <img src="img/huella.png" alt="huella" id="huella">
-          </div>
-          <div class="cajas_foot_1">
+                </div>
+                <div class="cajas_foot_1">
+                    <img src="img/huella.png" alt="huella" id="huella">
+                </div>
+                <div class="cajas_foot_1">
 
-          </div>
-          <div class="cajas_foot_1">
+                </div>
+                <div class="cajas_foot_1">
 
-          </div>
-      </div>
-      <div class="foot_2">
-        <div class="main_foot_2_a">
-          <div class="cajas_foot_2_a"></div>
-          <div class="cajas_foot_2_a"></div>
+                </div>
+            </div>
+            <div class="foot_2">
+                <div class="main_foot_2_a">
+                    <div class="cajas_foot_2_a"></div>
+                    <div class="cajas_foot_2_a"></div>
+                </div>
+                <div class="main_foot_2_b">
+                    <div class="cajas_foot_2_b">
+                        <img src="img/famda_dark.png" alt="dark" id="famda_dark">
+                    </div>
+                    <div class="cajas_foot_2_b"></div>
+                    <div class="cajas_foot_2_b"></div>
+                    <div class="cajas_foot_2_b"></div>
+                </div>
+                <div class="main_foot_2_c">
+                    <div class="cajas_foot_2_c">
+                        <p id="copyright"> C o p y r i g h t : f a m d a . o r g - 2 0 2 0 </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Modal HTML embedded directly into document -->
+        <div id="ex1" class="modal">
+          <p>Thanks for clicking. That felt good.</p>
+          <a href="#" rel="modal:close">Close</a>
         </div>
-        <div class="main_foot_2_b">
-          <div class="cajas_foot_2_b">
-            <img src="img/famda_dark.png" alt="dark" id="famda_dark">
-          </div>
-          <div class="cajas_foot_2_b"></div>
-          <div class="cajas_foot_2_b"></div>
-          <div class="cajas_foot_2_b"></div>
-        </div>
-        <div class="main_foot_2_c">
-          <div class="cajas_foot_2_c">
-            <p id="copyright"> C o p y r i g h t : f a m d a . o r g - 2 0 2 0 </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
-</html>
+    </body>
+    </html>

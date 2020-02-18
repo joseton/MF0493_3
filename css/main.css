@@ -99,10 +99,13 @@ div h6 a{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  transition: transform .5s ease;
+  overflow: hidden;
 }
 /* Hover MAIN 1*/
 #foto_intro:hover{
-  background-image: url("../img/hunger_zoom.jpg");
+  /* background-image: url("../img/hunger_zoom.jpg"); */
+   transform: scale(1.5);
 }
 #conoce:hover{
   text-decoration: none;
