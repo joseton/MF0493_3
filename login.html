@@ -7,7 +7,8 @@
         <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript" src="js/login.js"></script>
         <script type="text/javascript" src="js/cookies.js"></script>
-        <script src="https://use.fontawesome.com/ff0a9012c4.js"></script>
+        <!-- <script src="https://use.fontawesome.com/ff0a9012c4.js"></script> -->
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/animations.css">
         <link rel="stylesheet" href="css/login.css">
         <link rel="stylesheet" href="css/main.css">
@@ -17,7 +18,6 @@
         <header>
             <img id="logo" src="img/vegan.png" alt="Logo" onclick="index()">
             <nav>
-                <img id="responsive" alt="Menú" src="img/responsive.png">
                 <ul>
                     <li class="menu">
                         <a class="menu-boto" href="#">Receptes</a>
@@ -37,13 +37,40 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="menu">
+                    <li id="menuCategories" class="menu">
                         <a class="menu-boto" href="#">Categories</a>
                         <ul class="menu-desp">
-                            <li><a href="#" onclick="cerca()">Dificultat</a></li>
-                            <li><a href="#" onclick="cerca()">Temps de preparació</a></li>
-                            <li><a href="#" onclick="cerca()">Temperatura</a></li>
-                            <li><a href="#" onclick="cerca()">Gust</a></li>
+                            <li class="submenu"><a href="#" onclick="cerca()">Dificultat</a>
+                                <ul class="opcions">
+                                    <li><a href="#" onclick="cerca()">Fàcil</a></li>
+                                    <li><a href="#" onclick="cerca()">Mitjana</a></li>
+                                    <li><a href="#" onclick="cerca()">Difícil</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu"><a href="#" onclick="cerca()">Temps de preparació</a>
+                                <ul class="opcions">
+                                    <li><a href="#" onclick="cerca()">-15 minuts</a></li>
+                                    <li><a href="#" onclick="cerca()">-30 minuts</a></li>
+                                    <li><a href="#" onclick="cerca()">-45 minuts</a></li>
+                                    <li><a href="#" onclick="cerca()">-1 hora</a></li>
+                                    <li><a href="#" onclick="cerca()">+1 hora</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu"><a href="#" onclick="cerca()">Temperatura</a>
+                                <ul class="opcions">
+                                    <li><a href="#" onclick="cerca()">Calent</a></li>
+                                    <li><a href="#" onclick="cerca()">Del temps</a></li>
+                                    <li><a href="#" onclick="cerca()">Fred</a></li>
+                                    <li><a href="#" onclick="cerca()">Fred i calent</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu"><a href="#" onclick="cerca()">Gust</a>
+                                <ul class="opcions">
+                                    <li><a href="#" onclick="cerca()">Dolç</a></li>
+                                    <li><a href="#" onclick="cerca()">Salat</a></li>
+                                    <li><a href="#" onclick="cerca()">Picant</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -99,11 +126,6 @@
                             <p class="missatge" id="reg_nom_val"></p>
                         </div>
                         <div class="inputs_50">
-                            <label for="reg_edat">Edat</label>
-                            <input type="number" class="camp_form" id="reg_edat" name="reg_edat">
-                            <p class="missatge" id="reg_email_val"></p>
-                        </div>
-                        <div class="inputs_50">
                             <label for="reg_pass">Paraula de pas</label>
                             <input type="password" class="camp_form" id="reg_pass" name="reg_pass">
                             <p class="missatge" id="reg_pass_val"></p>
@@ -113,9 +135,11 @@
                             <input type="password" class="camp_form" id="reg_pass2" name="reg_pass2">
                             <p class="missatge" id="reg_pass2_val"></p>
                         </div>
-                        <input type="button" class="camp_form" value="Registrar" onclick="registre()">
-                        <p>Ja tens compte d'usuari? Fes clic <span onclick="mostrar_login()">AQUÍ</span></p>
-                        <p class="missatge" id="success"></p>
+                        <div class="inputs_100">
+                          <input type="button" class="camp_form" value="Registrar" onclick="registre()">
+                          <p>Ja tens compte d'usuari? Fes clic <span onclick="mostrar_login()">AQUÍ</span></p>
+                          <p class="missatge" id="success"></p>
+                        </div>
                     </form>
             </div>
         </main>

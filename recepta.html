@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="utf-8">
+    <title>Receptes veganes</title>
+    <script type="text/javascript" src="vendor/components/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- <script src="https://use.fontawesome.com/ff0a9012c4.js"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/recepta.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="img/vegan.png" alt="Logo" onclick="index()">
+        <nav>
+            <ul>
+                <li class="menu">
+                    <a class="menu-boto" href="#">Receptes</a>
+                    <ul class="menu-desp">
+                        <li><a href="#" onclick="cerca()">Arrossos</a></li>
+                        <li><a href="#" onclick="cerca()">Amanides</a></li>
+                        <li><a href="#" onclick="cerca()">Proteïnes</a></li>
+                        <li><a href="#" onclick="cerca()">Pasta</a></li>
+                        <li><a href="#" onclick="cerca()">Dolços</a></li>
+                        <li><a href="#" onclick="cerca()">Begudes</a></li>
+                        <li><a href="#" onclick="cerca()">Cremes</a></li>
+                        <li><a href="#" onclick="cerca()">Entrepans</a></li>
+                        <li><a href="#" onclick="cerca()">Pizzes</a></li>
+                        <li><a href="#" onclick="cerca()">Salses</a></li>
+                        <li><a href="#" onclick="cerca()">Sopes</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li class="menu">
+                    <a class="menu-boto" href="#">Categories</a>
+                    <ul class="menu-desp">
+                        <li><a href="#" onclick="cerca()">Dificultat</a></li>
+                        <li><a href="#" onclick="cerca()">Temps de preparació</a></li>
+                        <li><a href="#" onclick="cerca()">Temperatura</a></li>
+                        <li><a href="#" onclick="cerca()">Gust</a></li>
+                        <li><a href="#" onclick="cerca()">Sense gluten</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li class="menu">
+                    <a class="menu-boto" href="#">Ingredients</a>
+                    <ul class="menu-desp">
+                        <li><a href="#" onclick="cerca()">Arròs</a></li>
+                        <li><a href="#" onclick="cerca()">Civada</a></li>
+                        <li><a href="#" onclick="cerca()">Xocolata</a></li>
+                        <li><a href="#" onclick="cerca()">Fulles verdes</a></li>
+                        <li><a href="#" onclick="cerca()">Fruites</a></li>
+                        <li><a href="#" onclick="cerca()">Fruits secs</a></li>
+                        <li><a href="#" onclick="cerca()">Farines</a></li>
+                        <li><a href="#" onclick="cerca()">Hortalisses</a></li>
+                        <li><a href="#" onclick="cerca()">Begudes</a></li>
+                        <li><a href="#" onclick="cerca()">Llegums</a></li>
+                        <li><a href="#" onclick="cerca()">Bolets</a></li>
+                        <li><a href="#" onclick="cerca()">Soja</a></li>
+                        <li><a href="#" onclick="cerca()">Tofu</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <input type="text" id="cerca">
+        </nav>
+        <img id="login" src="img/login.png" alt="Login" title="Login" onclick="mostrar_login()">
+        <img id="logout" src="img/logout.png" alt="Logout" title="Logout" onclick="fer_logout()">
+    </header>
+    <main id="recepta">
+      <aside>
+        <div id="titol">
+          <h1>Macarrons gratinats amb formatge de patata</h1>
+        </div>
+        <div id="cap">
+          <p class="element">
+            <span>Tipus de plat </span>Pasta
+          </p>
+          <p class="element">
+            <!-- Fàcil
+            Mitjana
+            Difícil -->
+            <span>Dificultat </span>Fàcil
+          </p>
+          <p class="element">
+            <!-- -15 minuts
+            -30 minuts
+            -45 minuts
+            -1 hora
+            +1 hora -->
+            <span>Temps de preparació </span>-1 hora
+          </p>
+          <p class="element">
+            <!-- Calent
+            Del Temps
+            Fred
+            Fred i calent -->
+            <span>Temperatura </span>Calent
+          </p>
+          <p class="element">
+            <!-- Dolç
+            Salat
+            Picant -->
+            <span>Gust </span>Salat
+          </p>
+          <p class="element">
+            <span>Conté gluten </span>Sí
+          </p>
+          <div id="ingredients">
+            <h2 class="titol">Ingredients (per 3 persones)</h2>
+            <ul>
+                <li><span>300gr de macarrons</span></li>
+                <li><span>2 patates grans</span></li>
+                <li><span>1/2 ceba</span></li>
+                <li><span>1/2 albergínia</span></li>
+                <li><span>200gr. de pèssols cuits</span></li>
+                <li><span>250ml. de salsa de tomàquet fregit</span></li>
+                <li><span>150gr. de soja texturitzada fina</span></li>
+                <li><span>1 all</span></li>
+                <li><span>1 grapat de llevat nutricional</span></li>
+                <li><span>1/2 llimona</span></li>
+                <li><span>Aigua</span></li>
+                <li><span>Pebre negre</span></li>
+                <li><span>Orenga</span></li>
+                <li><span>All en pols</span></li>
+                <li><span>Sal</span></li>
+                <li><span>Oli d'oliva</span></li>
+                <li><span>* Una batedora de mà</span></li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      <article>
+          <div id="imatge">
+            <img src="img/recepta1.jpg" alt="Macarrons gratinats amb formatge de patata"
+            title="Macarrons gratinats amb formatge de patata">
+          </div>
+        <h3>Preparació</h3>
+        <div id="instruccions">
+            <p>1. Pelem i tallem les patates en trossos de mida mitjana-gran.</p>
+            <p>2. Les bullim amb molta aigua a foc lent.</p>
+            <p>3. Mentrestant, pelem i piquem la ceba. La posem a una paella a foc mig amb oli d'oliva.</p>
+            <p>4. Mentre es daura la ceba, pelem l'albergínia i la tallem a làmines molt fines.</p>
+            <p>5. Ara, posem els 150gr. de soja texturitzada fina amb aigua</p>
+            <p>6. D'altra banda, quan la ceba ja està sofregida, afegim l'albergínia en làmines i la saltegem. Si fos necessari, afegim més oli d'oliva.</p>
+            <p>7. Quan l'albergínia estigui preparada, afegim la soja. La soja ha d'haver xuclat l'aigua. En cas que no sigui així, treu l'aigua restant abans de posar-la a la paella</p>
+            <p>8. Saltegem dos minuts a foc mig.</p>
+            <p>9. Afegim els pèssols cuits, saltegem 2 minuts i afegim tota la salsa de tomàquet amb una mica d'all en pols, pebre negre, orenga de forma generosa i sal.</p>
+            <p>10. Barregem i mantenim a foc mig-baix durant 5 minuts, amb la salsa espessint-se lentament.</p>
+            <p>11. Apaguem i reservem.</p>
+            <p>12. Les patates ja haurien d'estar cuites. Les retirem de l'aigua i les volquem a un bol.</p>
+            <p>13. Ara, mentre preparem el formatge de patata vegà, coem la pasta.</p>
+            <p>14. Omplim una olla d'aigua i introduïm els macarrons. El temps de cocció variarà en funció del tipus de pasta, però l'haurieu de deixar una miqueta dura, perquè després s'haurà de gratinar al forn amb el formatge i no volem que estigui massa tova.</p>
+            <p>15. Deixem que la pasta es cogui i preparem el formatge: barregem les patates, l'all, un bon rajolí d'oli d'oliva, i aigua fins cobrir les patates a mitja alçada. Triturem molt bé, procurant que tot quedi homogeni.</p>
+            <p>16. Afegim el llevat, una mica de sal i tornem a triturar.</p>
+            <p>17. El provem. Si vols més aroma i gust a "formatge", afegeix més llevat.</p>
+            <p>18. Afegim el suc de la llimona i tornem a triturar. Ara la textura del formatge ha de ser sedosa i espesa. Assegura't de que no queden patates a trossos o l'all sencer.</p>
+            <p>19. La pasta ja estarà cuita. La treiem de l'olla i la volquem sobre la salsa bolonyesa vegana. Barregem, i si la vols més líquida, només has d'afegir una mica més de salsa de tomàquet.</p>
+            <p>20. Ho coloquem a una safata pel forn i ho cobrim amb el formatge de patata.</p>
+            <p>21. Engreixem amb una miqueta d'oli d'oliva i sal.</p>
+            <p>22. Introduïm al forn a 180 graus, gratinant pel damunt. Pel temps, en principi són suficients 15 minuts, però pot variar en funció del forn.</p>
+            <p>23. I ja ho tenim!</p>
+        </div>
+      </article>
+    </main>
+    <footer>
+        <p>2020 'Receptes veganes' per Víctor Aixalà</p>
+    </footer>
+  </body>
+</html>

@@ -112,9 +112,11 @@ function login(){
 function registre(){
     var registrat = true;
     var reg_email = $("#reg_email");
+    var reg_nom = $("#reg_nom");
     var reg_pass = $("#reg_pass");
     var reg_pass2 = $("#reg_pass2");
     var reg_email_val = $("#reg_email_val");
+    var reg_nom_val = $("#reg_nom_val");
     var reg_pass_val = $("#reg_pass_val");
     var reg_pass2_val = $("#reg_pass2_val");
 
@@ -127,6 +129,14 @@ function registre(){
     } else {
       $(reg_email_val).html("");
       $(reg_email).removeClass("invalid");
+    }
+
+    if(reg_nom.val() == ""){
+      $(reg_nom_val).html("Nom buit");
+      $(reg_nom).addClass("invalid");
+    } else {
+      $(reg_nom_val).html("");
+      $(reg_nom).removeClass("invalid");
     }
 
     if(reg_pass.val() == ""){

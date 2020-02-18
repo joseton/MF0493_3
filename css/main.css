@@ -4,15 +4,18 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
+
 body, html{
     height: 100%;
 }
+
 body{
     display: flex;
     flex-direction: column;
 }
+
 header{
-    border-bottom: 2px black solid;
+    /* border-bottom: 2px black solid; */
     background-color: #ddd;
     padding: 2px;
     display: flex;
@@ -20,72 +23,74 @@ header{
     align-items: center;
     width: 100%;
 }
+
 header span{
     display: none;
     color: white;
 }
+
 #logo{
     width: 15%;
     float: left;
     cursor: pointer;
 }
+
 nav{
     margin-left: 20px;
     width: 85%;
     padding: 15px;
     float: right;
 }
+
 nav ul {
-    text-align: center;
+    list-style: none;
     position: relative;
+    text-align: center;
     display: inline-block;
     margin-right: 50px;
 }
+
 main{
     flex: 1 0 auto;
     padding: 15px;
 }
+
 section{
     width: 70%;
     padding: 0 10px;
     float: left;
 }
+
 section p{
     text-align: justify;
 }
-h2{
-    padding-bottom: 1vh;
-}
+
 aside{
     width: 30%;
-    padding: 10px 20px;
+    padding: 20px;
     float: left;
-    text-align: center;
-    color: white;
     background-color: rgb(51,181,229);
 }
+
 aside>h4, aside>p{
     margin: 2.5vh;
 }
+
 footer{
-    height: 28px;
     text-align: center;
-    font-style: italic;
-    border-top: 2px black solid;
+    padding: 5px 0;
+    /* border-top: 2px black solid; */
     color: black;
     background-color: #ddd;
 }
+
 /* Caixa pel menú desplegable */
 .menu{
-    list-style-type: none;
     width: 151px;
     background-color: #ddd;
     padding: 10px 0;
 }
-/* Per alguna raó, mostra punts als elements dels ul */
-ul ul{
-    list-style-type: none;
-}
+
 /* Botó principal del menú */
 .menu-boto {
   background-color: #ddd;
@@ -95,6 +100,7 @@ ul ul{
   border: none;
   text-decoration: none;
 }
+
 /* Enllaços dintre del menú */
 .menu-desp {
   display: none;
@@ -106,6 +112,7 @@ ul ul{
   text-align: center;
   z-index: 1;
 }
+
 .menu-desp a {
   color: black;
   background-color: #f1f1f1;
@@ -114,14 +121,65 @@ ul ul{
   display: block;
   z-index: 1;
 }
-/* Mostra el menú desplegable al passar pel damunt del botó amb el ratolí */
-.menu:hover .menu-desp {
-    display: block;
-}
-/* Canvia el color de fons dels enllaços del menú al passar pel damunt amb el ratolí  */
+
 .menu-desp a:hover {
     background-color: #ddd;
 }
+
+/* Submenú de categories */
+#menuCategories>.menu-desp>.submenu {
+    position: relative
+}
+#menuCategories>ul>li>ul {
+    position: absolute;
+    left: 150px;
+    top: -28px;
+    /* display: none */
+}
+.submenu {
+	position: relative;
+}
+#menuCategories .menu-desp .opcions {
+    display: none;
+}
+#menuCategories .menu-desp .submenu:hover > .opcions {
+	display:block;
+}
+.opcions {
+  /* display: block; */
+  top: -28px;
+  left: 150px;
+  /* float: left; */
+  position: relative;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  text-align: center;
+  z-index: 1;
+}
+.opcions a {
+  color: black;
+  background-color: #f1f1f1;
+  padding: 5px 0;
+  text-decoration: none;
+  display: block;
+  z-index: 1;
+}
+/* Mostra el menú desplegable al passar pel damunt del botó amb el ratolí */
+/* .menu:hover .menu-desp {
+    display: block;
+}
+.menu-desp:hover .submenu-desp {
+    display: block;
+} */
+/* Canvia els colors de fons dels enllaços del menú al passar pel damunt amb el ratolí  */
+.opcions li a:hover {
+    background-color: #ddd;
+}
+/* .submenu-desp a:hover {
+    background-color: #ddd;
+} */
+
+
 #cerca{
     background-color: #ddd;
     color: black;
@@ -132,15 +190,18 @@ ul ul{
     border-bottom: 1px solid black;
     margin-right: 5px;
 }
+
 #cerca:focus{
     outline: none;
 }
+
 #login{
     position: absolute;
     right: 10px;
     top: 20px;
     cursor: pointer;
 }
+
 #logout{
     display: none;
     position: relative;
@@ -148,10 +209,12 @@ ul ul{
     top: 20px;
     cursor: pointer;
 }
+
 .invalid{
     border: 1px solid #900;
     background-color: #fdd;
 }
+
 .error{
     color: #900;
 }
