@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,120 +17,120 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <title>MyGymHome</title>
-  </head>
-  <body>
+</head>
+<body>
 
-   <!--  =========== Navbar  =========== -->
+    <!--  =========== Navbar  =========== -->
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="#">My Gym </a>
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="login.html">LogIn/Register <span class="sr-only">(current)</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-   <!--  =========== End Navbar  =========== -->
-  <!--  =========== Page Content  =========== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">My Gym </a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="login.html">LogIn/Register <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--  =========== End Navbar  =========== -->
+    <!--  =========== Page Content  =========== -->
 
-  <main>
-      <form id="registre" novalidate>
-          <h3>Register</h3>
-          <label for="reg_email">Email</label>
-          <input type="email" id="reg_email" name="reg_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-          <span class="error"></span>
-          <label for="reg_pass">password</label>
-          <input type="password" id="reg_pass" name="reg_pass"minlength="6">
-          <span class="error"></span>
-          <label for="reg_r_pass">Repeat Password</label>
-          <input type="password" id="reg_r_pass" name="reg_r_pass">
-          <span class="error"></span>
-          <input type="submit" value="Register">
-          <p>¿Are you allready registered <span id="mostrar_login">HERE</span></p>
-          <div id="dataResp1">
+    <main>
+        <form id="registre" novalidate>
+            <h3>Register</h3>
+            <label for="reg_email">Email</label>
+            <input type="email" id="reg_email" name="reg_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            <span class="error"></span>
+            <label for="reg_pass">password</label>
+            <input type="password" id="reg_pass" name="reg_pass"minlength="6">
+            <span class="error"></span>
+            <label for="reg_r_pass">Repeat Password</label>
+            <input type="password" id="reg_r_pass" name="reg_r_pass">
+            <span class="error"></span>
+            <input type="submit" value="Register">
+            <p>¿Are you allready registered <span id="mostrar_login">HERE</span></p>
+            <div id="dataResp1">
 
-          </div>
-      </form>
+            </div>
+        </form>
 
-      <form id="login" novalidate>
-          <h3>Login</h3>
-          <label for="lg_email">Email</label>
-          <input type="email" id="lg_email" name="lg_email">
-          <span class="error"></span>
-          <label for="lg_pass">password</label>
-          <input type="password" id="lg_pass" name="lg_pass">
-          <span class="error"></span>
-          <input type="button" value="Enter">
-          <p>Don't Have an Account? Click Here <span id="mostrar_reg">HERE</span></p>
-          <div id="dataResp2">
-
-
-          </div>
-      </form>
-  </main>
-
-   <!--============= End Page Content  =========== -->
-   <!--=============       Footer      ===========  -->
-   <footer>
-       <div class="container">
-           <section style="height:80px;"></section>
-       	<div class="row" style="text-align:center;">
-       		<!--    		Bootstrap Dark Footer UI  		 -->
-       	</div>
-           <footer class="footer-bs">
-               <div class="row">
-               	<div class="col-md-3 footer-brand animated fadeInLeft">
-                   	<h2>Logo</h2>
-                       <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
-                       <p>© 2014 BS3 UI Kit, All rights reserved</p>
-                   </div>
-               	<div class="col-md-4 footer-nav animated fadeInUp">
-                   	<h4>Menu —</h4>
-                   	<div class="col-md-6">
-                           <ul class="list">
-                               <li><a href="#">About Us</a></li>
-                               <li><a href="#">Contacts</a></li>
-                               <li><a href="#">Terms & Condition</a></li>
-                               <li><a href="#">Privacy Policy</a></li>
-                           </ul>
-                       </div>
-                   </div>
-               	<div class="col-md-2 footer-social animated fadeInDown">
-                   	<h4>Follow Us</h4>
-                   	<ul>
-                       	<li><a href="#">Facebook</a></li>
-                       	<li><a href="#">Twitter</a></li>
-                       	<li><a href="#">Instagram</a></li>
-                       	<li><a href="#">RSS</a></li>
-                       </ul>
-                   </div>
-               	<div class="col-md-3 footer-ns animated fadeInRight">
-                   	<h4>Newsletter</h4>
-                       <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
-                       <input type="email" name="" value="" placeholder="send">
-                       <input type="button" id="button"   name="" value="Send">
-                   </div>
-               </div>
-           </footer>
-           <section style="text-align:center; margin:10px auto;"><p>Designed by <a href="http://enfoplus.net">Vicente Mateu</a></p></section>
-
-       </div>
-
-   </footer>
-     <!-- Optional JavaScript -->
-     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <form id="login" novalidate>
+            <h3>Login</h3>
+            <label for="lg_email">Email</label>
+            <input type="email" id="lg_email" name="lg_email">
+            <span class="error"></span>
+            <label for="lg_pass">password</label>
+            <input type="password" id="lg_pass" name="lg_pass">
+            <span class="error"></span>
+            <input type="button" value="Enter">
+            <p>Don't Have an Account? Click Here <span id="mostrar_reg">HERE</span></p>
+            <div id="dataResp2">
 
 
-   </body>
- </html>
+            </div>
+        </form>
+    </main>
+
+    <!--============= End Page Content  =========== -->
+    <!--=============       Footer      ===========  -->
+    <footer>
+        <div class="container">
+            <section style="height:80px;"></section>
+            <div class="row" style="text-align:center;">
+                <!--    		Bootstrap Dark Footer UI  		 -->
+            </div>
+            <footer class="footer-bs">
+                <div class="row">
+                    <div class="col-md-3 footer-brand animated fadeInLeft">
+                        <h2>Logo</h2>
+                        <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
+                        <p>© 2014 BS3 UI Kit, All rights reserved</p>
+                    </div>
+                    <div class="col-md-4 footer-nav animated fadeInUp">
+                        <h4>Menu —</h4>
+                        <div class="col-md-6">
+                            <ul class="list">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contacts</a></li>
+                                <li><a href="#">Terms & Condition</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 footer-social animated fadeInDown">
+                        <h4>Follow Us</h4>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">RSS</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 footer-ns animated fadeInRight">
+                        <h4>Newsletter</h4>
+                        <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+                        <input type="email" name="" value="" placeholder="send">
+                        <input type="button" id="button"   name="" value="Send">
+                    </div>
+                </div>
+            </footer>
+            <section style="text-align:center; margin:10px auto;"><p>Designed by <a href="http://enfoplus.net">Vicente Mateu</a></p></section>
+
+        </div>
+
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
