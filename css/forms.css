@@ -39,7 +39,7 @@ input:invalid, .invalid{
     border: 1px solid #900 !important;
     background-color: #fdd;
 }
-span[class|=error], span[class|=vacio]{
+span[class="errorg"], span[class="errorl"]{
   color: rgb(255, 0, 0);
   margin: 2px 0;
   text-align: center;

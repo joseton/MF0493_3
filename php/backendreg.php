@@ -1,6 +1,6 @@
 <?php
     // temporizador 2sec
-    sleep(2);
+    sleep(10);
     // si existe la petición por método POST
     if(isset($_POST)){
 

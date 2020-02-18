@@ -1,14 +1,15 @@
 window.onload = function() {
     // validació del formulari de registre amb API de validació d'HTML5
-    var registre = document.getElementsByTagName("form")[0];
+    var registre = document.getElementById("registro");
     var nombre = document.getElementById("nombre");
     var apellidos = document.getElementById("apellidos");
     var reg_email = document.getElementById("mail");
     var reg_pass = document.getElementById("psw");
     var reg_r_pass = document.getElementById("psw2");
-    var error = document.getElementsByClassName("error");
+    var error = document.getElementsByClassName("errorg");
 
-    login.style.display = "none";
+    var boto_reg = document.getElementById("regsubmit");
+    var boto_log = document.getElementById("logsubmit");
 
     // validació per al nom
     nombre.addEventListener("keyup", function(){
@@ -20,7 +21,7 @@ window.onload = function() {
 
     // validació per als cognoms
     apellidos.addEventListener("keyup", function(){
-        if(apellidos.value == reg_pass.value){
+        if(apellidos.value !== ""){
             error[1].innerHTML = "";
             apellidos.className = "";
         }
@@ -50,15 +51,14 @@ window.onload = function() {
         }
     }, false);
 
-    registre.addEventListener("submit", function(event){
-
+    boto_reg.addEventListener("click", function(event){
         if(nombre.value == ""){
-            error[0].innerHTML = "Necesitamos conocer tu nombre<br>";
+            error[0].innerHTML = "Rellena el campo nombre<br>";
             nombre.className = "invalid";
         }
 
         if(apellidos.value == ""){
-            error[1].innerHTML = "Necesitamos conocer tus apellidos<br>";
+            error[1].innerHTML = "Rellena el campo apellidos<br>";
             apellidos.className = "invalid";
         }
 
@@ -74,7 +74,7 @@ window.onload = function() {
             error[3].innerHTML = "Rellena el campo contraseña<br>";
             reg_pass.className = "invalid";
         } else if(!reg_pass.validity.valid){
-            error[3].innerHTML = "La contraseña es demasiado corta<br>";
+            error[3].innerHTML = "La contraseña debe tener 6 ó más caracteres<br>";
             reg_pass.className = "invalid";
         }
 
@@ -86,10 +86,14 @@ window.onload = function() {
             reg_r_pass.className = "invalid";
         }
 
-        if (reg_email.className == "invalid"
+        if (nombre.className == "invalid"
+        ||  apellidos.className == "invalid"
+        ||  reg_email.className == "invalid"
         ||  reg_pass.className == "invalid"
         ||  reg_r_pass.className == "invalid"){
-            event.preventDefault();
+
+        event.preventDefault();
+
         } else {
 
             // recojo la caja de mensajes de respuesta
@@ -127,18 +131,18 @@ window.onload = function() {
             // send: envia el formulario
             req.send(formData);
             // para el evento "submit". Obligatorio para que el formulario con Ajax funcione bien.
-            event.preventDefault();
+            // event.preventDefault();
         }
       }, false);
 };
 
 $(document).ready(function(){
     // validació del formulari de login amb jQuery
-    var boton = $("input[type=submit]");
+    var boton = $("#logsubmit");
     var lg_email = $("#logmail");
     var lg_pass = $("#logpsw");
-    var errorEmail = $(".error").get(5);
-    var errorPass = $(".error").get(6);
+    var errorEmail = $(".errorl").get(0);
+    var errorPass = $(".errorl").get(1);
 
     // validació del correu electrònic
     lg_email.on("keyup", function(){
@@ -192,9 +196,8 @@ $(document).ready(function(){
                           $("#resultsl").html('Error en la comunicación con el servidor');
                       }
                   });
-                  event.preventDefault();
             });
-        }
+        }else{event.preventDefault()}
 
     });
 });
@@ -209,7 +212,12 @@ function mostrar_reg(){
     $("#registro").fadeIn();
 }
 
-function email_validar(email){
+function email_validar(mail){
     var patt = new RegExp(/^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/);
-    return patt.test(email);
+    return patt.test(mail);
+}
+
+function psw_validar(psw){
+    var pats = new RegExp(/^.{6,}$/);
+    return pats.test(psw)
 }

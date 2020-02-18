@@ -4,28 +4,30 @@
   <meta charset="utf-8">
   <!-- Questrial & Roboto Google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Questrial|Roboto&display=swap" rel="stylesheet">
-  <title>Proyecto Frontend</title>
+  <script src="https://use.fontawesome.com/ff0a9012c4.js"></script>
+  <title>Proyecto GroupAdvisor</title>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/forms.css">
   <script type="text/javascript" src="vendor/components/jquery/jquery.min.js"></script>
   <!-- jQuery Modal -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <script type="text/javascript" src="js/index.js"></script>
   <script type="text/javascript" src="js/cookies.js"></script>
-  <script type="text/javascript" src="js/validations.js"></script>
+  <script type="text/javascript" src="js/login_reg.js"></script>
 </head>
 <body>
-  <div class="fijo_lateral_izq">
+  <div class="fijo_lateral_izq col-2 col-s-3">
     <img src="img/logo01.png" id="logo">
     <input type="text" id="searchbox"><img src="img/lupa.png" width="20px" vertical-align="top">
-    <input type="submit" name="register" value="Regístrate" id="button" onclick="window.location.href='login_reg.html'">
-    <input type="submit" name="login" value="Entra" id="logbutton" onclick="goToLogin()">
-    <div id="social"><img src="img/instagram_icon.png"><img src="img/linkedin_icon.png"></div>
+    <!-- <input type="submit" name="register" value="Regístrate" id="button" href="#registro" rel="modal:open"> -->
+    <a href="#registro" id="regbutton" rel="modal:open">Regístrate</a>
+    <!-- <input type="submit" name="login" value="Entra" id="logbutton" href="#login" rel="modal:open"> -->
+    <a href="#login" id="logbutton" rel="modal:open">Entra</a>
   </div>
-  <div class="main">
+  <div class="main col-8 col-s-9">
     <div class="topnav">
       <nav id="menu">
         <ul>
@@ -70,10 +72,56 @@
             <a href="#" rel="modal:close">Cerrar</a>
           </div>
           <a href="#transporte" rel="modal:open">Transporte</a>
-
         </nav>
+
+        <!-- ***BURGER*** -->
+
         <div class="burguer_menu">
           <img src="img/burguer.png" alt="menu" id="burguer">
+          <nav id="menuburg1">
+            <ul>
+              <li>
+                <a href="#">Destino</a>
+                <ul>
+                  <li><a href="Barcelona">Barcelona</a></li>
+                  <li><a href="Girona">Girona</a></li>
+                  <li><a href="Madrid">Madrid</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Fechas</a>
+                <ul>
+                  <li>Desde</li>
+                  <li><input type="date" class="dat" name="fecha_desde"></li>
+                  <li>Hasta</li>
+                  <li><input type="date" class="dat" name="fecha_hasta"></li>
+                </ul>
+              </li>
+              <li>
+              </ul>
+          </nav>
+          <nav id="menuburg2">
+              <div id="actividades" class="modal">
+                <p>Estamos preparando las más originales actividades en grupo.<br>Te avisaremos en cuanto tengamos la oferta lista.<br><br></p>
+                <a href="#" rel="modal:close">Cerrar</a>
+              </div>
+              <a href="#actividades" rel="modal:open">Actividades</a>
+              <div id="alojamiento" class="modal">
+                <p>Estamos recopilando los alojamientos más interesantes para tu grupo.<br>Te avisaremos en cuanto tengamos la oferta lista.<br><br></p>
+                <a href="#" rel="modal:close">Cerrar</a>
+              </div>
+              <a href="#alojamiento" rel="modal:open">Alojamiento</a>
+              <div id="gastronomia" class="modal">
+                <p>Estamos cerrando acuerdos con restaurantes para grupos y caterings.<br>Te avisaremos en cuanto tengamos la oferta lista.<br><br></p>
+                <a href="#" rel="modal:close">Cerrar</a>
+              </div>
+              <a href="#gastronomia" rel="modal:open">Gastronomía</a>
+              <div id="transporte" class="modal">
+                <p>Estamos cerrando acuerdos con transportistas para grupos.<br>Te avisaremos en cuanto tengamos la oferta lista.<br><br></p>
+                <a href="#" rel="modal:close">Cerrar</a>
+              </div>
+              <a href="#transporte" rel="modal:open">Transporte</a>
+          </nav>
           <div class="lang">
             <a href="ES">ES</a>
             <a href="EN">EN</a>
@@ -87,17 +135,68 @@
 
 
     </div>
-    <div class="ads_banner">
+    <div class="ads_banner_v col-2">
       <div id="skyscraper1">
         <p>Aquí su publicidad</p>
       </div>
     </div>
-    <div class="footer">
-      <div class="footer_menu">
-        <a href="legal.html">Texto legal</a>
-        <p display="inline">Todos los derechos reservados Sensaciones a la Carta, s.l.©</p>
+    <div class="ads_banner_h col-s-12">
+      <div id="skyscraper1">
+        <p>Aquí su publicidad</p>
       </div>
     </div>
+
+
+    <div class="footer">
+      <div class="footer_menu">
+        <div id="social"><img src="img/instagram_icon.png"><img src="img/linkedin_icon.png"></div>
+        <a href="legal.html">Texto legal</a>
+        <p display="inline">Sensaciones a la Carta, s.l.©</p>
+      </div>
+    </div>
+
+    <!-- MODALS LOGIN Y REGISTRO -->
+    <form id="registro" novalidate method="post" class="modal">
+        <h3>Registro personal</h3>
+        <label for="nombre">Tu nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <span class="errorg"></span>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos">
+        <span class="errorg"></span>
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="mail">
+        <span class="errorg"></span>
+        <label for="psw">Contraseña:</label>
+        <input type="password" id="psw" name="psw">
+        <span class="errorg"></span>
+        <label for="psw2">Repite la contraseña:</label>
+        <input type="password" id="psw2" name="psw2">
+        <span class="errorg"></span>
+        <input type="submit" id="regsubmit" value="Enviar">
+        <div class="toggle">
+          <p>¿Ya te has registrado? Haz click </p><a id="reg" onclick="mostrar_login()">aquí</a>
+        </div>
+        <div id="resultsr"></div>
+    </form>
+    <form id="login" novalidate method="post" class="modal">
+        <h3>Entra con tu email</h3>
+        <label for="logmail">Email:</label>
+        <input type="email" id="logmail" name="logmail">
+        <span class="errorl"></span>
+        <label for="logpsw">Contraseña:</label>
+        <input type="password" id="logpsw" name="logpsw">
+        <span class="errorl"></span>
+        <input type="submit" id="logsubmit" value="Enviar">
+        <div class="toggle">
+          <p>¿Aún no te has registrado? Haz click </p><a onclick="mostrar_reg()">aquí</a>
+        </div>
+        <div id="resultsl"></div>
+    </form>
+
+
+
+
 
   </body>
   </html>
