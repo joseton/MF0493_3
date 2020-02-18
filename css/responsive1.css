@@ -56,7 +56,7 @@ header nav ul{
       width:100%;
 
 .p1{
-  width: 100;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
 }
@@ -86,11 +86,10 @@ header nav ul{
     .negro{
       width: 100%;
     }
-    
-    img.blanco{
-      width: 100%;
-    }
+
+
     form{
       margin: 0,auto;
+      width: 100%;
     }
 }

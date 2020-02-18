@@ -11,8 +11,6 @@
     <script type="text/javascript" src="js/validations.js"></script>
     <script src="https://kit.fontawesome.com/056db44d2b.js" crossorigin="anonymous"></script>
 
-
-
     <title>Restaurante Los Tres Egipcios</title>
 </head>
 <body>
@@ -29,25 +27,25 @@
 
                 <ul>
                     <li><a href="#Inicio">Conocenos</a></li>
-                    <li><a href="#registrate" onclick="display()">Registrate </a></li>
+                    <li><a href="#registrate" onclick="display()">Registrate/Reservas</a></li>
                     <li><a href="#LaCarta" >La Carta</a></li>
-                    <li><a href="#Contactanos">Donde estamos</a></li>
                     <li><a href="#Testimonios">Testimonios</a></li>
+                    <li><a href="#Contactanos">Donde estamos</a></li>
                 </ul>
             </div>
         </nav>
 
 
 
-    </div>
+            </div>
 </header>
 <div class="clearfix" ></div>
 
 <div class ="clearfix">
     <main>
-        <video class="video" src="rest.mp4" autoplay muted loop></video>
         <h5 id="registrate">Registro/Login</h5>
         <form id="registre" novalidate>
+            <h3>Gestiona tu reserva</h3>
             <h5>REGISTRO</h5>
             <label for="reg_email">Email</label>
             <input type="email" id="reg_email" name="reg_email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
@@ -64,6 +62,7 @@
         </form>
 
         <form id="login" novalidate>
+            <h3>Inicia Sesion</h3>
             <h5>LOGIN</h5>
             <label for="lg_email">Email</label>
             <input type="email" id="lg_email" name="lg_email">
@@ -76,32 +75,23 @@
             <div id="dataResp_login"></div>
 
         </form>
-
-        <h1 id="Inicio" >Conocenos</H1>
+        <section class="cono">
+        <h1 id="Inicio" >Conocenos</h1>
+            <video class="video" src="rest.mp4" autoplay muted loop></video>
             <div class="flexbox-container">
                 <div class="p1">
-                    <p> En este espacio pequeño y acogedor del barrio ajuytr es donde ahora
-                        transmite, junto a su equipo, toda su experiencia y buen hacer, disfruta
-                        creando recetas para sus clientes y vive su pasión por la hostelería.</p>
-                        <p> Te hablamos de un restaurante en tgerr artesanal,  donde lo que buscamos
-                            desde que entras por la puerta, es que te sientas cómodo y vivas una experiencia
-                            gastronómica placentera para tu gusto, olfato, oído, vista y tacto.</p>
-                        </div>
-                        <div class="p1">
-                            <p> Te hablamos de un restaurante en fdsgfdf artesanal,  donde lo que buscamos
-                                desde que entras por la puerta, es que te sientas cómodo y vivas una experiencia
-                                gastronómica placentera para tu gusto, olfato, oído, vista y tacto.</p>
-
-                                Nos gusta que estés aquí, bienvenido a Los Tres egipcios..
-                            </div >
-                        </div>
-                        <div class ="clearfix">
-                        </div>
-                    </div>
+            <p> En este espacio pequeño y acogedor del barrio ajuytr es donde ahora
+                transmite, junto a su equipo, toda su experiencia y buen hacer.</p>
                 </div>
-                <div class ="clearfix"></div>
+                <div class="p1">
+                    <p> Te hablamos de un restaurante en fdsgfdf artesanal,  donde lo que buscamos
+                    desde que entras por la puerta, es que te sientas cómodo y vivas una experiencia
+                    gastronómica placentera .</p>
+                    </div >
+            </div>
+                </section>
+                    <div class ="clearfix">
 
-                <div class ="clearfix"></div>
                 <h1 id="LaCarta" >LaCarta</h1>
                 <div class="galeria">
                     <div class="b">
@@ -236,11 +226,18 @@
                                 <div class="pie">
                                 <p>C/ la porra fresca, 5. 086954 castefa
                                 (Junto al Palacio de los Deportes)</p>
-                                <p>e. info @ restaurantelostresegipcios.com</p>
                                 <p>m. 675 11 11 36</p>
-                                <p>Los clientes nos recomiendan en                                                                               TripAdvisor</p>
-                                <p> © 2019 Restaurante Los tres Egipcios</p>
-                                </div>
+                                <p>Los clientes nos recomiendan en TripAdvisor</p>
+                                 <p>© 2019 Restaurante Los tres Egipcios</p>
+                                   </div>
+                                <div class="clearfix"></div>
+                                <div id="redessociales">
+          <a  href="https://www.facebook.com/restaurantelostresegipcios"><i class="fab fa-facebook"></i></a>
+          <a  href="https://www.twitter.com/restaurantelostresegipcios"><i class="fab fa-twitter-square"></i></a>
+          <a  href="#"><i class="fab fa-instagram-square"></i></a>
+          <a  href="#"><i class="fab fa-youtube"></i></a>
+          <a  href="#"><i class="fab fa-vimeo"></i></a>
+          </div>
                                 </footer>
                                 </body>
                                 </html>
