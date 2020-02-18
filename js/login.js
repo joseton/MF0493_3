@@ -55,25 +55,25 @@ function login(){
     var lg_pass_val = $("#lg_pass_val");
 
     if(lg_email.val() == ""){
-      $(lg_email_val).html("Correu electrònic buit");
-      $(lg_email).addClass("invalid");
+        $(lg_email_val).html("Correu electrònic buit");
+        $(lg_email).addClass("invalid");
     } else if(!email_validar(lg_email.val())){
-      $(lg_email_val).html("El correu electrònic té un format incorrecte");
-      $(lg_email).addClass("invalid");
+        $(lg_email_val).html("El correu electrònic té un format incorrecte");
+        $(lg_email).addClass("invalid");
     } else {
-      $(lg_email_val).html("");
-      $(lg_email).removeClass("invalid");
+        $(lg_email_val).html("");
+        $(lg_email).removeClass("invalid");
     }
 
     if(lg_pass.val() == ""){
-      $(lg_pass_val).html("Paraula de pas buida");
-      $(lg_pass).addClass("invalid");
+        $(lg_pass_val).html("Paraula de pas buida");
+        $(lg_pass).addClass("invalid");
     } else if(lg_pass.val().length < 6){
-      $(lg_pass_val).html("La paraula de pas és massa curta");
-      $(lg_pass).addClass("invalid");
+        $(lg_pass_val).html("La paraula de pas és massa curta");
+        $(lg_pass).addClass("invalid");
     } else {
-      $(lg_pass_val).html("");
-      $(lg_pass).removeClass("invalid");
+        $(lg_pass_val).html("");
+        $(lg_pass).removeClass("invalid");
     }
 
     if ($(lg_email_val).html() == ""
@@ -121,47 +121,47 @@ function registre(){
     var reg_pass2_val = $("#reg_pass2_val");
 
     if(reg_email.val() == ""){
-      $(reg_email_val).html("Correu electrònic buit");
-      $(reg_email).addClass("invalid");
+        $(reg_email_val).html("Correu electrònic buit");
+        $(reg_email).addClass("invalid");
     } else if(!email_validar(reg_email.val())){
-      $(reg_email_val).html("El correu electrònic té un format incorrecte");
-      $(reg_email).addClass("invalid");
+        $(reg_email_val).html("El correu electrònic té un format incorrecte");
+        $(reg_email).addClass("invalid");
     } else {
-      $(reg_email_val).html("");
-      $(reg_email).removeClass("invalid");
+        $(reg_email_val).html("");
+        $(reg_email).removeClass("invalid");
     }
 
     if(reg_nom.val() == ""){
-      $(reg_nom_val).html("Nom buit");
-      $(reg_nom).addClass("invalid");
+        $(reg_nom_val).html("Nom buit");
+        $(reg_nom).addClass("invalid");
     } else {
-      $(reg_nom_val).html("");
-      $(reg_nom).removeClass("invalid");
+        $(reg_nom_val).html("");
+        $(reg_nom).removeClass("invalid");
     }
 
     if(reg_pass.val() == ""){
-      $(reg_pass_val).html("Paraula de pas buida");
-      $(reg_pass).addClass("invalid");
+        $(reg_pass_val).html("Paraula de pas buida");
+        $(reg_pass).addClass("invalid");
     } else if(reg_pass.val().length < 6){
-      $(reg_pass_val).html("La paraula de pas és massa curta");
-      $(reg_pass).addClass("invalid");
+        $(reg_pass_val).html("La paraula de pas és massa curta");
+        $(reg_pass).addClass("invalid");
     } else {
-      $(reg_pass_val).html("");
-      $(reg_pass).removeClass("invalid");
+        $(reg_pass_val).html("");
+        $(reg_pass).removeClass("invalid");
     }
 
     if(reg_pass2.val() == ""){
-      $(reg_pass2_val).html("Paraula de pas buida");
-      $(reg_pass2).addClass("invalid");
+        $(reg_pass2_val).html("Paraula de pas buida");
+        $(reg_pass2).addClass("invalid");
     } else if(reg_pass2.val().length < 6){
-      $(reg_pass2_val).html("La paraula de pas és massa curta");
-      $(reg_pass2).addClass("invalid");
+        $(reg_pass2_val).html("La paraula de pas és massa curta");
+        $(reg_pass2).addClass("invalid");
     } else if (reg_pass.val() != reg_pass2.val()) {
-      $(reg_pass2_val).html("Les paraules de pas no coincideixen!");
-      $(reg_pass2).addClass("invalid");
+        $(reg_pass2_val).html("Les paraules de pas no coincideixen!");
+        $(reg_pass2).addClass("invalid");
     } else {
-      $(reg_pass2_val).html("");
-      $(reg_pass2).removeClass("invalid");
+        $(reg_pass2_val).html("");
+        $(reg_pass2).removeClass("invalid");
     }
 
     if ($(reg_email_val).html() == ""
