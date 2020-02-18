@@ -11,14 +11,16 @@
 .imagenfondo{
     background-image: url("../img/images92.jpg");
     background-attachment: fixed;
+    background-size: auto;
     overflow: hidden;
-    height: 575px;
+    width: 100%;
+    height: 560px;
 }
 
+
 .menu{
-    opacity: 0.95;
+    opacity: 1;
     position: relative;
-    /* display: block; */
     background-attachment: fixed;
 }
 
@@ -31,12 +33,79 @@
 	top:0;
 	/* max-width:1000px; */
 	width: 100% ;
-    padding: 20px;
+    padding: 30px;
     /* el box shadow es para darle sombra al menu navbar */
 	box-shadow:0px 4px 3px rgba(0,0,0,.5);
-    margin-left: -20px
+    margin-left: -30px;
+    opacity: 0.5;
 }
-/* ____________________________________________________________________________________________________________________ */
+
+.menu-fixed:hover {
+    opacity: 1;
+}
+
+
+/* SUBMENU DEL NAVBAR_______________________________________________________________________________ */
+.subnav{
+    float: left;
+    overflow: hidden;
+
+}
+
+.subnav .subnavbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: grey;
+  /* padding-top: 4px;
+  padding-bottom: 20px; */
+  background-color: white;
+  font-family: sans-serif;
+  margin: 0;
+
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: white;
+  color: #cfbf13;
+  cursor: pointer;
+  font-weight: bold;
+
+
+}
+
+.subnav-content {
+  display: none;position: absolute;
+  margin-left: -60px;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
+}
+
+
+.subnav-content a {
+  float: left;
+  /* display: flex;
+  flex-direction: column; */
+  color: #cfbf13;
+  text-decoration: none;
+  /* margin-top: 43px; */
+  margin-top: 43px;
+
+}
+
+.subnav-content a:hover {
+
+  background-color: #cfbf13;
+  color: white;
+  /* margin-top: 43px; */
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+/* ________________________________________________________________________________________________________ */
 
 
 
@@ -59,19 +128,14 @@ h4{
 
 
 } */
-/* _______________________________________________________________________________________________________________________ */
+/* _________________________________________________________________________________________________________ */
 
 body header{
     font-size: 20px;
     color: grey;
-    padding: 20px;
+    padding: 30px;
 }
 
-
-main{
-    /* background-image: linear-gradient(to right, #c6ffdd, #cee5a7, #e1c67d, #f3a06e, #f7797d);; */
-
-}
 
 header nav ul{
     display: flex;
@@ -81,7 +145,7 @@ header nav ul{
 ul li a{
     color: grey;
     text-decoration: none;
-    padding: 30px 24px;
+    /* padding: 30px 24px; */
     font-family: sans-serif;
     letter-spacing: 2px;
     vertical-align: middle;
@@ -94,11 +158,11 @@ ul li a:hover{
 }
 
 ul li {
-    padding: 7px;
+    /* padding: 7px; */
     list-style: none;
 }
 
-/* ESTILOS DE SABIAS QUE.._______________________________________________________________ */
+/* ESTILOS DE(HISTORIA) SABIAS QUE.._______________________________________________________________ */
 #imghistoria{
     opacity: 0.95;
     position: absolute;
@@ -122,7 +186,7 @@ section div h1{
     font-weight: bold;
     font-size: 20px;
     font-family: 'Roboto Mono', monospace;
-
+    margin-top: 25px;
  }
 
 main section #nuestrosproductos h1{
@@ -133,75 +197,59 @@ main section #nuestrosproductos h1{
     top: 65px;
 }
 
-/* ESTOS SON LOS ESTILOS DE NUESTROS PRODUCTOS______________________________________________________________________ */
+/* ESTOS SON LOS ESTILOS DE NUESTROS PRODUCTOS___________________________________________________________ */
 
 .contenedor_productos{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 100px;
+
+}
+
+.producto{
+    width: 33.3%;
+    text-align: center;
+}
+
+
+.imagentitulo{
+    margin-bottom: 20px;
 }
 
 #nuestrosproductos p{
-    font-size: 15px;
+    /* font-size: 15px; */
+    font-size: 90%;
     font-family: sans-serif;
-    color: #cfbf13;
+    color: black;
     border-color: black;
-    padding: 10px;
     text-align: center;
     right: 10px;
+    background-color: white;
+    padding: 10px;
+    padding-right: 10px;
+    border: 2px solid black;
+    max-width: 65%;
+    margin-top: 25px;
 }
 
-#nuestrosproductos img:hover{
-
+#nuestrosproductos p:hover{
+    /* font-size: 15px; */
+    font-size: 90%;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    right: 10px;
+    background-color: black;
+    padding: 10px;
+    padding-right: 10px;
+    border: 2px solid black;
+    max-width: 65%;
+    cursor: pointer;
 }
 
-#nuestrosproductos img:hover{
+
+div .contenedor_productos img:hover{
     cursor: pointer;
     -webkit-transform: scale(1.1,1.1);
-}
-
-/* ESTILOS DEL FOOTER_____________________________________________________________________ */
-footer{
-    background-color: #cfbf13;
-    font-family: sans-serif;
-    width: 100%;
-    height: 5%;
-    bottom: 0;
-    padding: 15px;
-}
-
-footer span{
-    color: white;
-    font-size: 15px;
-    margin: 8px;
-}
-
-footer span:hover{
-    color: black;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-footer .footerleft{
-    display: flex;
-    justify-content: flex-start;
-}
-
-footer .footerright{
-    display: flex;
-    justify-content: flex-end;
-}
-
- input[type=search]{
-    padding: 10px;
-    outline: 0;
-    border: 0px;
-    margin: 12px;
-}
-
-.footerright img{
-    cursor: pointer;
-    margin: 12px;
 
 }

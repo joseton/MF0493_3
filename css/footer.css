@@ -1,0 +1,64 @@
+/* ESTILOS DEL FOOTER_____________________________________________________________________ */
+footer{
+    background-color: #cfbf13;
+    font-family: sans-serif;
+    width: 100%;
+    /* height: 5%; */
+    bottom: 0;
+    padding: 15px;
+}
+
+footer span{
+    color: white;
+    font-size: 15px;
+    margin: 8px;
+}
+
+footer span:hover{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer .footerleft{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #cfbf13;
+}
+
+footer .footerright{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #cfbf13;
+}
+
+footer .footerright img{
+    opacity: 0.5;
+    width: 20px;
+    height: 20px;
+}
+
+footer .footerright img:hover{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: white;
+    opacity: 1;
+}
+
+
+input[type=search]{
+    padding: 10px;
+    outline: 0;
+    border: 0px;
+    margin: 12px;
+    height: 20px;
+}
+
+.footerright img{
+    cursor: pointer;
+    margin: 12px;
+}
+/* _____________________________________________________________________________________________ */

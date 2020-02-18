@@ -1,16 +1,19 @@
 
 /* AQUI APLICAMOS LOS ESTILOS DEL SLIDER(IMAGENES SLIDER) */
 
+/* SLIDER 1_____________________________________________________________
+(HECHO SIN JS SIN BOTONES, LAS IMAGENES SE PASAN SOLAS TRAS UNOS SEGUNDOS) */
 
-.mask{
+
+/* .mask{
     display: block;
     width: 100%;
     height: 500px;
     margin: 0px auto;
     overflow: hidden;
-    /* border: 1px solid #cfbf13; */
-    /* box-shadow: 18px 10px 18px #cfbf13; */
     box-shadow: 2px 4px 60px 32px rgba(207,191,19,0.32);
+    margin-bottom: 100px;
+
 
 }
 
@@ -20,6 +23,7 @@
     animation-name: slider;
     animation-duration: 20s;
     position: relative;
+
 }
 .slide{
     float: left;
@@ -28,6 +32,7 @@
     background-size: cover;
     background-position: center;
 }
+
 #slide1{
     background-image: url(../img/images1.jpg);
 }
@@ -56,5 +61,187 @@
     }
     85%{
         left: -300%;
-    }
+    } */
+
+
+
+
+/* SLIDER 2______________________________________________________________________________ */
+
+            /* (HECHO CON JS Y CON BOTONES PARA QUE USUARIO PUEDA INTERACTUAR) */
+body{
+	margin: 0;
+
+}
+
+
+nav ul li a:hover{
+	color: #cfbf13;
+	font-weight: bold;
+
+}
+
+div#mask{
+	width: 100%;
+	height: 525px;
+	margin: 0px auto 0px;
+	margin-bottom: 150px;
+	overflow: hidden;
+	position: relative;
+		/* box-shadow: 2px 4px 60px 32px rgba(207,191,19,0.32); */
+	/* -webkit-box-shadow: 0px 0px 110px 79px rgba(207,191,19,0.79); */
+
+
+}
+
+div#mask>.arrow{
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	background-color: rgba(255,255,255,.3);
+	border-radius: 50%;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 10;
+	cursor: pointer;
+	right: 15px;
+	display: inline-block;
+	transition: all .3s;
+
+}
+
+div#mask>.arrow:hover{
+	background-color: rgba(255,255,255,.6);
+
+}
+
+div#mask>.arrow>img{
+	width: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+
+}
+
+div#mask>.arrow.left{
+	right: unset;
+	left: 15px;
+
+}
+
+div.bullets{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: inline-block;
+
+}
+
+div.bullets>.bullet{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: white;
+	margin: 0 5px;
+	cursor: pointer;
+	border: solid 1px white;
+
+}
+
+
+div.bullets>.bullet:hover{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: black;
+	margin: 0 5px;
+	cursor: pointer;
+	border: solid 1px white;
+
+}
+
+div.bullets>.bullet.selected{
+	border: solid 1px white;
+	background-color: black;
+
+}
+
+div.bullets>.bullet.selected:hover{
+	border: solid 1px white;
+	background-color: black;
+
+}
+
+div#mask>div#tira{
+	height: 100%;
+	width: 500%;
+	position: relative;
+	transition: all .5s;
+	left: 0px;
+	/*animation-name: slider;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;*/
+
+}
+
+div#mask>div#tira>div.image{
+	height: 100%;
+	width: 20%;
+	background-size: cover;
+	background-position: center;
+	float: left;
+
+}
+
+div#mask>div#tira>div#image1{
+	background-image: url(../img/images1.jpg);
+}
+div#mask>div#tira>div#image2{
+	background-image: url(../img/images2.jpg);
+}
+div#mask>div#tira>div#image3{
+	background-image: url(../img/images3.jpg);
+}
+div#mask>div#tira>div#image4{
+	background-image: url(../img/images4.jpg);
+}
+div#mask>div#tira>div#image5{
+	background-image: url(../img/mrpotato2.jpg);
+}
+
+@keyframes slider{
+	0%{
+		left: 0;
+	}
+	18%{
+		left: 0;
+	}
+	20%{
+		left: -100%;
+	}
+	38%{
+		left: -100%;
+	}
+	40%{
+		left: -200%;
+	}
+	58%{
+		left: -200%;
+	}
+	60%{
+		left: -300%;
+	}
+	78%{
+		left: -300%;
+	}
+	80%{
+		left: -400%;
+	}
+	100%{
+		left: -400%;
+	}
 }
