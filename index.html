@@ -22,18 +22,20 @@
 
 </head>
 <body>
-<!-- AQUI CREAMOS UN DIV CON UNA CLASE PARA DESPUES DESDE CSS CARGAR LA IMAGEN DE NUESTRA PAGINA -->
-    <div id=imagenportada>
-        <div class="imagenfondo">
+    <div class="flexbox-container">
+        <div id=imagenportada>
+            <div class="imagenfondo">
+            </div>
+            <!-- ANTES TENIAMOS LA IMAGEN CARGADA AQUI DESDE HTML CON SU LOGO PERO PARA PODER HACER EL EFECTO DE IMAGEN ESTATICA LA CARGAMOS DESDE CSS -->
+            <!-- <img src="img/images92.jpg" width='100%' height='575px' alt="" class="imagenfondo" > -->
+            <!-- <h4>Potatoes Chips</h4>
+            <h2>R</h2> -->
         </div>
-        <!-- ANTES TENIAMOS LA IMAGEN CARGADA AQUI DESDE HTML CON SU LOGO PERO PARA PODER HACER EL EFECTO DE IMAGEN ESTATICA LA CARGAMOS DESDE CSS -->
-        <!-- <img src="img/images92.jpg" width='100%' height='575px' alt="" class="imagenfondo" > -->
-        <!-- <h4>Potatoes Chips</h4>
-        <h2>R</h2> -->
     </div>
 
+
     <header>
-        <nav class="menu">
+        <nav class="menu" >
             <ul>
                 <!-- <li><a href="index.html">Home</a></li> -->
                 <li>
@@ -41,12 +43,12 @@
                         <!-- AQUI HEMOS HECHO LAS ANCLAS(#)_______________________________________________________________________ -->
 
                         <div class="subnav">
-                        <li><a href="#imagenportada" class="subnavbtn">Home ▼ </a></li>
+                        <li><a href="index.html" class="subnavbtn">Home ▼ </a></li>
 
                         <!-- <button class="subnavbtn">Home<i class="fa fa-caret-down"></i></button> -->
                             <div class="subnav-content">
-                                <a href="#historia">Historia</a>
-                                <a href="#nuestrosproductos">Productos</a>
+                                <a href="C:/xampp/htdocs/Proyecto_FINAL/index.html#historia">Historia</a>
+                                <a href="C:/xampp/htdocs/Proyecto_FINAL/index.html#nuestrosproductos">Productos</a>
                             </div>
                         </div>
 
@@ -63,9 +65,7 @@
 
 
     <main>
-
-
-            <video width="100%" height="765px" autoplay muted loop>
+            <video width="100%" height="100%" autoplay muted loop>
                 <source src="video/video1.mp4" type="video/mp4">
             </video>
 
@@ -86,6 +86,7 @@
 
                     <p>Se las sirvieron a Vanderbilt esperando que, con razón, no quedara satisfecho, pero a Venderbilt le volvieron loco. Crum montó su propio restaurante, donde servía sus famosas “Saratoga Chips”.</p>
                 </div>
+
 
                 <div id="nuestrosproductos">
                     <h1>NUESTRAS PATATAS</h1>

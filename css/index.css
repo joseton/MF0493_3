@@ -17,11 +17,15 @@
     height: 560px;
 }
 
-
 .menu{
     opacity: 1;
     position: relative;
     background-attachment: fixed;
+}
+
+#hamburguesa{
+    display:none;
+
 }
 
 /* CLASE QUE SE AÑADIRÁ CON JS PARA EL MENU PEGAJOSO______________________________________________________________ */

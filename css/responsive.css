@@ -1,8 +1,25 @@
 
 /* <!—- Aquí van todos los estilos CSS PARA PANTALLAS DE MENOS DE 320PX--> */
+@media all and (max-width: 768px){
+    .menu{
+        display:none;
+    }
 
-@media (max-width:320px){
+    .imagenfondo{
+        width:100%;
+        max-width:400px;
 
-    
+    }
+
+    #hamburguesa{
+        display:block;
+
+    }
+
+    .flexbox-container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
 
 }
