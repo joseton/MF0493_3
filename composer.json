@@ -1,5 +1,5 @@
 {
-    "name":"proyecto",
+    "name":"proyecto/frontend",
     "description":"Proyecto CIFO Violeta",
     "licencia":"public",
     "authors":[
@@ -10,9 +10,7 @@
     ],
 
     "require":{
-        "components/jquery":">=3.4.1",
-        "components/bootstrap":">=4.4.1"
+        "components/jquery":">=3.4.1"
     }
-
 
 }

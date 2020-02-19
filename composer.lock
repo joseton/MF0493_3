@@ -4,71 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a4aeb3c90a8c0a2cece1fe8fc952364c",
+    "content-hash": "5c23664a2d058d70c2d9626c2b03d59f",
     "packages": [
-        {
-            "name": "components/bootstrap",
-            "version": "4.4.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/components/bootstrap.git",
-                "reference": "983313252725392091d8d2952276cbdcd4060014"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/components/bootstrap/zipball/983313252725392091d8d2952276cbdcd4060014",
-                "reference": "983313252725392091d8d2952276cbdcd4060014",
-                "shasum": ""
-            },
-            "require": {
-                "components/jquery": ">=2"
-            },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "js/bootstrap.js"
-                    ],
-                    "files": [
-                        "js/*.js",
-                        "js/*.map",
-                        "css/*.css",
-                        "css/*.map"
-                    ],
-                    "shim": {
-                        "deps": [
-                            "jquery"
-                        ]
-                    }
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mark Otto",
-                    "email": "markdotto@gmail.com"
-                },
-                {
-                    "name": "Jacob Thornton",
-                    "email": "jacobthornton@gmail.com"
-                }
-            ],
-            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
-            "homepage": "https://getbootstrap.com",
-            "keywords": [
-                "css",
-                "framework",
-                "front-end",
-                "mobile-first",
-                "responsive",
-                "sass",
-                "web"
-            ],
-            "time": "2020-01-08T10:19:13+00:00"
-        },
         {
             "name": "components/jquery",
             "version": "3.4.1",
