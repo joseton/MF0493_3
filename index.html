@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <a id="up" href="#header"></li><i id="irarriba" class="fas fa-arrow-up"></i> </a>
+        <a id="up" href="#header"><i id="irarriba" class="fas fa-arrow-up"></i> </a>
         <div id="header">
             <div id="hamburguesa"onclick="desplegar()">
                 <i class="fas fa-bars"></i>
@@ -26,8 +26,8 @@
 
 
                 <ul>
-                    <li><a href="#Inicio">Conocenos</a></li>
                     <li><a href="#registrate" onclick="display()">Registrate/Reservas</a></li>
+                    <li><a href="#Inicio">Conocenos</a></li>
                     <li><a href="#LaCarta" >La Carta</a></li>
                     <li><a href="#Testimonios">Testimonios</a></li>
                     <li><a href="#Contactanos">Donde estamos</a></li>
@@ -45,7 +45,6 @@
     <main>
         <h5 id="registrate">Registro/Login</h5>
         <form id="registre" novalidate>
-            <h3>Gestiona tu reserva</h3>
             <h5>REGISTRO</h5>
             <label for="reg_email">Email</label>
             <input type="email" id="reg_email" name="reg_email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
@@ -75,6 +74,7 @@
             <div id="dataResp_login"></div>
 
         </form>
+        <button type="button"id="Reservaboton"onclick="aparece()">Reserva</button>
         <section class="cono">
         <h1 id="Inicio" >Conocenos</h1>
             <video class="video" src="rest.mp4" autoplay muted loop></video>

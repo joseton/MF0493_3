@@ -37,6 +37,18 @@
   #hamburguesa{
       display: none;
   }
+  #Reservaboton{
+      text-align: center;
+      position:relative;
+      transform: translateX(-50%);
+      left: 50%;
+      background-color: #E7C089;
+      outline:0;
+
+  }
+  #irarriba:hover{
+    color:#E7C089;
+  }
 
 .video{
   width: 100%;
