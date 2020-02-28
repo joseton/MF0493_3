@@ -104,7 +104,7 @@ window.onload = function() {
         }
         event.preventDefault();
 
-        }, false);
+    }, false);
 };
 
 //
@@ -116,7 +116,7 @@ $(document).ready(function(){
     var errorEmail = $(".error").get(3);
     var errorPass = $(".error").get(4);
 
-//
+    //
     // validació del correu electrònic
     lg_email.on("keyup", function(){
         if(lg_email.val() != "" && email_validar(lg_email.val())){
@@ -154,26 +154,26 @@ $(document).ready(function(){
         &&  $(errorPass).html() == ""){
             // alert("El usuario ha entrado correctamente");
             $.ajax({
-            // config. de datos de envío
-            type: 'POST',
-            url: 'php/backend.php',
-            dataType: 'json',
-            data: $("#login").serialize(),
-            // control de acciones en el envio y respuesta del server
-            success: function(dataResp){
-                $("#dataResp_login").html(dataResp);
-            },
-            beforeSend: function(){
-                $("#dataResp_login").html('<i class="spiner1" class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>');
-            },
-        //     error: function(){
-        //         $("#dataResp_login").html('Error en la comunicación con el servidor');
-        //     }
-        });
-        event.preventDefault();
-    }
+                // config. de datos de envío
+                type: 'POST',
+                url: 'php/backend.php',
+                dataType: 'json',
+                data: $("#login").serialize(),
+                // control de acciones en el envio y respuesta del server
+                success: function(dataResp){
+                    $("#dataResp_login").html(dataResp);
+                },
+                beforeSend: function(){
+                    $("#dataResp_login").html('<i class="spiner1" class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>');
+                },
+                //     error: function(){
+                //         $("#dataResp_login").html('Error en la comunicación con el servidor');
+                //     }
+            });
+            event.preventDefault();
+        }
 
-
+        
     });
 });
 
