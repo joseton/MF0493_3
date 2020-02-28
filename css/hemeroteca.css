@@ -3,11 +3,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+#logo_header{
+  width: 70%;
+  height: 30px;
+  margin-top: 40px;
+}
 .htka_intro{
   width: 100%;
   height: 150px;
   float: left;
-  background-color: #131b24;
+  background-color: white;
   color: #fff;
 }
 .htka_texto{
