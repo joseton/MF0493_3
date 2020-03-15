@@ -18,10 +18,6 @@ header{
     overflow: hidden;
 }
 
-#hamburguesa{
-    display:none;
-}
-
 /* CLASE QUE SE AÑADIRÁ CON JS PARA EL MENU PEGAJOSO______________________________________________________________ */
 .menu-fixed {
 	position: fixed;
@@ -41,11 +37,11 @@ header{
 }
 
 .navbar a:hover{
-  background-color: white;
+  background-color: black;
   color: #cfbf13;
   cursor: pointer;
   font-weight: bold;
-
+  text-decoration: underline;
 }
 
 /* ESTILOS DE(HISTORIA) SABIAS QUE.._______________________________________________________________ */
