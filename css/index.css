@@ -43,6 +43,42 @@ header{
   font-weight: bold;
   text-decoration: underline;
 }
+/* ESTILOS DE COMO FABRICAMOS__________________________________________________________________ */
+.comofabricamos img{
+    float: left;
+    max-width: 100%;
+    height: auto;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #3a3a3a;
+    font-family: 'Signika',serif;
+
+}
+
+.comofabricamos p{
+    font-family: "Open Sans",sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color: #808285;
+}
+
+.comofabricamosizq{
+    margin-right: 80%;
+    text-align: right;
+
+}
+
+.comofabricamosdcha{
+    margin-left: 80%;
+    text-align: left;
+
+
+}
 
 /* ESTILOS DE(HISTORIA) SABIAS QUE.._______________________________________________________________ */
 #imghistoria{
