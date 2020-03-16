@@ -1,5 +1,4 @@
 <?php
-
     // temporizador 2sec
     usleep(1500000);
 
