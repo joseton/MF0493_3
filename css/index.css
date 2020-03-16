@@ -17,6 +17,11 @@
   background-color: #white;
   color: black;
 }
+#img_msj{
+  width: 80%;
+  margin-left: 50px;
+  margin-top: 80px;
+}
 div h1{
   margin: 120px 50px;
   font-size: 48px;
@@ -26,21 +31,24 @@ div h1 span{
   color: #ffbd59;
 }
 div h6{
-  margin: -120px 50px;
-  font-size: 24px;
+  margin-top: -50px;
+  margin-left: 60px;
+  font-size: 50px;
   font-weight: lighter;
   font-family: 'Abhaya Libre', serif;
-  color: #05d192;
+  color: #62c6c2;
   vertical-align: bottom;
+
 }
 div h6 a{
-  font-size: 14px;
-  color: #05d192;
+  font-size: 16px;
+  color: #002638;
   text-decoration: underline;
   vertical-align: middle;
+
 }
 #foto_intro{
-  background-image: url("../img/hunger.jpg");
+  background-image: url("../img/hungerblue.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -49,7 +57,7 @@ div h6 a{
 }
 /* Hover MAIN 1*/
 #foto_intro:hover{
-  background-image: url("../img/hunger_zoom.jpg");
+  background-image: url("../img/hunger_red.png");
    /* transform: scale(1.5); */
 }
 #conoce:hover{
