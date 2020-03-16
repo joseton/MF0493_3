@@ -15,28 +15,33 @@ h1{
     margin: 50px;
 }
 
-h2{
-    font-size: 35px;
-
+.titulocurios{
+    display: flex;
+    justify-content: center;
 }
-h3{
-    display: inline;
 
-}
 .container_curiosidades{
-    /* border: 1px solid red; */
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
     margin-top: 100px;
     margin-bottom: 100px;
+    font-family: 'Kranky', cursive;
+
+
+}
+
+.textocurios{
+    bottom: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
 }
 
 .curiosidadesizq{
-    /* border: 1px solid black; */
     text-align: justify;
     font-size:  150%;
     margin-right: 50%;
-    max-width: 33%;
+    max-width: 50%;
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 3%;
@@ -44,41 +49,19 @@ h3{
 }
 
 .curiosidadesdcha{
-    /* border: 1px solid black; */
     text-align: justify;
     font-size:  150%;
     margin-right: 50%;
-    max-width: 33%;
+    max-width: 50%;
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 3%;
     display: -webkit-box;
-
 }
 
 .imagenescurios img{
-    width: 500px;
     margin-left: 100px;
     margin-right: 100px;
-
+    width: 400px;
+    height: 100%;
 }
-
-.imagenescurios img:hover{
-    margin-left: 100px;
-    margin-right: 100px;
-
-}
-
-/* p{
-    display: none;
-}
-.textocurios{
-
-    background-color: yellow;
-
-
-}
-.imagenescurios img:hover + .textocurios{
-
-    display: block;
-} */
