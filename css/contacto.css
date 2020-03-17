@@ -3,6 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+#logo_header{
+  width: 130px;
+  margin: 10px;
+}
 .contact_intro{
   width: 100%;
   height: 100px;

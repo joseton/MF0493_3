@@ -6,13 +6,12 @@
 
 /* HEADER */
 header{
-  height: 100px;
+  height: 107px;
   width: 100%;
   background-color: white;
   display: flex;
   justify-content: space-around;
   font-family: 'Montserrat', sans-serif;
-  /* position: fixed; */
 }
 .logo_header{
   width: 50%;
@@ -36,84 +35,71 @@ div a{
   text-decoration: none;
 
 }
+div a:hover{
+  color: #131b24;
+  font-weight: bolder;
+}
 div a span{
   color: white;
   font-weight: bolder;
   font-size: 30px;
   vertical-align: baseline;
 }
-/* Hover header */
-#hom:hover{
-  color: #131b24;
-  font-weight: bolder;
-}
-#obs:hover{
-  color: #131b24;
-  font-weight: bolder
-}
-#hemer:hover{
-  color: #131b24;
-  font-weight: bolder
-}
-#contac:hover{
-  color: #131b24;
-  font-weight: bolder
-}
 
 /* FOOTER */
 .foot_1{
   width: 100%;
-  height: 100px;
+  height: 70%;
   display: flex;
   justify-content: space-between;
-  background-color: white
-  ;
+  background-color: #ff7a7a;
   color: white;
+  position: relative;
 }
-.cajas_foot_1{
-  width: 20%;
-  border: 1px dashed white;
+.foot1_cien{
+  width: 100%;
+  height: 20%;
+  background-color: black;
+  position: absolute;
+  display: block;
+  /* float: left; */
+}
+.foot1_33{
+  width: 33.3%;
+  height: 60%;
+  border-right: 1px solid white;
 }
 #huella{
   width: 60px;
-  margin: 20px 103px;
+  /* margin: 20px 103px; */
 }
 .foot_2{
   width: 100%;
-  height: 400px;
-  background-color: black;
+  height: 30%;
+  background-color: #002638;
   color: white;
-}
-.main_foot_2_a{
-  width: 100%;
-  height: 200px;
-  display: flex;
 }
 .main_foot_2_b{
   width: 100%;
-  height: 160px;
+  height: 80%;
   display: flex;
 }
-#huella_negro{
-  width: 60px;
-  margin: 15px 20px;
+#Footer_Log{
+  width: 212px;
+  margin: 0px 50px;
 }
 .main_foot_2_c{
   width: 100%;
-  height: 40px;
+  height: 20%;
   display: flex;
-}
-.cajas_foot_2_a{
-  width: 50%;
-  border: 1px dashed darkgreen;
 }
 .cajas_foot_2_b{
   width: 25%;
-  border: 1px dashed darkgreen;
+  /* border-right: 1px dashed #62c6c2; */
 }
 .cajas_foot_2_c{
   width: 100%;
-  border: 1px dashed darkgreen;
+  /* border-top: 1px dashed #62c6c2; */
 }
 #copyright{
   margin: 10px 0px;
