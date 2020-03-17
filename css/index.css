@@ -44,10 +44,20 @@ header{
   text-decoration: underline;
 }
 /* ESTILOS DE COMO FABRICAMOS__________________________________________________________________ */
+.comofabricamos{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #f7f5f2;
+}
+
 .comofabricamos img{
-    float: left;
-    max-width: 100%;
-    height: auto;
+    /* max-width: 100%;
+    height: auto; */
+    width:388px;
+    height:483px;
+    margin: 0 20px;
 }
 
 h3{
@@ -56,6 +66,7 @@ h3{
     line-height: 28px;
     color: #3a3a3a;
     font-family: 'Signika',serif;
+    margin: 10px 0;
 
 }
 
@@ -65,22 +76,28 @@ h3{
     font-size: 15px;
     line-height: 26px;
     color: #808285;
+    margin-bottom: 30px;
 }
 
 .comofabricamosizq{
-    margin-right: 80%;
     text-align: right;
-
+    width: 20%;
+    margin-left: 15%;
 }
 
 .comofabricamosdcha{
-    margin-left: 80%;
     text-align: left;
-
+    width: 20%;
+    margin-right: 15%;
 
 }
 
 /* ESTILOS DE(HISTORIA) SABIAS QUE.._______________________________________________________________ */
+#historia{
+    /* padding-top: 100px;
+    padding-bottom: 100px; */
+}
+
 #imghistoria{
     opacity: 0.95;
     position: absolute;
@@ -93,29 +110,32 @@ section div h1{
     font-weight: 800;
     letter-spacing: -.02em;
     line-height: 1;
-    padding-top: 20px;
-    margin: 100px;
+    padding-top: 50px;
+    padding-bottom: 40px;
 }
+
  section div p{
     position: relative;
     margin: 0 auto 20px;
     text-align: center;
     max-width: 50%;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Roboto Mono', monospace;
     margin-top: 25px;
  }
+ /* ESTOS SON LOS ESTILOS DE NUESTROS PRODUCTOS___________________________________________________________ */
 
 main section #nuestrosproductos h1{
     color: #cfbf13;
     font-size: 35px;
     text-align: center;
     font-family: monospace;
-    top: 65px;
+    /* top: 65px; */
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin-top: 150px;
 }
-
-/* ESTOS SON LOS ESTILOS DE NUESTROS PRODUCTOS___________________________________________________________ */
 
 .contenedor_productos{
     display: flex;
