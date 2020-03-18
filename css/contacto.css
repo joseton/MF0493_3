@@ -7,6 +7,9 @@
   width: 130px;
   margin: 10px;
 }
+.cien_height{
+  height: 100vh;
+}
 .contact_intro{
   width: 100%;
   height: 100px;
@@ -125,4 +128,8 @@ input:invalid, .invalid{
   margin-left: 30%;
   text-align: center;
   padding: 8px;
+}
+/* FOOTER */
+.foot_1{
+    background-color: #62c6c2;
 }

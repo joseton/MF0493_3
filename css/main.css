@@ -11,7 +11,7 @@ header{
   background-color: white;
   display: flex;
   justify-content: space-around;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .logo_header{
   width: 50%;
@@ -19,7 +19,7 @@ header{
 }
 .nav_home{
   width: 50%;
-  height: 100px;
+  height: 15%;
   padding: 30px 0px;
   background-color: white;
   display: flex;
@@ -29,27 +29,27 @@ header{
   width: 200px;
   margin: 15px;
 }
-div a{
-  font-family: 'Montserrat', sans-serif;
+.nav_home a{
+  font-family: 'Open Sans', sans-serif;
   color: #ff7a7a;
   text-decoration: none;
 
 }
-div a:hover{
+.nav_home a:hover{
   color: #131b24;
   font-weight: bolder;
 }
-div a span{
+.nav_home a span{
   color: white;
   font-weight: bolder;
   font-size: 30px;
   vertical-align: baseline;
 }
 
-/* FOOTER */
+/* FOOTER 1*/
 .foot_1{
   width: 100%;
-  height: 70%;
+  height: 60%;
   display: flex;
   justify-content: space-between;
   background-color: #ff7a7a;
@@ -58,51 +58,103 @@ div a span{
 }
 .foot1_cien{
   width: 100%;
-  height: 20%;
-  background-color: black;
+  height: 15%;
+  display: flex;
   position: absolute;
-  display: block;
-  /* float: left; */
+  clear: both;
+  float: left;
+}
+#one{
+  width: 100%;
+  background-color: black;
+  z-index:30;
+}
+#two{
+  width: 100%;
+  background-color: silver;
+  opacity: 60%;
+  z-index:10;
+}
+.foot1_main{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  position: absolute;
+  z-index:20;
 }
 .foot1_33{
   width: 33.3%;
-  height: 60%;
   border-right: 1px solid white;
+  background-color: red;
+  opacity: 60%;
 }
 #huella{
   width: 60px;
   /* margin: 20px 103px; */
 }
-.foot_2{
+/* FOOTER 2 */
+.foot2{
   width: 100%;
-  height: 30%;
+  height: 40%;
   background-color: #002638;
   color: white;
 }
-.main_foot_2_b{
+.foot2_main{
   width: 100%;
-  height: 80%;
+  height: 70%;
   display: flex;
+}
+.cajas_foot2{
+  width: 25%;
+  padding: 40px;
+  color: #62c6c2;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+  /* border-right: 1px dashed #62c6c2; */
+}
+.cajas_foot2 a{
+  padding-bottom: 15px;
+  color: #62c6c2;
+  text-decoration: none;
+}
+.foot_links{
+  display: block;
+}
+/* #acerca_de{
+  color: white;
+} */
+.cajas_foot2 a:hover{
+  /* opacity: 50%; */
+  color: white;
 }
 #Footer_Log{
   width: 212px;
-  margin: 0px 50px;
+  margin: -30px 10px;
 }
-.main_foot_2_c{
+.social{
+  width: 30px;
+  height: 30px;
+  margin-right: 12px;
+  display: inline;
+}
+.social:hover{
+  opacity: 40%;
+}
+/* Copyright */
+.foot2_copy{
   width: 100%;
-  height: 20%;
+  height: 30%;
   display: flex;
 }
-.cajas_foot_2_b{
-  width: 25%;
-  /* border-right: 1px dashed #62c6c2; */
-}
-.cajas_foot_2_c{
+.caja_copy{
   width: 100%;
   /* border-top: 1px dashed #62c6c2; */
 }
 #copyright{
-  margin: 10px 0px;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  margin: 0px 70px;
+  text-align: right;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
 }
