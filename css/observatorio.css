@@ -3,46 +3,84 @@
   margin: 0;
   box-sizing: border-box;
 }
+#ob_panel1{
+  background-color: #fff;
+}
+header{
+  height: 17%;
+  width: 100%;
+  background-color: #002638;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Open Sans', sans-serif;
+}
+.logo_header{
+  width: 50%;
+  height: 100px;
+}
+.nav_home{
+  width: 50%;
+  height: 15%;
+  padding: 30px 0px;
+  background-color: #002638;
+  display: flex;
+  justify-content: space-around;
+}
+#logo_header{
+  width: 200px;
+  margin: 15px;
+}
+.nav_home a{
+  font-family: 'Open Sans', sans-serif;
+  color: transparent;
+  text-decoration: none;
+}
+.nav_home a:hover{
+  color: #ff7a7a;
+  font-weight: lighter;
+}
+.nav_home a span{
+  color: #ff7a7a;
+  font-weight: bolder;
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+/* TÍTULO */
+.obs_title{
+  width: 100%;
+  height: 15%;
+  padding: 30px;
+  float: left;
+  background-color: #002638;
+  color: #62c6c2;
+  text-align: right;
+}
+.obs_title p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+}
+
+/* INTRO TITULARES OBSERVATORIO */
 .obs_intro{
   width: 50%;
-  height: 300px;
-  padding: 70px 40px;
-  /* background-color: #05d192; VERDE */
-  background-color: #f4f4f4;
+  height: 68%;
   float: left;
-  text-align: justify;
+  border-right: 1px solid #ff7a7a;
 }
 .obs_intro p{
-  font-family: monospace;
   font-size: 21px;
-  color: gray;
 }
 .mask_obs{
   width: 50%;
-  height: 300px;
-  background-image: url("../img/hunger2_zoom.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 68%;
   float: left;
 }
-.obs_caja1{
-  width: 100%;
-  height: 150px;
-  padding: 40px;
-  float: left;
-  background-color: #131b24;
-  color: #05d192;
-  text-align: center;
+
+/* PANEL 2 */
+#ob_panel2{
+  border-top: 1px solid #ff7a7a;
 }
-.obs_caja1 p{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 36px;
-  color: #05d192;
-}
-.obs_caja2{
-  width: 100%;
-  height: 150px;
-  float: left;
-  background-color: #f4f4f4;
+.foot_1{
+    background-color: #62c6c2;
 }

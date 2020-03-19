@@ -5,6 +5,9 @@
 }
 
 /* HEADER */
+.cien_height{
+  height: 100vh;
+}
 header{
   height: 107px;
   width: 100%;
@@ -31,19 +34,18 @@ header{
 }
 .nav_home a{
   font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
   color: #ff7a7a;
   text-decoration: none;
-
 }
 .nav_home a:hover{
   color: #131b24;
-  font-weight: bolder;
 }
 .nav_home a span{
   color: white;
-  font-weight: bolder;
+  /* font-weight: bolder; */
   font-size: 30px;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 /* FOOTER 1*/

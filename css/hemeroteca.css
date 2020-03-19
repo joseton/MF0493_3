@@ -3,35 +3,64 @@
   margin: 0;
   box-sizing: border-box;
 }
+#htka_panel1{
+  background-color: #62c6c2;
+}
+header{
+  width: 100%;
+  height: 17%;
+  background-color: #62c6c2;
+}
 #logo_header{
-  width: 70%;
-  height: 30px;
-  margin-top: 40px;
+  width: 200px;
+  margin: 15px;
+}
+.nav_home{
+  background-color: #62c6c2;
+}
+.nav_home a{
+  color: #002638;
+}
+.nav_home a:hover{
+  color: #fff;
+  font-weight: lighter;
+}
+
+/* TITLE */
+.htka_title{
+  width: 100%;
+  height: 15%;
+  padding: 30px;
+  float: left;
+  color: #fff;
+  text-align: right;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
 }
 .htka_intro{
   width: 100%;
-  height: 150px;
-  float: left;
-  background-color: white;
-  color: #fff;
-}
-.htka_texto{
-  width: 100%;
-  height: 300px;
+  height: 68%;
   padding: 100px 100px;
-  background-color: #f4f4f4;
+  background-color: #fff;
   float: left;
   font-size: 20px;
   color: #131b24;
   position: relative;
   text-align: center;
 }
-.htka_texto p{
+.htka_intro p{
   font-family: monospace;
   font-size: 36px;
   color: gray;
 }
-#huella_footer{
-  width: 60px;
-  margin: 19px 102px;
+
+/* PANEL 2 CONTENT */
+#htka_panel2{
+  background-color: #fff;
+  border-top: 1px solid #ff7a7a;
+}
+
+/* FOOTER */
+.foot_1{
+    background-color: #62c6c2;
 }

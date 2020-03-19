@@ -3,19 +3,38 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-.cien_height{
-  height: 100vh;
+header{
+  background-color: #002638;
+  height: 15%;
 }
+.logo_header{
+  background-color: #fff;
+}
+.nav_home{
+  background-color: #002638;
+}
+.nav_home a{
+  color: #ff7a7a;
+  /* color: #62c6c2; */
+  /* opacity: 70%; */
+}
+.nav_home a:hover{
+  color: #fff;
+}
+.nav_home a span{
+  color: transparent;
+}
+
 /* MAIN 1 */
 .mask{
   width: 50%;
-  height: 83.35%;
+  height: 85%;
   float: left;
   font-family: 'Open Sans Condensed', sans-serif;
+  background-color: #002638;
 }
 #msj_intro{
-  background-color: #white;
+  background-color: white;
   color: black;
 }
 #img_msj{
@@ -49,7 +68,7 @@ div h6{
 
 }
 #foto_intro{
-  background-image: url("../img/hungerblue.png");
+  background-image: url("../img/hungerblue2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -3,30 +3,40 @@
   margin: 0;
   box-sizing: border-box;
 }
+#contact_panel1{
+  background-color: white;
+}
+header{
+  width: 100%;
+  height: 17%;
+}
 #logo_header{
   width: 130px;
   margin: 10px;
 }
-.cien_height{
-  height: 100vh;
+.nav_home a{
+  color: #62c6c2;
 }
-.contact_intro{
+.nav_home a:hover{
+  color: #002638;
+  font-weight: lighter;
+}
+.contact_title{
   width: 100%;
-  height: 100px;
-  padding: 17px;
+  height: 15%;
+  padding: 40px;
   float: left;
-  background-color: #131b24;
+  background-color: #002638;
   color: #fff;
   text-align: center;
 }
-.contact_intro p{
+.contact_title p{
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  color: #fff;
 }
 .contact_form{
   width: 100%;
-  height: 450px;
+  height: 68%;
   background-color: #f4f4f4;
   float: left;
   font-family: 'Montserrat', sans-serif;
@@ -36,7 +46,7 @@
 }
 .titulo{
   width: 1200px;
-  height: 40px;
+  height: 15%;
   float: left;
   position: absolute;
   top: 3%;
@@ -45,12 +55,12 @@
 .titulo p{
   font-family: 'Montserrat', sans-serif;
   font-size: 28px;
-  color: #05d192;
+  color: #002638;
 }
 
 form{
   width: 1200px;
-  height: 340px;
+  height: 75%;
   margin: auto;
   padding: 20px;
   background-color: #f5f5f5;
@@ -91,7 +101,7 @@ input, select{
 span{
   font-family: monospace;
   font-size: 14px;
-  color: orange;
+  color: #ff7a7a;
   font-weight: lighter;
 }
 textarea{
@@ -106,7 +116,7 @@ textarea{
 .btn{
   width: 13%;
   height: 40px;
-  background-color: #05d192;
+  background-color: #002638;
   color: #fff;
   margin-left: 43%;
   outline: none;
@@ -122,7 +132,7 @@ input:invalid, .invalid{
 }
 #dataResp{
   font-size: 18px;
-  color: #05d192;
+  color: #62c6c2;
   width: 40%;
   height: 40px;
   margin-left: 30%;
@@ -131,5 +141,5 @@ input:invalid, .invalid{
 }
 /* FOOTER */
 .foot_1{
-    background-color: #62c6c2;
+    background-color: #ff7a7a;
 }
