@@ -32,7 +32,7 @@
     border-radius: 5px;
     margin-bottom: 3%;
     display: -webkit-box;
-    opacity: 0.2;
+    opacity: 0.6;
 }
 
 .curiosidadesizq:hover{
@@ -57,7 +57,7 @@
     border-radius: 5px;
     margin-bottom: 3%;
     display: -webkit-box;
-    opacity: 0.2;
+    opacity: 0.6;
 }
 
 .curiosidadesdcha:hover{
@@ -101,10 +101,10 @@ p{
     opacity: 0.1;
 }
 p:hover{
-
     text-shadow: 10px;
     opacity: 1;
-    transition: .2s;
+    transition: .4s;
+    cursor: pointer;
 }
 
 h2{

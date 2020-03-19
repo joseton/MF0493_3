@@ -113,7 +113,7 @@ $(document).ready(function(){
            }
 
            if(provincias.val() == "0"){
-               mensajes = "*Elige una de las provincia<br>";
+               mensajes = "*Elige una de las provincias<br>";
                provincias.addClass("placeholder_val_ko");
                provincias.removeClass("placeholder_val_ok");
                $("#provincias_val").html(mensajes);

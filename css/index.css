@@ -185,9 +185,9 @@ main section #nuestrosproductos h1{
     cursor: pointer;
 }
 
-
 div .contenedor_productos img:hover{
     cursor: pointer;
     -webkit-transform: scale(1.1,1.1);
+    transition: .5s;
 
 }
