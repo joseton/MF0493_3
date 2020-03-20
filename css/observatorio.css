@@ -32,11 +32,11 @@ header{
 }
 .nav_home a{
   font-family: 'Open Sans', sans-serif;
-  color: transparent;
+  color: #fff;
   text-decoration: none;
 }
 .nav_home a:hover{
-  color: #ff7a7a;
+  color: #62c6c2;
   font-weight: lighter;
 }
 .nav_home a span{

@@ -1,4 +1,4 @@
-*{
+45*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -21,12 +21,17 @@ header{
   height: 100px;
 }
 .nav_home{
-  width: 50%;
+  width: 44%;
   height: 15%;
-  padding: 30px 0px;
+  padding: 25px 0px;
   background-color: white;
   display: flex;
   justify-content: space-around;
+}
+.menu{
+  width: 6%;
+  height: 15%;
+  padding: 25px 0px 25px 10px;
 }
 #logo_header{
   width: 200px;
@@ -41,11 +46,9 @@ header{
 .nav_home a:hover{
   color: #131b24;
 }
-.nav_home a span{
-  color: white;
-  /* font-weight: bolder; */
-  font-size: 30px;
-  vertical-align: middle;
+#menu{
+  width: 40px;
+  height: 40px;
 }
 
 /* FOOTER 1*/

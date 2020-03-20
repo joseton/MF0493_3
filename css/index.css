@@ -12,17 +12,19 @@ header{
 }
 .nav_home{
   background-color: #002638;
+  align-items: center;
+  margin-top: 20px;
+  /* background-color: gray; */
 }
 .nav_home a{
-  color: #ff7a7a;
-  /* color: #62c6c2; */
-  /* opacity: 70%; */
+  color: #fff;
+  /* border: 1px solid white; */
+  /* background-color: gray; */
+  padding: 10px 15px;
+  /* display: none; */
 }
 .nav_home a:hover{
-  color: #fff;
-}
-.nav_home a span{
-  color: transparent;
+  color: #62c6c2;
 }
 
 /* MAIN 1 */
@@ -68,7 +70,7 @@ div h6{
 
 }
 #foto_intro{
-  background-image: url("../img/hungerblue2.png");
+  background-image: url("../img/hungerblue.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -224,20 +226,20 @@ div h6{
 
 /* Hover MAIN 2*/
 #africa:hover{
-  background-color: black;
+  background-color: #000;
 }
 #latin:hover{
-  background-color: black;
+  background-color: #000;
 }
 #amer_septentrional:hover{
-  background-color: black;
+  background-color: #000;
 }
 #asia:hover{
-  background-color: black;
+  background-color: #000;
 }
 #europa:hover{
-  background-color: black;
+  background-color: #000;
 }
 #oceania:hover{
-  background-color: black;
+  background-color: #000;
 }
