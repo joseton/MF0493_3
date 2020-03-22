@@ -7,7 +7,7 @@
 
     <!--      own links     -->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
     <!--      animate.css     -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <script type="text/javascript" src="js/index.js"></script>
@@ -26,9 +26,8 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="index.html"  > </a>
+            <a class="navbar-brand" href="#">My Gym </a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <img src="img/equipment/life-fitness.png" style="width: 150px">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
@@ -49,76 +48,57 @@
 
         <div class="card border-0 shadow my-5">
             <div class="card-body p-5">
-                <h5>Get Advised to make your right gym rutine & diet</h5>
+
 
                 <!-- Page Content -->
                 <div class="container">
 
-                    <!-- Portfolio Item Heading -->
-                    <img src="img/equipment/life-fitness.png" style="width: 200px">
-                    </h1>
+
+
 
                     <!-- Portfolio Item Row -->
                     <div class="row">
                         <div class="col-md-8">
-                            <video class="video-fluid z-depth-1" autoplay loop controls muted>
-                                <source src="img/home/projecte_final_video.mp4" type="video/mp4" />
-                            </video>
-                        </div>
+                            <h3>My Google Maps Demo</h3>
+                            <!--The div element for the map -->
+                            <div id="map"></div>
+                            <script>
+                                // Initialize and add the map
+                                function initMap() {
+                                    // The location of Uluru
+                                    var uluru = {lat: -25.344, lng: 131.036};
+                                    // The map, centered at Uluru
+                                    var map = new google.maps.Map(
+                                    document.getElementById('map'), {zoom: 4, center: uluru});
+                                    // The marker, positioned at Uluru
+                                    var marker = new google.maps.Marker({position: uluru, map: map});
+                                }
+                            </script>
+                            <script async defer
+                            src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+                        </script>
 
-                        <div class="col-md-4">
-                            <h5 class="my-3">My Gym is more yours than ever</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-                            <h3 class="my-3">Project Details</h3>
-                            <ul>
-                                <li>Couches</li>
-                                <li>dietitian</li>
-                                <li>Routines</li>
-                                <li>Store</li>
-                            </ul>
-                        </div>
-
-                    </div>
-
-                    <!-- Related Projects Row -->
-                    <h3 class="my-4">Services</h3>
-
-                    <div class="row">
-
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <a href="routines.html">
-                                <img class="img-fluid" img src="img/home/img_home1.jpg" alt="">
-                            </a>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <a href="#">
-                                <img class="img-fluid" img src="img/home/img_home2.jpg" alt="">
-                            </a>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <a href="#">
-                                <img class="img-fluid" img src="img/home/img_home3.jpg" alt="">
-                            </a>
-                        </div>
-
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <a href="equipment.html">
-                                <img class="img-fluid" img src="img/home/img_home4.jpg" alt="">
-                            </a>
-                        </div>
 
                     </div>
-                    <!-- /.row -->
+
+                    <div class="col-md-4">
+
+
+
+
+                    </div>
 
                 </div>
+
+
+
+
+
+
                 <!-- /.container -->
             </div>
         </div>
     </div>
-
-
     <!--===================== End Page Content  ============== -->
 
     <!--========================= Footer ====================  -->

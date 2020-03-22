@@ -6,6 +6,9 @@
 
 div .card {
     border-radius: 10px;
+    background: #9f9fa8;
+    color: white;
+
 }
 
 div card-body.p-5 {
