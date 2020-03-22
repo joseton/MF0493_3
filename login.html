@@ -27,13 +27,16 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">My Gym </a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <img src="img/equipment/life-fitness.png" style="width: 150px">
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="login.html">LogIn/Register <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="subscriptions.html">Subscriptions <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
@@ -45,7 +48,7 @@
         <form id="registre" novalidate>
             <h3>Register</h3>
             <label for="reg_email">Email</label>
-            <input type="email" id="reg_email" name="reg_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            <input type="email" id="reg_email" name="reg_email">
             <span class="error"></span>
             <label for="reg_pass">password</label>
             <input type="password" id="reg_pass" name="reg_pass"minlength="6">
