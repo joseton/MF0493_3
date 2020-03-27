@@ -4,25 +4,21 @@
   box-sizing: border-box;
 }
 #htka_panel1{
-  background-color: #62c6c2;
+  background-color: #fff;
 }
 header{
   width: 100%;
   height: 17%;
-  background-color: #62c6c2;
 }
 #logo_header{
-  width: 200px;
+  width: 300px;
   margin: 15px;
 }
-.nav_home{
-  background-color: #62c6c2;
-}
 .nav_home a{
-  color: #002638;
+  color: #62c6c2;
 }
 .nav_home a:hover{
-  color: #fff;
+  color: #002638;
   font-weight: lighter;
 }
 
@@ -32,7 +28,7 @@ header{
   height: 15%;
   padding: 30px;
   float: left;
-  color: #fff;
+  color: #002638;
   text-align: right;
   font-family: 'Open Sans', sans-serif;
   font-size: 24px;

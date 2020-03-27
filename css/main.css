@@ -34,7 +34,8 @@ header{
   padding: 25px 0px 25px 10px;
 }
 #logo_header{
-  width: 200px;
+  width: 47%;
+  width: 300px;
   margin: 15px;
 }
 .nav_home a{
@@ -134,7 +135,7 @@ header{
   color: white;
 }
 #Footer_Log{
-  width: 212px;
+  width: 260px;
   margin: -30px 10px;
 }
 .social{
