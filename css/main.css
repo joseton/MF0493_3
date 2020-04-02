@@ -4,13 +4,31 @@
   box-sizing: border-box;
 }
 
-/* HEADER */
+/* Heights */
+.doscien_height{
+  height: 250vh;
+}
 .cien_height{
   height: 100vh;
 }
+.setenta_height{
+  height: 70vh;
+}
+.cincuenta_height{
+  height: 50vh;
+}
+.treinta_height{
+  height: 30vh;
+}
+.veinte_height{
+  height: 20vh;
+}
+
+/* HEADER */
 header{
   height: 107px;
   width: 100%;
+  height: 17%;
   background-color: white;
   display: flex;
   justify-content: space-around;
@@ -18,11 +36,11 @@ header{
 }
 .logo_header{
   width: 50%;
-  height: 100px;
+  height: 100%;
 }
 .nav_home{
   width: 44%;
-  height: 15%;
+  height: 100%;
   padding: 25px 0px;
   background-color: white;
   display: flex;
@@ -34,15 +52,16 @@ header{
   padding: 25px 0px 25px 10px;
 }
 #logo_header{
-  width: 47%;
+  /* width: 55%; */
   width: 300px;
   margin: 15px;
 }
 .nav_home a{
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Montserrat";
   font-weight: lighter;
   color: #ff7a7a;
   text-decoration: none;
+  font-size: 15px;
 }
 .nav_home a:hover{
   color: #131b24;
@@ -55,7 +74,7 @@ header{
 /* FOOTER 1*/
 .foot_1{
   width: 100%;
-  height: 60%;
+  height: 70%;
   display: flex;
   justify-content: space-between;
   background-color: #ff7a7a;
@@ -101,7 +120,7 @@ header{
 /* FOOTER 2 */
 .foot2{
   width: 100%;
-  height: 40%;
+  height: 30%;
   background-color: #002638;
   color: white;
 }

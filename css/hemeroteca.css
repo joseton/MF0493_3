@@ -12,13 +12,14 @@ header{
 }
 #logo_header{
   width: 300px;
+  /* width: 47%; */
   margin: 15px;
 }
 .nav_home a{
-  color: #62c6c2;
+  color: #002638;
 }
 .nav_home a:hover{
-  color: #002638;
+  color: #37bfbf;
   font-weight: lighter;
 }
 
@@ -44,16 +45,11 @@ header{
   position: relative;
   text-align: center;
 }
-.htka_intro p{
-  font-family: monospace;
-  font-size: 36px;
-  color: gray;
-}
 
 /* PANEL 2 CONTENT */
 #htka_panel2{
   background-color: #fff;
-  border-top: 1px solid #ff7a7a;
+  border-top: 1px solid #62c6c2;
 }
 
 /* FOOTER */
