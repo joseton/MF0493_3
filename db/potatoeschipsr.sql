@@ -44,7 +44,7 @@ CREATE TABLE `potatoeschipsr`.`Usuarios_suscripcion` (
   `activo` BOOLEAN,
   `newsletter` BOOLEAN,
   `fecha_alta` DATETIME DEFAULT CURRENT_TIMESTAMP,
-  `fecha_baja` DATETIME DEFAULT CURRENT_TIMESTAMP,
+  `fecha_baja` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `id_usuarios_suscripcion` INT,
 
 
@@ -63,7 +63,7 @@ ENGINE = InnoDB;
 CREATE TABLE `potatoeschipsr`.`Registros` (
   `idRegistros` INT PRIMARY KEY AUTO_INCREMENT,
   `fecha_alta` DATETIME  DEFAULT CURRENT_TIMESTAMP,
-  `fecha_baja` DATETIME  DEFAULT CURRENT_TIMESTAMP,
+  `fecha_baja` DATETIME  DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `codigo_reg` VARCHAR(45)
   )
 ENGINE = InnoDB;
@@ -117,14 +117,14 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `potatoeschipsr`;
-INSERT INTO `potatoeschipsr`.`Usuarios_suscripcion` (`id_usuario`, `nombre`, `apellidos`, `email`, `telefono`, `dni`, `ano_nacimiento`, `provincia`, `mensaje`, `activo`, `newsletter`, `fecha_alta`, `fecha_baja`, `id_usuarios_suscripcion`) VALUES (NULL, 'Ruben', 'Fernandez', 'rubenferndez@hotmail.com', 934567532, 'md5(34532345S)', '1989-02-20', 'Barcelona', NULL, true, true, '2020-01-01', NULL, NULL);
-INSERT INTO `potatoeschipsr`.`Usuarios_suscripcion` (`id_usuario`, `nombre`, `apellidos`, `email`, `telefono`, `dni`, `ano_nacimiento`, `provincia`, `mensaje`, `activo`, `newsletter`, `fecha_alta`, `fecha_baja`, `id_usuarios_suscripcion`) VALUES (NULL, 'Juan ', 'Palomo', 'juanpalomo@hotmail.com', 923456789, 'md5(45372861B)', '1991-01-01', 'Tarragona', NULL, false, false, '2019-07-10', NULL, NULL);
-INSERT INTO `potatoeschipsr`.`Usuarios_suscripcion` (`id_usuario`, `nombre`, `apellidos`, `email`, `telefono`, `dni`, `ano_nacimiento`, `provincia`, `mensaje`, `activo`, `newsletter`, `fecha_alta`, `fecha_baja`, `id_usuarios_suscripcion`) VALUES (NULL, 'Jorge', 'Valdano', 'jorgevaldano@hotmail.com', 923458789, 'md5(36273645A)', '1983-01-01', 'Lleida', NULL, true, true, '2018-02-23', '2020-01-01', NULL);
-INSERT INTO `potatoeschipsr`.`Usuarios_suscripcion` (`id_usuario`, `nombre`, `apellidos`, `email`, `telefono`, `dni`, `ano_nacimiento`, `provincia`, `mensaje`, `activo`, `newsletter`, `fecha_alta`, `fecha_baja`, `id_usuarios_suscripcion`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO `potatoeschipsr`.`Usuarios_suscripcion` (`id_usuario`, `nombre`, `apellidos`, `email`, `telefono`, `dni`, `ano_nacimiento`, `provincia`, `mensaje`, `activo`, `newsletter`, `fecha_alta`, `fecha_baja`, `id_usuarios_suscripcion`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO `potatoeschipsr`.`Usuarios_suscripcion` (`id_usuario`, `nombre`, `apellidos`, `email`, `telefono`, `dni`, `ano_nacimiento`, `provincia`, `mensaje`, `activo`, `newsletter`, `fecha_alta`, `fecha_baja`, `id_usuarios_suscripcion`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO `potatoeschipsr`.`Usuarios_suscripcion` (`id_usuario`, `nombre`, `apellidos`, `email`, `telefono`, `dni`, `ano_nacimiento`, `provincia`, `mensaje`, `activo`, `newsletter`, `fecha_alta`, `fecha_baja`, `id_usuarios_suscripcion`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO `potatoeschipsr`.`Usuarios_suscripcion` (`id_usuario`, `nombre`, `apellidos`, `email`, `telefono`, `dni`, `ano_nacimiento`, `provincia`, `mensaje`, `activo`, `newsletter`, `fecha_alta`, `fecha_baja`, `id_usuarios_suscripcion`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `potatoeschipsr`.`Usuarios_suscripcion` (`id_usuario`, `nombre`, `apellidos`, `email`, `telefono`, `dni`, `ano_nacimiento`, `provincia`, `mensaje`, `activo`, `newsletter`, `fecha_alta`, `fecha_baja`, `id_usuarios_suscripcion`) VALUES (NULL, 'ruben', 'fernandez', 'rubenferndez@hotmail.com', 934567532, 'md5(34532345A)', '1989-02-21', 'Barcelona', NULL, true, true, '2020-01-01', NULL, NULL);
+INSERT INTO `potatoeschipsr`.`Usuarios_suscripcion` (`id_usuario`, `nombre`, `apellidos`, `email`, `telefono`, `dni`, `ano_nacimiento`, `provincia`, `mensaje`, `activo`, `newsletter`, `fecha_alta`, `fecha_baja`, `id_usuarios_suscripcion`) VALUES (NULL, 'juan ', 'palomo', 'juanpalomo@hotmail.com', 923456789, 'md5(45372861B)', '1991-01-01', 'Tarragona', NULL, false, false, '2019-07-10', NULL, NULL);
+INSERT INTO `potatoeschipsr`.`Usuarios_suscripcion` (`id_usuario`, `nombre`, `apellidos`, `email`, `telefono`, `dni`, `ano_nacimiento`, `provincia`, `mensaje`, `activo`, `newsletter`, `fecha_alta`, `fecha_baja`, `id_usuarios_suscripcion`) VALUES (NULL, 'jorge', 'valdano', 'jorgevaldano@hotmail.com', 923458789, 'md5(36273645C)', '1983-01-01', 'Lleida', NULL, true, true, '2018-02-23', '2020-01-04', NULL);
+INSERT INTO `potatoeschipsr`.`Usuarios_suscripcion` (`id_usuario`, `nombre`, `apellidos`, `email`, `telefono`, `dni`, `ano_nacimiento`, `provincia`, `mensaje`, `activo`, `newsletter`, `fecha_alta`, `fecha_baja`, `id_usuarios_suscripcion`) VALUES (NULL, 'david', 'fernandez', 'davidferndez@hotmail.com', 934567538, 'md5(34532345D)', '1989-02-25', 'Barcelona', NULL, true, true, '2020-01-02', NULL, NULL);
+INSERT INTO `potatoeschipsr`.`Usuarios_suscripcion` (`id_usuario`, `nombre`, `apellidos`, `email`, `telefono`, `dni`, `ano_nacimiento`, `provincia`, `mensaje`, `activo`, `newsletter`, `fecha_alta`, `fecha_baja`, `id_usuarios_suscripcion`) VALUES (NULL, 'raul', 'ortega', 'raulortega@hotmail.com', 934567537, 'md5(34532345E)', '1989-03-20', 'Barcelona', NULL, true, true, '2020-01-05', NULL, NULL);
+INSERT INTO `potatoeschipsr`.`Usuarios_suscripcion` (`id_usuario`, `nombre`, `apellidos`, `email`, `telefono`, `dni`, `ano_nacimiento`, `provincia`, `mensaje`, `activo`, `newsletter`, `fecha_alta`, `fecha_baja`, `id_usuarios_suscripcion`) VALUES (NULL, 'jorge', 'diaz', 'jorgediaz@hotmail.com', 934567536, 'md5(34532345F)', '1989-06-20', 'Lleida', NULL, true, true, '2020-01-07', NULL, NULL);
+INSERT INTO `potatoeschipsr`.`Usuarios_suscripcion` (`id_usuario`, `nombre`, `apellidos`, `email`, `telefono`, `dni`, `ano_nacimiento`, `provincia`, `mensaje`, `activo`, `newsletter`, `fecha_alta`, `fecha_baja`, `id_usuarios_suscripcion`) VALUES (NULL, 'esteban', 'martinez', 'estebanmartinez@hotmail.com', 934567553, 'md5(34532345G)', '1989-09-20', 'Tarragona', NULL, true, true, '2020-01-08', NULL, NULL);
+INSERT INTO `potatoeschipsr`.`Usuarios_suscripcion` (`id_usuario`, `nombre`, `apellidos`, `email`, `telefono`, `dni`, `ano_nacimiento`, `provincia`, `mensaje`, `activo`, `newsletter`, `fecha_alta`, `fecha_baja`, `id_usuarios_suscripcion`) VALUES (NULL, 'eloy', 'agudo', 'eloyagudo@hotmail.com', 934567532, 'md5(34532344H)', '1989-01-02', 'Lleida', NULL, true, true, '2020-01-01', NULL, NULL);
 
 COMMIT;
 

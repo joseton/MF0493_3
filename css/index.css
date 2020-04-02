@@ -11,6 +11,9 @@ header{
     box-shadow:0px 4px 3px rgba(0,0,0,.5);
 }
 .imagenfondo{
+
+    background-attachment: fixed; /* CON ESTA PROPIEDAD HACEMOS QUE LA IMAGEN SE QUEDE FIJA AL HACER SCROLL  */
+    background-size: auto;
     background-image: url("../img/images92.jpg");
     background-size: cover;
     width: 100%;
