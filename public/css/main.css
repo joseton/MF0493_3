@@ -6,6 +6,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
 /*deja el footer abajo*/
 /* html, body{
     height: 100%;
@@ -22,6 +25,9 @@ main{
     margin-bottom: 100px;
     margin-top: 20px;
 } */
+
+
+
 header{
 
     font-size: 20px;
@@ -40,9 +46,7 @@ header nav ul{
 
 ul li a{
     color: grey;
-    /* border: 1px solid grey; */
     text-decoration: none;
-    /* padding: 30px 24px; */
     font-family: sans-serif;
     letter-spacing: 2px;
 }
@@ -53,6 +57,5 @@ ul li a:hover{
 }
 
 ul li {
-    /* padding: 7px; */
     list-style: none;
 }

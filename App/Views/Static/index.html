@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+
+{% block title %}Index{% endblock %}
+
+{% block headLinks %}
+
+<link rel="stylesheet" href="public/css/index.css">
+<script type="text/javascript" src="public/js/index.js"></script>
+
+{% endblock %}
+
+
+{% block main %}
+<!-- AQUÍ AÑADIREMOS LO QUE QUERAMOS VER SOLO EN LA PAGINA INDEX.HTML -->
+<main>
+    <div class="imagenfondo"></div>
+
+    <!-- VIDEO_______________________________________________________________________ -->
+
+    <!-- video: MUTED(SILENCIADO), LOOP(AUTOCARGADO DESPUES DE FINALIZAR), AUTOPLAY(SE REPRODUCE AUTOMATIC.) -->
+    <video width="100%" height="100%" autoplay muted loop>
+        <source src="public/video/video1.mp4" type="video/mp4">
+    </video>
+    <!-- ESTE ES EL APARTADO DE COMO FABRICAMOS_________________________________________________ -->
+    <div class="comofabricamos">
+
+        <div class="comofabricamosizq">
+            <h3>Patatas seleccionadas</h3>
+            <p>La selección de las materias primas es nuestra máxima para poder ofrecer un producto natural con un aroma, sabor y textura únicos.</p>
+
+
+            <h3>Sal del mar menor</h3>
+            <p>Nuestras chips son condimentadas con sal del mar menor, una sal recolectada en el Parque Regional de San Pedro Del Pinatar que gracias a su clima y ubicación dan como resultado un sabor excepcional.</p>
+
+
+            <h3>Aceite de girasol</h3>
+            <p>No utilizamos aceites de palma ni derivados. Todas nuestras patatas están fritas con aceite de girasol u oliva 100% de origen natural.</p>
+        </div>
+
+        <img src="public/img/comofabricamos.jpg" alt="">
+
+        <div class="comofabricamosdcha">
+            <h3>Proceso de fabricación</h3>
+            <p>Mimamos cada parte del proceso de fabricación, desde su recolección hasta su packaging, sólo así se puede garantizar un producto de calidad.</p>
+
+
+
+            <h3>Sin alérgenos</h3>
+            <p>Ninguna de nuestras patatas fritas contiene gluten ni otros alergenos. Lo natural, es más sano.</p>
+
+
+
+            <h3>Atmósfera protectora</h3>
+            <p>Envasamos nuestros productos con nitrógeno para evitar la oxidación. Esto nos garantiza un producto estable y de sabor excepcional durante toda su vida útil.</p>
+        </div>
+
+    </div>
+
+    <!-- SABIAS QUE..._____________________________________________________________________- -->
+    <section>
+        <div id="historia">
+
+            <img src="public/img/images12.jpg" width='100%' height='700px' alt="" id="imghistoria">
+            <h1>Sabías que...</h1>
+            <p>En 1853, George Crum era el chef de Moon’s Lake House, en Saratoga Springs, EEUU. Crum no tenía fama de tener buen carácter, y la aparición de Cornelius Vanderbilt en el restaurante desencadenó uno de los inventos más famosos de la historia.</p>
+
+            <p></p>
+
+            <p>El señor Vanderbilt pidió un plato de patatas fritas, que en inglés se denominan french fries. Vanderbilt devolvió el plato argumentando que eran demasiado gruesas y estaban poco hechas. Crum cortó las patatas mucho más finas y las frió más tiempo, pero Vanderbilt era la horma de su zapato y las devolvió de nuevo porque aún eran demasiado gruesas. Harto de Vanderbilt, Crum decidió cortarlas tan finas y freírlas tanto que fuera imposible pincharlas con el tenedor sin romperlas, además de sazonarlas con excesiva sal.</p>
+
+            <p></p>
+
+            <p>Se las sirvieron a Vanderbilt esperando que, con razón, no quedara satisfecho, pero a Venderbilt le volvieron loco. Crum montó su propio restaurante, donde servía sus famosas “Saratoga Chips”.</p>
+        </div>
+
+        <!-- NUESTROS PRODUCTOS_________________________________________________________________ -->
+        <div id="nuestrosproductos">
+            <h1>NUESTRAS PATATAS</h1>
+
+            <img src="public/img/imagentitulocaseras.jpg" width="20%" height="20%" alt="" class="imagentitulo">
+            <div class="contenedor_productos">
+                <div class="producto">
+                    <img src="public/img/caseras1.jpg" alt="">
+                    <p>CASERAS</p>
+                </div>
+                <div class="producto">
+                    <img src="public/img/caseras2.jpg" alt="">
+                    <p>CASERAS PAJA</p>
+                </div>
+                <div class="producto">
+                    <img src="public/img/caseras3.jpg" alt="">
+                    <p>CASERAS ONDULADAS</p>
+                </div>
+            </div>
+
+
+            <img src="public/img/imagentitulopremium.jpg" width="20%" height="20%" alt="" class="imagentitulo">
+            <div class="contenedor_productos">
+                <div class="producto">
+                    <img src="public/img/premium1.jpg" alt="">
+                    <p>PREMIUM</p>
+                </div>
+
+                <div class="producto">
+                    <img src="public/img/premium2.jpg" alt="">
+                    <p>PREMIUM SABOR APERITIVO</p>
+                </div>
+
+                <div class="producto">
+                    <img src="public/img/premium3.jpg" alt="">
+                    <p>PREMIUM QUESO DE CABRA Y CEBOLLA CARAMELIZADA</p>
+                </div>
+            </div>
+
+
+            <img src="public/img/imagentituloligeras.jpg" width="20%" height="20%" alt="" class="imagentitulo">
+            <div class="contenedor_productos">
+                <div class="producto">
+                    <img src="public/img/ligeras1.jpg" alt="">
+                    <p>LIGERAS</p>
+                </div>
+
+                <div class="producto">
+                    <img src="public/img/ligeras2.jpg" alt="">
+                    <p>LIGERAS TOMATE Y OREGANO</p>
+                </div>
+            </div>
+
+            <img src="public/img/imagentitulochips.jpg" width="20%" height="20%" alt="" class="imagentitulo">
+            <div class="contenedor_productos">
+                <div class="producto">
+                    <img src="public/img/chips1.jpg" alt="">
+                    <p>CHIPS ORIGINALES</p>
+                </div>
+
+                <div class="producto">
+                    <img src="public/img/chips2.jpg" alt="">
+                    <p>CHIPS PIZZA</p>
+                </div>
+
+                <div class="producto">
+                    <img src="public/img/chips3.jpg" alt="">
+                    <p>CHIPS BACON & CHEESE</p>
+                </div>
+            </div>
+
+            <img src="public/img/imagentitulochurreria.jpg" width="20%" height="20%" alt="" class="imagentitulo">
+            <div class="contenedor_productos">
+                <div class="producto">
+                    <img src="public/img/churreria1.jpg" alt="">
+                    <p>CHURRERIA</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+{% endblock %}

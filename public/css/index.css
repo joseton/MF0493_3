@@ -1,17 +1,39 @@
 /* AQUI APLICAMOS LOS ESTILOS DE INDEX */
+
 header{
     font-size: 20px;
-    /* background-image: linear-gradient(to right, #c6ffdd, #cee5a7, #e1c67d, #f3a06e, #f7797d);; */
     color: grey;
     padding: 50px;
-    position: absolute;
-    bottom: 0;
     width: 100%;
     background: #fff;
-    box-shadow:0px 4px 3px rgba(0,0,0,.5);
+    box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+    position: absolute;
+    bottom: 0;
 }
-.imagenfondo{
 
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li a{
+    color: grey;
+    text-decoration: none;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+
+ul li a:hover{
+    font-weight: bold;
+    color: #cfbf13;
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+}
+
+.imagenfondo{
     background-attachment: fixed; /* CON ESTA PROPIEDAD HACEMOS QUE LA IMAGEN SE QUEDE FIJA AL HACER SCROLL  */
     background-size: auto;
     background-image: url("../img/images92.jpg");
@@ -56,8 +78,6 @@ header{
 }
 
 .comofabricamos img{
-    /* max-width: 100%;
-    height: auto; */
     width:388px;
     height:483px;
     margin: 0 20px;
@@ -96,11 +116,6 @@ h3{
 }
 
 /* ESTILOS DE(HISTORIA) SABIAS QUE.._______________________________________________________________ */
-#historia{
-    /* padding-top: 100px;
-    padding-bottom: 100px; */
-}
-
 #imghistoria{
     opacity: 0.95;
     position: absolute;
@@ -134,7 +149,6 @@ main section #nuestrosproductos h1{
     font-size: 35px;
     text-align: center;
     font-family: monospace;
-    /* top: 65px; */
     padding-top: 100px;
     padding-bottom: 50px;
     margin-top: 150px;
@@ -158,7 +172,6 @@ main section #nuestrosproductos h1{
 }
 
 #nuestrosproductos p{
-    /* font-size: 15px; */
     font-size: 90%;
     font-family: sans-serif;
     color: black;
@@ -174,7 +187,6 @@ main section #nuestrosproductos h1{
 }
 
 #nuestrosproductos p:hover{
-    /* font-size: 15px; */
     font-size: 90%;
     font-family: sans-serif;
     color: white;

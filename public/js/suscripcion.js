@@ -139,6 +139,44 @@ $(document).ready(function(){
                document.getElementById("mensaje_val").innerHTML = mensajes;
            }
 
+           // Envío de datos del formulario suscripción por ajax(con ajax enviamos datos sin recargar la pagina)
+           if (
+           $(nombre_val).html() == ""
+           && $(apellido_val).html() == ""
+           && $(email_val).html() == ""
+           && $(tlf_val).html() == ""
+           && $(dni_val).html() == ""
+           && $(any_val).html() == ""
+           && $(provincias_val).html() == ""
+           && $(mensaje_val).html() == ""
+            ){
+               // alert("El usuario ha entrado correctamente");
+
+
+                   // método AJAX de jQuery________________________________________________________________________________
+
+                   // El prevent default lo ponemos aquí para que pare la acción del SUBMIT y envíe los datos sin recargar
+                   event.preventDefault();
+
+                   $.ajax({
+                       // config. de datos de envío
+                       type: 'POST',
+                       url: 'formulariosuscripcion',
+                       dataType: 'json',
+                       data: $("#suscripcion").serialize(),
+                       // control de acciones en el envio y respuesta del server
+                       success: function(dataSuscrip){
+                           $("#dataSuscrip").html(dataSuscrip);
+                       },
+                       beforeSend: function(){
+                           $("#dataSuscrip").html('<i class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>');
+                       },
+                       error: function(){
+                           $("#dataSuscrip").html('*Error en la comunicación con el servidor');
+                       }
+                   });
+           }
+
     });
 });
 

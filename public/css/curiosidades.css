@@ -6,7 +6,8 @@
 .titulocurios{
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 10px;
 }
 
 .container_curiosidades{

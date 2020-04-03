@@ -1,0 +1,61 @@
+{
+    "": {
+        "controller": "StaticController",
+        "action": "renderIndex"
+    },
+
+    "index": {
+         "controller": "StaticController",
+         "action": "renderIndex"
+     },
+
+     "slider": {
+         "controller": "StaticController",
+         "action": "renderSlider"
+     },
+
+     "curiosidades": {
+          "controller": "StaticController",
+          "action": "renderCuriosidades"
+      },
+
+      "dondeestamos": {
+          "controller": "StaticController",
+          "action": "renderDondeestamos"
+      },
+
+
+
+
+
+     "suscripcion": {
+          "controller": "UserController",
+          "action": "renderSuscripcion"
+      },
+
+      "login_reg": {
+          "controller": "UserController",
+          "action": "renderLoginReg"
+      },
+
+      "registro": {
+          "controller": "UserController",
+          "action": "Registro"
+      },
+      "login": {
+          "controller": "UserController",
+          "action": "Login"
+      },
+      "formulariosuscripcion": {
+          "controller": "UserController",
+          "action": "Suscripcion"
+      },
+
+      "eConfirm": {
+          "controller": "UserController",
+          "action": "emailConfirm"
+      }
+
+
+
+}

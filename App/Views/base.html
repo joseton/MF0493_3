@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}{% endblock %}</title>
+
+        <link rel="stylesheet" href="public/css/main.css">
+        <link rel="stylesheet" href="public/css/footer.css">
+        <link rel="stylesheet" href="public/css/responsive.css">
+
+        <script type="text/javascript" src="vendor/components/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="public/js/index.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet">
+        <!-- (LINK PARA SPINNER) -->
+        <script src="https://use.fontawesome.com/ff0a9012c4.js"></script>
+
+        {% block headLinks %}{% endblock %}
+
+    </head>
+
+    <!-- AQUÍ PONEMOS ToDO EL CONTENIDO QUE SE REPITE EN CADA APARTADO, EN ESTE CASO, EL HEADER(MENU) , Y EL FOOTER -->
+    <body>
+        <header>
+            <nav class="menu" >
+                <ul>
+                    <li><a href="index">Home</a></li>
+                    <li><a href="slider">Galería</a></li>
+                    <li><a href="curiosidades">Curiosidades</a></li>
+                    <li><a href="suscripcion">Suscripción</a></li>
+                    <li><a href="login_reg">Login/Registro</a></li>
+                    <li><a href="dondeestamos">¿Donde estamos?</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- EN EL MAIN SE CARGA EL CONTENIDO DE CADA PAGINA, PERO ESO NO LO HAREMOS EN "BASE.HTML" -->
+        <main>
+            {% block main %}{% endblock %}
+        </main>
+
+
+        <footer id="footer">
+            <div class="footerleft">
+                <span> Únete a nuestro equipo </span>
+                <span> Política de cookies </span>
+                <span> Aviso legal </span>
+                <span> Código Ético </span>
+                <span> Otra información </span>
+            </div>
+
+            <div class="footerright">
+                <div class="logolupa">
+                    <img src="public/img/logolupa.png" alt="" width="40px" height="40px">
+                </div>
+                <input type="search" placeholder="Buscar..." >
+
+                <div class="logoredes">
+                    <img src="public/img/logo1.png" alt="" width="40px" height="40px">
+                    <img src="public/img/logo2.png" alt="" width="40px" height="40px">
+                    <img src="public/img/logo3.png" alt="" width="40px" height="40px">
+                    <img src="public/img/logo4.png" alt="" width="40px" height="40px">
+                </div>
+
+            </div>
+        </footer>
+
+
+    </body>
+
+</html>

@@ -20,6 +20,7 @@
     color:#cfbf13;
     margin: 10px 0px 20px 20px;
     text-align: center;
+    font-size: 30px;
 }
 
 #form_log{
@@ -97,6 +98,7 @@
     padding: 5px;
 }
 
+
 /* AQUI APLICAMOS LOS ESTILOS DE SUSCRIPCION; */
 /* ________________________________________________________________________________________________________________ */
 
@@ -116,6 +118,8 @@
     color:#cfbf13;
     margin: 10px 0px 20px 20px;
     text-align: center;
+    font-size: 30px;
+
 }
 
 #formulariosuscrip .inputs_100{
