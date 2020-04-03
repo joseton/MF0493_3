@@ -150,23 +150,21 @@ class UserController extends Controller{
             $provincias = Security::secure_input($params['provincias']);
             $mensaje = Security::secure_input($params['mensaje']);
 
+            
+
             // OB_START Y OB_END_CLEAN meten esa vista con el twig dentro del body en App/Views/Email/suscripcion.html, estamos metiendo El array con los datos.
             ob_start();
-            View::renderTwig('Email/suscripcion.html', array('nombre'=>$nombre, 'apellidos'=>$apellidos, 'email'=>$email, 'tlf'=>$telefono, 'dni'=>$dni, 'any'=>$ano_nac, 'provincias'=>$provincias, 'mensaje'=>$mensaje));
+            View::renderTwig('Email/suscripcion.html', array('href'=>$href, 'nombre'=>$nombre, 'apellidos'=>$apellidos, 'email'=>$email, 'tlf'=>$telefono, 'dni'=>$dni, 'any'=>$ano_nac, 'provincias'=>$provincias, 'mensaje'=>$mensaje));
             $body = ob_get_contents();
             ob_end_clean();
             // SUBJECT = es el asunto del email
-            $subject = 'Ha realizado correctamente su suscripción(Ruben)';
+            $subject = 'Datos del formulario de contacto(Ruben)';
 
             if(!Security::email($email, $subject, $body)){
                 echo json_encode('No se ha podido enviar el email de confirmación de suscripción. Inténtalo más tarde');
             }else{
                 echo json_encode('Usuario suscrito con éxito, verifica tu email para confirmar el registro ');
             }
-            break;
-
-
-
 
     }
 

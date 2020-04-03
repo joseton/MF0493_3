@@ -27,15 +27,15 @@ $(document).ready(function(){
                document.getElementById("nombre_val").innerHTML = mensajes;
            }
 
-           if(apellido.value == ""){
+           if(apellidos.value == ""){
                mensajes = "*Rellena el campo Apellido<br>";
-               apellido.classList.add("placeholder_val_ko");
-               apellido.classList.remove("placeholder_val_ok");
+               apellidos.classList.add("placeholder_val_ko");
+               apellidos.classList.remove("placeholder_val_ok");
                document.getElementById("apellido_val").innerHTML = mensajes;
            }else{
-               apellido.removeAttribute("style");
-               apellido.classList.add("placeholder_val_ok");
-               apellido.classList.remove("placeholder_val_ko");
+               apellidos.removeAttribute("style");
+               apellidos.classList.add("placeholder_val_ok");
+               apellidos.classList.remove("placeholder_val_ko");
                mensajes = "";
                document.getElementById("apellido_val").innerHTML = mensajes;
            }
@@ -139,7 +139,7 @@ $(document).ready(function(){
                document.getElementById("mensaje_val").innerHTML = mensajes;
            }
 
-           // Envío de datos del formulario suscripción por ajax(con ajax enviamos datos sin recargar la pagina)
+           // Envío de datos del formulario suscripción por AJAX(con ajax enviamos datos sin recargar la pagina)
            if (
            $(nombre_val).html() == ""
            && $(apellido_val).html() == ""
