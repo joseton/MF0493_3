@@ -10,7 +10,16 @@
   ],
 
   "require": {
-      "components/jquery":">=3.4.1"
+      "php": ">=7.0",
+      "components/jquery": ">=3.4.1",
+      "twig/twig": "^2.0"
+  },
+
+  "autoload": {
+      "psr-4": {
+          "Core\\": "Core/",
+          "App\\": "App/"
+      }
   }
 
 }

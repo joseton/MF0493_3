@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}{% endblock %}</title>
+        <style>
+        @import url('https://fonts.googleapis.com/css?family=Abhaya+Libre|Montserrat|Special+Elite|Open+Sans|Open+Sans+Condensed:700&display=swap');
+        </style>
+        <link rel="icon" href="img/icon.png">
+        <link rel="stylesheet" href="public/css/forms.css">
+        <link rel="stylesheet" href="public/css/main.css">
+        <link rel="stylesheet" href="public/css/index.css">
+        {% block link %}
+        {% endblock %}
+        <script type="text/javascript" src="vendor/components/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="public/js/user.js"></script>
+        <script type="text/javascript" scr="public/js/index.js"></script>
+        <!-- jQuery Modal -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        {% block script %}
+        {% endblock %}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    </head>
+    <body>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>

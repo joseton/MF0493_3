@@ -1,0 +1,58 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#htka_panel1{
+  background-color: #fff;
+}
+header{
+  width: 100%;
+  height: 17%;
+}
+#logo_header{
+  width: 300px;
+  /* width: 47%; */
+  margin: 15px;
+}
+.nav_home a{
+  color: #002638;
+}
+.nav_home a:hover{
+  color: #37bfbf;
+  font-weight: lighter;
+}
+
+/* TITLE */
+.htka_title{
+  width: 100%;
+  height: 15%;
+  padding: 30px;
+  float: left;
+  color: #002638;
+  text-align: right;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+}
+.htka_intro{
+  width: 100%;
+  height: 68%;
+  padding: 100px 100px;
+  background-color: #fff;
+  float: left;
+  font-size: 20px;
+  color: #131b24;
+  position: relative;
+  text-align: center;
+}
+
+/* PANEL 2 CONTENT */
+#htka_panel2{
+  background-color: #fff;
+  border-top: 1px solid #62c6c2;
+}
+
+/* FOOTER */
+.foot_1{
+    background-color: #62c6c2;
+}

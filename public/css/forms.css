@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+/* TODO Challenge 5: Añadir el código PHP que se indica en el ejercicio del Challenge 5 */
+body{
+  height: 100vh;
+  background-color: #002638;
+}
+#logofamda_auth{
+  width: 300px;
+  margin: 2% 50% auto;
+  transform: translate(-50%, 0%);
+
+}
+
+/* Formularios */
+form{
+    width: 500px;
+    /* margin: 30px; */
+}
+input{
+    width: 97%;
+    height: 45px;
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: #001C29;
+    border: 0px;
+    color: #fff;
+    outline-style: none;
+}
+.form{
+  margin: 10px auto;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 30px;
+  text-align: center;
+  margin-top: 7%;
+}
+#logForm{
+  display: none;
+}
+form span{
+  color: #37BFBF;
+}
+.label{
+  color: #FFF;
+  font-weight: bold;
+  font-size: 20px;
+}
+.submit{
+  margin-bottom: 20px;
+  width: 100%;
+  height: 45px;
+  color: #fff;
+  background-color: #37BFBF;
+  font-size: 16px;
+  border-radius: 30px;
+  opacity: 70%;
+}
+.submit:hover{
+  opacity: 100%;
+}
+.click_aqui{
+  color: #37BFBF;
+  text-decoration: none;
+}
+.click_aqui:hover{
+  text-decoration: underline;
+}
+.results{
+  color: #ff7a7a;
+  padding-top: 24px;
+}
+
+/* FOOTER */
+
+.foot_1{
+  background-color: #002638;
+}
+
+/* Final TODO Challenge 5 */
