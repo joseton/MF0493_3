@@ -228,6 +228,26 @@ function mostrar_reg(){
     $("#registre").fadeIn(750);
 }
 
+// ejempplo de método TOOGLE: ES LO MISMO QUE EL HIDE Y EL FADE IN PERO CON EL METODO TOOGLE (faltaría cambiar las ids y clases)
+//     $("#registrespan").click(function(){
+//       $("#login").toggle();
+//       $("#registre").toggle();
+//       $(".results").html("");
+//       $("#login").trigger("reset");
+//       $("#registre").trigger("reset");
+//
+//     });
+//
+//     $("#loginspan").click(function(){
+//         $("#registre").toggle();
+//         $("#login").toggle();
+//         $(".results").html("");
+//         $("#registre").trigger("reset");
+//         $("#login").trigger("reset");
+//     });
+
+
+
 function email_validar(email){
     var patt = new RegExp(/^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/);
     return patt.test(email);

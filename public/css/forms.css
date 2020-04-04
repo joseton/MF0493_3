@@ -66,11 +66,14 @@
 #formulariologinreg input:invalid, .invalid{
     color: #ff0000;
     font-size: 75%;
+
 }
+
 
 #formulariologinreg .error{
     font-size: 75%;
     color: #ff0000;
+
 }
 
 #formulariologinreg form p{
