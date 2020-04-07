@@ -11,6 +11,12 @@ header{
     bottom: 0;
 }
 
+ /* .video_content{
+    padding: 150px 250px;
+    background-color: black;
+} */
+
+
 header nav ul{
     display: flex;
     justify-content: space-around;
@@ -42,6 +48,11 @@ ul li {
     height: 100vh;
     overflow: hidden;
 }
+video{
+
+        background-color: black;
+}
+
 
 /* CLASE QUE SE AÑADIRÁ CON JS PARA EL MENU PEGAJOSO______________________________________________________________ */
 .menu-fixed {
@@ -202,7 +213,7 @@ main section #nuestrosproductos h1{
 
 div .contenedor_productos img:hover{
     cursor: pointer;
-    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
     transition: .5s;
 
 }

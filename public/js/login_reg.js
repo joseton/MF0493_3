@@ -220,12 +220,12 @@ $(document).ready(function(){
 
 function mostrar_login(){
     $("#registre").hide();
-    $("#login").fadeIn(750);
+    $("#login").fadeIn(2000);
 }
 
 function mostrar_reg(){
     $("#login").hide();
-    $("#registre").fadeIn(750);
+    $("#registre").fadeIn(2000);
 }
 
 // ejempplo de método TOOGLE: ES LO MISMO QUE EL HIDE Y EL FADE IN PERO CON EL METODO TOOGLE (faltaría cambiar las ids y clases)
