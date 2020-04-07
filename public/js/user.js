@@ -132,7 +132,7 @@ $( document ).ready(function() {
                     success: function(response){
                         console.log("Success en Ajax");
                         $(".resultado").html(response);
-                        // setTimeout(location.reload.bind(location), 1500);
+                        setTimeout(location.reload.bind(location), 1500);
                     },
                     beforeSend: function(){
                         // $(".resultado").html('<i class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>');
@@ -191,8 +191,3 @@ function idTopic(event) {
     $('#editTopic').append("<div class='caja2' id='topic'>"+event.target.id+"</div>");
 
 }
-
-// Recoge el id seleccionado en editar y lo muestra para editar o eliminar.
-// function idTopic(event) {
-//     document.getElementById("editTopic").innerHTML += "<div class='caja2' id='topic'>"+event.target.id+"</div>";
-// }

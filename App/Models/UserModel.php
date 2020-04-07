@@ -231,10 +231,7 @@ class UserModel extends Model{
             $stmt->execute();
             $rows1 = $stmt->rowCount(); //Almacenamos el número de registros obtenidos
             $id_topi = $stmt->fetch(PDO::FETCH_ASSOC);
-            $id_topic = (int)$id_topi['id_topic'];
-
-
-            var_dump($id_topic);
+            $id_topic = (int)$id_topi['id_topic'];        
 
             if($rows1 == 1){
                 //Actualizamos el tema
