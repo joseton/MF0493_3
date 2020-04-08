@@ -55,7 +55,7 @@ $( document ).ready(function() {
     &&  $(mensaje_val).html() == ""){
       $.ajax({
         type: 'POST',
-        url: 'backend/backend.php',
+        url: 'App/Controllers/backend.php',
         dataType: 'json',
         data: $("#contacto").serialize(),
 

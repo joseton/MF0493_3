@@ -23,7 +23,7 @@ class UserController extends Controller{
   }
 
   public function registerAction($params){
-    sleep (1);
+    sleep (1.5);
     // if(isset($params['register'])){
     $email = $params['email'];
     $pass = $params['pass'];
@@ -59,7 +59,7 @@ class UserController extends Controller{
   }
 
   public function loginAction($params){
-    sleep (1);
+    sleep (1.5);
     $email_log = $params['email_log'];
     $pass_log = $params['pass_log'];
 
@@ -92,6 +92,23 @@ class UserController extends Controller{
         default:
         echo json_encode('[!] Error en la base de datos');
         break;
+      }
+    }
+  }
+
+  public function contactoAction(){
+    View::renderTwig('User/contacto.html');
+
+    sleep(1.5);
+
+    if(isset($_POST['email'])){
+      $email_log = $_POST['email'];
+      $nombre_log = $_POST['nombre'];
+
+      if(!filter_var($email_log, FILTER_VALIDATE_EMAIL)) {
+        echo json_encode( "Email address '$email_log' is not considered valid.\n");
+      }else{
+        echo json_encode("Gracias por escribirnos " . $nombre_log);
       }
     }
   }

@@ -8,19 +8,15 @@
         @import url('https://fonts.googleapis.com/css?family=Abhaya+Libre|Montserrat|Special+Elite|Open+Sans|Open+Sans+Condensed:700&display=swap');
         </style>
         <link rel="icon" href="img/icon.png">
-        <link rel="stylesheet" href="public/css/forms.css">
         <link rel="stylesheet" href="public/css/main.css">
-        <link rel="stylesheet" href="public/css/index.css">
-        {% block link %}
-        {% endblock %}
+        <link rel="stylesheet">{% block link %}{% endblock %}
         <script type="text/javascript" src="vendor/components/jquery/jquery.min.js"></script>
-        <script type="text/javascript" src="public/js/user.js"></script>
-        <script type="text/javascript" scr="public/js/index.js"></script>
         <!-- jQuery Modal -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-        {% block script %}
-        {% endblock %}
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+        <!-- Spinner -->
+        <script src="https://use.fontawesome.com/ff0a9012c4.js"></script>
+        <!-- block script -->
+        <script type="text/javascript"></script>{% block script %}{% endblock %}
     </head>
     <body>
         {% block body %}

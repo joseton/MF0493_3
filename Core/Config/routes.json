@@ -7,6 +7,14 @@
         "controller": "HomeController",
         "action": "index"
     },
+    "observatorio": {
+        "controller": "HomeController",
+        "action": "obs"
+    },
+    "hemeroteca": {
+        "controller": "HomeController",
+        "action": "htk"
+    },
     "database": {
         "controller": "HomeController",
         "action": "conexionDB"
@@ -22,5 +30,9 @@
     "auth/login": {
         "controller": "UserController",
         "action": "login"
+    },
+    "contacto": {
+        "controller": "UserController",
+        "action": "contacto"
     }
 }

@@ -11,4 +11,12 @@ class HomeController extends Controller{
         View::renderTwig('Home/home.html');
     }
 
+    public function obsAction(){
+        View::renderTwig('Obs/observatorio.html');
+    }
+
+    public function htkAction(){
+        View::renderTwig('Htk/hemeroteca.html');
+    }
+
 }

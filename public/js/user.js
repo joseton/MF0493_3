@@ -23,7 +23,7 @@ $( document ).ready(function() {
         $(".results").html(dataResp);
       },
       beforeSend: function(){
-        $(".results").html('Comprobando datos...');
+        $(".results").html('<i class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>');
       },
       error: function(){
         $(".results").html('[!] Error en la comunicación con el servidor');
@@ -44,7 +44,7 @@ $( document ).ready(function() {
         $(".results").html(dataResp);
       },
       beforeSend: function(){
-        $(".results").html('Comprobando datos...');
+        $(".results").html('<i class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>');
       },
       error: function(){
         $(".results").html('[!] Error en la comunicación con el servidor');
