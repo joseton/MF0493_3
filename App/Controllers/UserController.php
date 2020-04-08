@@ -49,7 +49,7 @@ class UserController extends Controller{
       $registro = new UserModel;
       $result = $registro->registro($params);
       if($result == 1){
-        echo json_encode('El registro se ha completado correctamente');
+        echo json_encode('El registro se ha completado correctamente :)');
       }else{
         echo json_encode('[!] Error en el registro');
       }
@@ -84,7 +84,7 @@ class UserController extends Controller{
         echo json_encode('[!] Error en el login');
         break;
         case '1':
-        echo json_encode('Login ok');
+        echo json_encode('Login ok :)');
         break;
         case '2':
         echo json_encode('[!] Error en el email o la contraseña ingresados');

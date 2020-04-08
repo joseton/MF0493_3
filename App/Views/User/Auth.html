@@ -4,7 +4,7 @@
 
 {% block body %}
 
-<!-- <h3>Soy la página de REGISTRO</h3> -->
+<div class="cien_height">
   <div class="">
       <a href="http://localhost/mf0493_3/home"><img src="public/img/FAMDA_LogDark.png" alt="Imagen Logo" id="logofamda_auth"></a>
   </div>
@@ -17,14 +17,47 @@
       <span>¿Ya estás registrado? <a href="#" class="click_aqui"> Inicia sesión </a></span>
       <div class="results">{{ mensaje }}</div>
   </form>
+  <form class="form" id="logForm">
+      <label class="label">Iniciar sesión</label>
+      <input type="email" name="email_log" placeholder="Email" id="email_log">
+      <input type="password" name="pass_log" placeholder="Contraseña" id="pass_log">
+      <input type="submit" name="entrar" value="Entrar" class="submit">
+      <span>¿No te has registrado? <a href="#" class="click_aqui"> Click Aquí! </a></span>
+      <div class="results">{{ mensaje }}</div>
+  </form>
+</div>
+<footer class="treinta_height">
+  <div class="foot2" id="auth_foot2">
+    <div class="foot2_main">
+      <div class="cajas_foot2">
+        <img src="img/FooterFAMDA_Log.png" alt="Footer_Log" id="Footer_Log">
+      </div>
+      <div class="cajas_foot2">
+        <a href="" class="foot_links" id="acerca_de">· Acerca de FamDA</a>
+        <a href="" class="foot_links" id="telefono">· + 34 644 94 93 39</a>
+        <a href="" class="foot_links" id="postal">· 08013, Barcelona</a>
+      </div>
+      <div class="cajas_foot2">
+        <a href="" class="foot_links" id="legal">Aviso legal</a>
+        <a href="" class="foot_links" id="privacidad">Política de privacidad</a>
+        <a href="" class="foot_links" id="cookies">Política de cookies</a>
+      </div>
+      <div class="cajas_foot2">
+        <a href="http://localhost/mf0493_3/index.html" target="_blank"><img class="social" alt="Twitter FamDA" src="img/rrss/twitter.png"/></a>
+        <a href="http://localhost/mf0493_3/index.html" target="_blank"><img class="social" alt="Instagram FamDA" src="img/rrss/instagram.png"/></a>
+        <a href="http://localhost/mf0493_3/index.html" target="_blank"><img class="social" alt="Linkedin FamDA" src="img/rrss/linkedin.png"/></a>
+        <a href="http://localhost/mf0493_3/index.html" target="_blank"><img class="social" alt="Instagram FamDA" src="img/rrss/youtube.png"/></a>
+        <a href="http://localhost/mf0493_3/index.html" target="_blank"><img class="social" alt="Instagram FamDA" src="img/rrss/facebook.png"/></a>
+      </div>
+    </div>
+    <div class="foot2_copy">
+      <div class="caja_copy">
+        <p id="copyright"> &#169; 2020 FAMDA.org  |  Todos los derechos reservados </p>
+      </div>
+    </div>
+  </div>
+</footer>
 
-<form class="form" id="logForm">
-    <label class="label">Login</label>
-    <input type="email" name="email_log" placeholder="Email" id="email_log">
-    <input type="password" name="pass_log" placeholder="Contraseña" id="pass_log">
-    <input type="submit" name="entrar" value="Entrar" class="submit">
-    <span>¿No te has registrado? <a href="#" class="click_aqui"> Click Aquí! </a></span>
-    <div class="results">{{ mensaje }}</div>
-</form>
+
 
 {% endblock %}
