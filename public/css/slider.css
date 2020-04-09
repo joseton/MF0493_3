@@ -1,0 +1,53 @@
+/* ------------------------------------------------------------------------ */
+/* slider.css: Estilos de la página slider.html */
+/* ------------------------------------------------------------------------ */
+/* TODO Challenge 3: Añade aqui los estilos necesarios para confeccionar el slider que se indica en el Challenge. */
+.mask{
+    display: block;
+    width: 80%;
+    height: 300px;
+    margin:50px auto;
+    overflow: hidden;
+    border: 1px solid #c3c3c3;
+}
+.container_slider{
+    width: 400%;
+    height: 100%;
+    animation-name: slider;
+    animation-duration: 15s;
+    position: relative;
+}
+.slide{
+    float: left;
+    width: 25%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+#slide1{
+    background-image: url(../img/img1.jpg);
+}
+#slide2{
+    background-image: url(../img/img2.jpg);
+}
+#slide3{
+    background-image: url(../img/img3.jpg);
+}
+#slide4{
+    background-image: url(../img/img4.jpg);
+}
+@keyframes slider {
+    10%{
+        left: 0;
+    }
+    35%{
+        left: -100%;
+    }
+    60%{
+        left: -200%;
+    }
+    85%{
+        left: -300%;
+    }
+}
+/* Final TODO Challenge 3 */

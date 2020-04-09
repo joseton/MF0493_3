@@ -1,0 +1,27 @@
+/* ------------------------------------------------------------------------ */
+/* index.css: Estilos de la página index.html */
+/* ------------------------------------------------------------------------ */
+/* TODO Challenge 1: añade aqui los estilos necesarios para confeccionar la tabla que se indica en el Challenge. */
+main h2{
+    margin: 10px;
+    text-align: center;
+}
+table{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+tr, td{
+    width: 150px;
+    height: 40px;
+}
+td, th{
+    border-bottom: dashed;
+    border-color: gray;
+    border-bottom-width: thin;
+}
+.celdaNombre{
+    width: 600px;
+    text-align: left;
+}
+/* Final TODO Challenge 1 */

@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block headlinks %}
+<link rel="stylesheet" href="public/css/contacto.css">
+<script type="text/javascript" src="public/js/contacto.js"></script>
+{% endblock %}
+
+
+
+{% block main %}
+<main>
+<form>
+    <h3>Formulario de contacto</h3>
+    <div class="inputs_50">
+        <label for="nombre">Nombre <span>*</span></label>
+        <input type="text" id="nombre">
+        <span class="result_nombre"></span>
+    </div>
+    <div class="inputs_50">
+        <label for="apellido">Apellido <span>*</span></label>
+        <input type="text" id="apellido">
+        <span class="result_apellido"></span>
+    </div>
+    <div class="clearflix"></div>
+    <div class="inputs_100">
+        <label for="email">Email <span>*</span></label>
+        <input type="text" id="email">
+        <span class="result_email"></span>
+    </div>
+    <div class="inputs_33">
+        <label for="tlf">Teléfono <span>*</span></label>
+        <input type="text" id="tlf">
+        <span class="result_tlf"></span>
+    </div>
+    <div class="inputs_33">
+        <label for="dni">DNI <span>*</span></label>
+        <input type="text" id="dni">
+        <span class="result_dni"></span>
+    </div>
+    <div class="inputs_33">
+        <label for="any">Año de Nacimiento <span>*</span></label>
+        <input type="text" id="any">
+        <span class="result_any"></span>
+    </div>
+    <div class="clearflix"></div>
+    <div class="inputs_100">
+        <label>Provincias Catalanas <span>*</span></label>
+        <select class="provincias">
+            <option>[Selecciona]</option>
+            <option>Barcelona</option>
+            <option>Girona</option>
+            <option>Lleida</option>
+            <option>Tarragona</option>
+        </select>
+        <span class="result_provincias"></span>
+    </div>
+    <div class="inputs_100">
+        <label>Mensaje <span>*</span></label>
+        <textarea  placeholder="Mensaje" id="mensaje"></textarea>
+        <span class="result_mensaje"></span>
+    </div>
+    <button type="button" class="btn">Enviar datos</button>
+</form>
+</main>
+{% endblock %}

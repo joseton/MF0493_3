@@ -1,0 +1,77 @@
+/* ------------------------------------------------------------------------ */
+/* main.css: Estilos Generales */
+/* ------------------------------------------------------------------------ */
+/* importamos la tipografia 'Ubuntu' desde nuestra carpeta 'fonts' */
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../fonts/Ubuntu-Title.ttf") format("truetype");
+}
+/* importamos tipografia 'Montserrat' de Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+/* 3 maneras de seleccionar los elementos HTML desde CSS */
+/* 1: Nombre de etiqueta HTML
+2: Por ID: elemento con propiedades especificas
+3: Por Clase: elementos con propiedades comunes */
+/* --------------------------------------------------- */
+/* Selector universal *: aplica propiedades a todos los elementos */
+*{
+    margin: 0;
+    /* no tiene en cuenta la suma de anchos de las propiedades 'border' ni 'padding' */
+    box-sizing: border-box;
+}
+.clearflix{
+    clear: both;
+}
+body, html{
+	height: 100%; /* posicionamiento de footer abajo (respeta flujo del navegador) */
+}
+body{
+    /* Google fonts */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    /* posicionamiento de footer abajo (respeta flujo del navegador) */
+    display: flex;
+  	flex-direction: column;
+}
+/* ------------ ESTILOS DE CABECERA ----------------*/
+header{
+    border-bottom: 1px #555 solid;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    width: 250px;
+}
+header nav ul li{
+    list-style-type: none;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li a{
+    border: 1px solid #000;
+    padding: 5px 15px;
+    margin-left: 5px;
+    color: #000;
+    text-decoration: none;
+}
+/* ------------ ESTILOS DEL CONTENIDO ----------------*/
+main{
+    flex: 1 0 auto; /* posicionamiento de footer abajo (respeta flujo del navegador) */
+    padding: 20px;
+}
+.btn{
+    display: block;
+    width: 610px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #000;
+}
+/* ------------ ESTILOS DEL PIE DE PÁGINA -------------*/
+footer{
+    padding: 20px;
+    text-align: center;
+    border-top: 1px #555 solid;
+}

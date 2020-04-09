@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}Login y Registro{% endblock %}
+
+{% block headlinks %}
+<link rel="stylesheet" href="public/css/login_reg.css">
+<script type="text/javascript" src="public/js/login_reg.js"></script>
+{% endblock %}
+
+
+
+{% block main %}
+<main>
+<form id="registre" novalidate>
+    <h3>REGISTRO</h3>
+    <label for="reg_email">Email</label>
+    <input type="email" id="reg_email" name="mailreg" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+    <span class="error"></span>
+    <label for="reg_pass">Contraseña</label>
+    <input type="password" id="reg_pass" name="pswreg" minlength="6">
+    <span class="error"></span>
+    <label for="reg_r_pass">Repetir contraseña</label>
+    <input type="password" id="reg_r_pass" name ="rpswreg">
+    <span class="error"></span>
+    <input type="submit" value="Registrar">
+    <div class="spinner" id="pensandoreg" ></div>
+    <p>¿Ya estás registrado? Haz clic <span onclick="mostrar_login()">AQUÍ</span></p>
+</form>
+
+<form id="login" novalidate>
+    <h3>LOGIN</h3>
+    <label for="lg_email">Email</label>
+    <input type="email" id="lg_email" name="lg_email">
+    <span class="error"></span>
+    <label for="lg_pass">Contraseña</label>
+    <input type="password" id="lg_pass" name="lg_pass">
+    <span class="error"></span>
+    <input type="button" value="Entrar">
+    <p>¿No tienes cuenta? Haz clic <span onclick="mostrar_reg()">AQUÍ</span></p>
+    <div class="spinner" id="pensandolog">
+
+    </div>
+</form>
+</main>
+{% endblock %}

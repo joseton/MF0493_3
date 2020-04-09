@@ -1,0 +1,49 @@
+/* ------------------------------------------------------------------------ */
+/* responsive.css: Estilos para todas las páginas 'html' */
+/* ------------------------------------------------------------------------ */
+/* TODO Challenge 4: Añade aqui las media querys para realizar las tareas que se indica en el Challenge. */
+
+
+#show_menu{
+    display: none;
+    width: 109px;
+    padding: 10px;
+    margin: 0 0 0 45px;
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+}
+#show_menu:hover + ul{
+    height: 93px;
+}
+nav ul{
+    transition: all .5s;
+}
+
+@media all and (max-width: 768px){
+    #show_menu{
+        display: block;
+    }
+    nav ul{
+        height: 0;
+        width: 109px;
+        text-align: center;
+        margin-left: 45px;
+        padding: 0;
+        overflow: hidden;
+        flex-direction: column;
+        position: absolute;
+    }
+    nav ul li{
+        margin-top: 13px;
+        width: 100%;
+    }
+    nav ul li a{
+        background-color: white;
+    } 
+    .inputs_33, .inputs_50{
+    	width: 100%;
+    }
+}
+
+/* Final TODO Challenge 4 */

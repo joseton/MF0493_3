@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}{% endblock %}</title>
+        <script type="text/javascript" src="public/js/jquery.min.js"></script>
+        <link rel="stylesheet" href="public/css/main.css">
+        <link rel="stylesheet" href="public/css/responsive.css">
+        <script src="https://use.fontawesome.com/ff0a9012c4.js"></script>
+        {% block headlinks %}{% endblock %}
+    </head>
+    <body>
+      <header>
+          <img src="PUBLIC/img/logo.png" alt="logo" title="Imagen logo" id="logo">
+
+          <nav>
+              <div id="show_menu">Mostrar Menú</div>
+
+              <ul>
+
+                  <li><a href="home">Home</a></li>
+                  <li><a href="slider">Slider</a></li>
+                  <li><a href="contacto">Contacto</a></li>
+                  <li><a href="login_reg">Login/Registro</a></li>
+              </ul>
+          </nav>
+      </header>
+      <main>
+        {% block main %}{% endblock %}
+      </main>
+        <footer>
+            <p>Web ejemplo clase M1 - DWEBS CIFO VIOLETA</p>
+        </footer>
+    </body>
+</html>
